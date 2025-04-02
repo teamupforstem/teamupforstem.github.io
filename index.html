@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Up For Science</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #0d6efd;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        header p {
+            margin: 5px 0;
+            font-size: 1.2rem;
+        }
+
+        nav {
+            background: #f4f4f4;
+            padding: 10px 0;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #0d6efd;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        section h2 {
+            font-size: 2rem;
+            color: #0d6efd;
+            margin-bottom: 10px;
+        }
+
+        section p {
+            font-size: 1rem;
+            color: #555;
+        }
+
+        .grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .grid > div {
+            flex: 1 1 calc(33.333% - 20px);
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .grid > div h3 {
+            margin-top: 0;
+            font-size: 1.4rem;
+            color: #0d6efd;
+        }
+
+        .grid > div p {
+            font-size: 1rem;
+            color: #555;
+        }
+
+        .grid > div a {
+            text-decoration: none;
+            color: #0d6efd;
+            font-weight: bold;
+        }
+
+        .grid > div a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            .grid > div {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Team Up For Science</h1>
+        <p>Inspiring Creativity, Critical Thinking, and Innovation in STEM Fields</p>
+    </header>
+
+    <nav>
+        <a href="#about">About Us</a>
+        <a href="#programs">Programs</a>
+        <a href="#mentorship">Mentorship</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="container">
+        <section id="about">
+            <h2>About Us</h2>
+            <p>
+                At <b>Team Up For Science</b>, we are dedicated to supporting and promoting student participation in robotics, 
+                computer science, mathematics, and science competitions. Our mission is to provide resources, mentorship, 
+                and opportunities that inspire creativity, critical thinking, and innovation for the next generation of STEM leaders.
+            </p>
+        </section>
+
+        <section id="programs">
+            <h2>Our Programs</h2>
+            <div class="grid">
+                <div>
+                    <h3>Robotics Competitions</h3>
+                    <p>We equip students with the tools and knowledge to participate and excel in robotics competitions at all levels.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <h3>Computer Science Challenges</h3>
+                    <p>Our workshops and coding bootcamps empower students to tackle real-world programming challenges with confidence.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <h3>Mathematics Olympiads</h3>
+                    <p>We provide resources and training for students to succeed in mathematics olympiads and competitions.</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="mentorship">
+            <h2>Mentorship Opportunities</h2>
+            <p>
+                Our mentorship program connects students with experienced professionals and educators in STEM fields. 
+                Mentors provide guidance, share expertise, and inspire innovation, helping students achieve their full potential.
+            </p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>
+                Have questions or want to get involved? Reach out to us:
+            </p>
+            <p>
+                📧 Email: <a href="mailto:office@teamupforscience.org">office@teamupforscience.org</a><br>
+                📞 Phone: <a href="tel:4346886119">434-688-6119</a>
+            </p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Team Up For Science. All rights reserved.</p>
+    </footer>
+</body>
+</html>
