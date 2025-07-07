@@ -1,0 +1,96 @@
+{{ $paginator := .Paginator }}
+<!-- Number of links either side of the current page. -->
+{{ $adjacent_links := 2 }}
+<!-- $max_links = ($adjacent_links * 2) + 1 -->
+{{ $max_links := (add (mul $adjacent_links 2) 1) }}
+<!-- $lower_limit = $adjacent_links + 1 -->
+{{ $lower_limit := (add $adjacent_links 1) }}
+<!-- $upper_limit = $paginator.TotalPages - $adjacent_links -->
+{{ $upper_limit := (sub $paginator.TotalPages $adjacent_links) }}
+<!-- If there's more than one page. -->
+{{ if gt $paginator.TotalPages 1 }}
+  <nav
+    class="flex items-center justify-between space-x-3 mt-10 mb-20"
+    aria-label="Pagination">
+    <!-- Previous page. -->
+    {{ if $paginator.HasPrev }}
+    <a href="{{ $paginator.Prev.URL }}" class="btn btn-icon" aria-label="Pagination Arrow">
+      <i class="fa fa-arrow-left text-xs"></i>
+      <span class="uppercase font-normal">Pervious Page</span>
+    </a>
+  
+    {{ else }}
+      <span disabled class="text-text-light rounded px-2 py-1.5 btn  cursor-not-allowed hover:text-text-light">
+        <span class="sr-only">Previous</span>
+        <span class="uppercase font-normal">Pervious Page</span>
+      </span>
+    {{ end }}
+
+
+    <!-- Page numbers -->
+    <div>
+    {{ range $paginator.Pagers }}
+      {{ $.Scratch.Set "page_number_flag" false }}
+      <!-- Advanced page numbers. -->
+      {{ if gt $paginator.TotalPages $max_links }}
+        <!-- Lower limit pages. -->
+        <!-- If the user is on a page which is in the lower limit.  -->
+        {{ if le $paginator.PageNumber $lower_limit }}
+          <!-- If the current loop page is less than max_links. -->
+          {{ if le .PageNumber $max_links }}
+            {{ $.Scratch.Set "page_number_flag" true }}
+          {{ end }}
+          <!-- Upper limit pages. -->
+          <!-- If the user is on a page which is in the upper limit. -->
+        {{ else if ge $paginator.PageNumber $upper_limit }}
+          <!-- If the current loop page is greater than total pages minus $max_links -->
+          {{ if gt .PageNumber (sub $paginator.TotalPages $max_links) }}
+            {{ $.Scratch.Set "page_number_flag" true }}
+          {{ end }}
+          <!-- Middle pages. -->
+        {{ else }}
+          {{ if and ( ge .PageNumber (sub $paginator.PageNumber $adjacent_links) ) ( le .PageNumber (add $paginator.PageNumber $adjacent_links) ) }}
+            {{ $.Scratch.Set "page_number_flag" true }}
+          {{ end }}
+        {{ end }}
+        <!-- Simple page numbers. -->
+      {{ else }}
+        {{ $.Scratch.Set "page_number_flag" true }}
+      {{ end }}
+      <!-- Output page numbers. -->
+      {{ if eq ($.Scratch.Get "page_number_flag") true }}
+
+        {{ if eq . $paginator }}
+          <span
+            aria-current="page"
+            class="bg-primary dark:bg-darkmode-primary dark:text-white rounded px-4 py-2 text-white">
+            {{ .PageNumber }}
+          </span>
+        {{ else }}
+          <a
+            href="{{ .URL }}"
+            aria-current="page"
+            class="text-text-dark hover:bg-light dark:text-darkmode-text-dark dark:hover:bg-darkmode-light rounded px-4 py-2">
+            {{ .PageNumber }}
+          </a>
+        {{ end }}
+      {{ end }}
+    {{ end }}  
+  </div>
+
+    <!-- Next page. -->
+    {{ if $paginator.HasNext }}
+    <a  href="{{ $paginator.Next.URL }}" aria-label="Pagination Arrow" class="btn btn-icon">
+      <span class="uppercase font-normal">Next Page</span>
+      <i class="fa fa-arrow-right text-xs"></i>
+    </a>
+     
+    {{ else }}
+      <button disabled class="text-text-light rounded px-2 py-1.5 btn  cursor-not-allowed hover:text-text-light">
+        <span class="uppercase font-normal">Next Page</span>
+        
+      
+      </button>
+    {{ end }}
+  </nav>
+{{ end }}

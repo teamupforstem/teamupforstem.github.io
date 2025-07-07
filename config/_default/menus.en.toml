@@ -1,0 +1,105 @@
+############# English navigation ##############
+
+# Main menu in TOML format
+
+[[main]]
+name = "Home"
+url = "/"
+weight = 1
+
+[[main]]
+name = "Competitions"
+url = "/events/"
+weight = 2
+
+[[main]]
+weight = 5
+name = "More"
+
+[[main]]
+parent = "More"
+name = "Info"
+url = "/blog/"
+
+[[main]]
+parent = "More"
+name = "Team Budgets"
+url = "/blog/post-1/"
+
+[[main]]
+parent = "More"
+name = "Elements"
+url = "/elements/"
+
+
+[[main]]
+name = "Members"
+url = "/members/"
+weight = 3
+
+[[main]]
+name = "Donate"
+url = "/get-tickets/"
+weight = 4
+
+
+
+
+
+# footer menu
+[[footer]]
+name = "Terms of Service"
+weight = 1
+url = "/terms-of-service"
+
+[[footer]]
+name = "Privacy Policy"
+weight = 2
+url = "/privacy-policy"
+
+[[footer_menu_quick_links]]
+name = "Home"
+url = "/"
+weight = 1
+
+[[footer_menu_quick_links]]
+name = "Competitions"
+url = "/events"
+weight = 2
+
+[[footer_menu_quick_links]]
+name = "Members"
+url = "/members"
+weight = 3
+
+[[footer_menu_quick_links]]
+name = "Sponsor Partners"
+url = "/our-sponsors"
+weight = 5
+
+
+[[footer_menu_get_started]]
+name = "Register Now"
+url = "/events"
+weight = 1
+
+[[footer_menu_get_started]]
+name = "Get Tickets"
+url = "/get-tickets"
+weight = 2
+
+[[footer_menu_get_started]]
+name = "Our Gallery"
+url = "/events"
+weight = 3
+
+[[footer_menu_get_started]]
+name = "Stay in the loop"
+url = "/"
+weight = 4
+
+[[footer_menu_get_started]]
+name = "Terms of service"
+url = "/terms-of-service"
+weight = 5
+

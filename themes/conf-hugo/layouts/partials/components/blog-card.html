@@ -1,0 +1,30 @@
+<div>
+  <a href="{{ .RelPermalink }}">
+    {{ partial "image" (dict "Src" .Params.card_image "Alt" "blog image") }}
+  </a>
+  <div class="mt-6 lg:mt-10">
+    <a
+      href="{{ .RelPermalink }}"
+      class="text-h5 leading-tight hover:text-primary hover:dark:text-darkmode-primary transition duration-300"
+      >{{ .Title }}</a
+    >
+    <div class="flex mt-4 items-center gap-x-3 xl:gap-x-5">
+      <span>{{ .Params.author }}</span>
+      <span
+        ><svg
+          width="20"
+          height="2"
+          viewBox="0 0 20 2"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <rect
+            y="0.5"
+            width="19.0698"
+            height="1"
+            class="fill-dark dark:fill-white" />
+        </svg>
+      </span>
+      <span>{{ .Date | time.Format "January 2, 2006" }}</span>
+    </div>
+  </div>
+</div>
