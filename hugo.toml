@@ -1,8 +1,8 @@
 ######################## default configuration ####################
 # The base URL of your site (required). This will be prepended to all relative URLs.
-baseURL = "https://demo.gethugothemes.com/"
+baseURL = "https://teamupforstem.org/"
 # Title of your website (required).
-title = "Team Up For STEM | "
+title = "Team Up For STEM"
 # Your theme name
 theme = "conf-hugo"
 # Default time zone for time stamps; use any valid tz database name: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List
