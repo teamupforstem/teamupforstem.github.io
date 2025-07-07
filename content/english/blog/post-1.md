@@ -7,7 +7,7 @@ date: 2022-04-04T05:00:00Z
 # blog banner image in blog details page
 image: "/images/blog/blog-banner-1.png"
 # blog card image in blog list page
-card_image: "/images/blog/blog-img-1.png"
+card_image: "/images/placeholder.jpg"
 categories: ["Application", "Data"]
 author: "James C."
 tags: ["nextjs", "tailwind"]

@@ -5,7 +5,7 @@ meta_title: ""
 description: "this is meta description"
 date: 2022-04-04T05:00:00Z
 image: "/images/image-placeholder.png"
-card_image: "/images/blog/blog-img-2.png"
+card_image: "/images/placeholder.jpg"
 categories: ["Technology", "Data"]
 author: "Sam Wilson"
 tags: ["technology", "tailwind"]
@@ -23,7 +23,7 @@ People gather in parks, sharing stories and ideas, while artists display their w
 
 People gather in parks, sharing stories and ideas, while artists display their work, adding color to the urban landscape. This is a place where dreams take flight and connections are made, fostering a spirit of and joy.
 
-{{< image src="/images/blog/crafting-img.png" class="w-full" >}}
+{{< image src="/images/placeholder.jpg" class="w-full" >}}
 
 ### CREATING OUTSTANDING ONLINE EXPERIENCES FOR EVERYONE.
 
@@ -37,7 +37,7 @@ People gather in parks, sharing stories and ideas, while artists display their w
 
 {{< quote Title="Effortless comfortable full leather lining eye-catching unique detail to the toe low sides cleaned and sleeking harmony gather in parks." Author="Adamson Janny" >}}
 
-{{< image src="/images/blog/creating-img.png" class="w-full">}}
+{{< image src="/images/placeholder.jpg" class="w-full">}}
 
 {{< follow-social >}}
 [
