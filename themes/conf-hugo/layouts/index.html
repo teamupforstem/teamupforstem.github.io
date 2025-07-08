@@ -8,7 +8,9 @@
           {{/* Title */}}
           <div class="text-center py-8 px-0">
             <h1 class="text-[5vw] lg:text-[6vw] xl:text-[7vw] font-semibold">
-              {{ .title  | markdownify }}
+              <!-- {{ .title  | markdownify }} -->
+                d
+              {{ $apiKey := getenv "STRIPE_API_KEY"}}
             </h1>
           </div>
 

@@ -56,6 +56,8 @@ jobs:
 
       - name: Publish to GitHub Pages
         run: npm run build
+        with:
+          HUGO_STRIPE_API_KEY: ${{secrets.STRIPE_KEY_API}}
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

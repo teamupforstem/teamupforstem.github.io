@@ -6,7 +6,8 @@ description: Join us for an as we unveil the most exciting highlights at our upc
 image: /images/placeholder.jpg
 date: 2022-06-01T05:00:00.000Z
 competition_group: Robotics
-
+donations:
+  
 event_list:
  - time: "September"
    short_details: 'Kick-Off'
