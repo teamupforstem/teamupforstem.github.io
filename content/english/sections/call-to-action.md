@@ -6,7 +6,7 @@ bg_image: "/images/cto-bg.png"
 button:
   enable: true
   label: "Donate"
-  link: "get-tickets"
+  link: "donations"
 
 # don't create a separate page
 _build:

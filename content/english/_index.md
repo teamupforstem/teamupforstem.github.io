@@ -2,7 +2,7 @@
 # Hero
 hero:
   title: 'Team up for STEM'
-  tickets:
+  teams:
    - " FIRST Tech Challenge"
    - " FIRST Lego League"
    - " Vex IQ"

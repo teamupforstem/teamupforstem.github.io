@@ -41,7 +41,7 @@ weight = 3
 
 [[main]]
 name = "Donate"
-url = "/get-tickets/"
+url = "/donations/"
 weight = 4
 
 
@@ -78,7 +78,7 @@ weight = 3
 
 [[footer_menu_get_started]]
 name = "Donations"
-url = "/get-tickets"
+url = "/donations"
 weight = 1
 
 [[footer_menu_get_started]]

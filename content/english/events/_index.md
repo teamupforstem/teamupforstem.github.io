@@ -7,7 +7,7 @@ description: "Make a donation today and help our teams compete."
 button:
  enable: true
  label: "Donate"
- link: "get-tickets"
+ link: "donations"
 banner_image: "/images/placeholder.jpg"
 image: "/images/placeholder.jpg"
 ---

@@ -12,7 +12,7 @@
             </h1>
           </div>
 
-          {{/* Tickets slide start */}}
+          {{/* Teams slide start */}}
           <div
             class="flex justify-between items-center bg-dark py-5 px-3 gap-2 flex-row">
             
@@ -42,7 +42,7 @@
             {{/* slide */}}
             <div class="tickets-slide text-white">
               <div class="swiper-wrapper">
-                {{ range .tickets }}
+                {{ range .teams }}
                   <div
                     class="swiper-slide flex gap-1 sm:gap-1 justify-center whitespace-nowrap">
                     <p class="text-lg font-light uppercase whitespace-nowrap">
@@ -68,7 +68,7 @@
                 </svg>
               </span>
           </div>
-          {{/* Tickets slide end */}}
+          {{/* Teams slide end */}}
         </div>
         {{/* Hero Title end */}}
       </div>
@@ -347,7 +347,7 @@
   {{/* end events section */}}
 
   {{/* Start Ticket section */}}
-  {{ with .Params.tickets }}
+  {{ with .Params.donations }}
     {{ if .enable }}
       <section class="section">
         <div class="container">
@@ -355,8 +355,8 @@
             <h2>{{ .title }}</h2>
             <p>{{ .content | markdownify }}</p>
           </div>
-          {{ with site.GetPage "get-tickets/_index" }}
-            {{ partial "components/tickets.html" . }}
+          {{ with site.GetPage "donations/_index" }}
+            {{ partial "components/donations.html" . }}
           {{ end }}
         </div>
       </section>
