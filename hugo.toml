@@ -20,7 +20,7 @@ defaultContentLanguageInSubdir = false
 ########################### Security ###########################
 [security]
     [security.funcs]
-        getenv = ['^HUGO_', '^CI$', "STRIPE_API_KEY"]
+        getenv = ['^HUGO_', '^CI$']
 ########################### Services #############################
 [services]
 [services.googleAnalytics]

@@ -1,5 +1,6 @@
 <!-- Load Stripe.js on your website. -->
 <script src="https://js.stripe.com/v3"></script>
+<script src="https://js.stripe.com/basil/stripe.js"></script>
 
 <!-- Create a button that your customers click to complete their purchase. Customize the styling to suit your branding. -->
 <button
@@ -13,9 +14,25 @@
 
 <div id="error-message"></div>
 
+
+
+  <section>
+    <div class="product">
+      <img src="/images/placeholder.jpg" alt="The cover of Stubborn Attachments" />
+      <div class="description">
+        <h3>Stubborn Attachments</h3>
+        <h5>$20.00</h5>
+      </div>
+    </div>
+    <form action="/create-checkout-session" method="POST">
+      <button type="submit" id="checkout-button">Checkout</button>
+    </form>
+  </section>
+
+
 <script>
 (function() {
-  var stripe = Stripe();
+  var stripe = Stripe('pk_test_51Rbp2lH5BRP1wdS77lPEOAmXB592nf70VsEertD6bWx8BaGmGlIP5NmoQoaRWsmqfvuQdapUIW6zoOTqJyBdLeL000zvvqLCpA');
 
   var checkoutButton = document.getElementById('checkout-button-price_1RibzZH5BRP1wdS7Gv9ZitGn');
   checkoutButton.addEventListener('click', function () {
@@ -33,8 +50,8 @@
        * Instead use one of the strategies described in
        * https://docs.stripe.com/payments/checkout/fulfill-orders
        */
-      successUrl: 'https://teamupforstem.org/success',
-      cancelUrl: 'https://teamupforstem.org/canceled',
+      successUrl: '/donations/orders/order-successful/',
+      cancelUrl: '/donations/orders/order-cancelled/',
     })
     .then(function (result) {
       if (result.error) {
