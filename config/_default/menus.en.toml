@@ -24,12 +24,14 @@ url = "/blog/"
 [[main]]
 parent = "More"
 name = "Team Budgets"
-url = "/blog/post-1/"
+url = "/blog/budgets/"
+
+
 
 [[main]]
 parent = "More"
-name = "Elements"
-url = "/elements/"
+name = "Membership Opportunities"
+url = "/blog/membership-opportunities"
 
 
 [[main]]
@@ -72,34 +74,20 @@ name = "Members"
 url = "/members"
 weight = 3
 
-[[footer_menu_quick_links]]
-name = "Sponsor Partners"
-url = "/our-sponsors"
-weight = 5
 
 
 [[footer_menu_get_started]]
-name = "Register Now"
-url = "/events"
+name = "Donations"
+url = "/get-tickets"
 weight = 1
 
 [[footer_menu_get_started]]
-name = "Get Tickets"
-url = "/get-tickets"
+name = "Membership Opportunities"
+url = "/blog/membership-opportunities"
 weight = 2
 
 [[footer_menu_get_started]]
-name = "Our Gallery"
-url = "/events"
+name = "Team Budgets"
+url = "/blog/budgets"
 weight = 3
-
-[[footer_menu_get_started]]
-name = "Stay in the loop"
-url = "/"
-weight = 4
-
-[[footer_menu_get_started]]
-name = "Terms of service"
-url = "/terms-of-service"
-weight = 5
 

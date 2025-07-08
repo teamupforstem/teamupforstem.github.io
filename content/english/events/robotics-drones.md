@@ -8,12 +8,12 @@ date: 2023-06-01T05:00:00.000Z
 competition_group: Robotics
 
 event_list:
- - time: "9:00 AM - 12:30 PM"
-   short_details: 'Welcome Address & Opening Remarks. Keynote: "The Future of Design". Panel Discussion: "Designing Sustainability"'
- - time: "12:30 PM - 3:30 PM"
-   short_details: 'Welcome Address & Opening Remarks. Workshop: "Mastering (UX) Design". Afternoon Break & Social Networking.'
- - time: "3:30 PM - 6:30 PM"
-   short_details: 'Breakout Sessions. <br /> Networking Happy Hour.'
+ - time: "June 2025"
+   short_details: 'Mission 2026 Season Opens for Team Registration'
+ - time: "September 9"
+   short_details: 'Mission 2026 Competition Rules Released'
+ - time: "June 2026"
+   short_details: 'Regional Championships'
 member: 
  name: "John Williams"
 points:

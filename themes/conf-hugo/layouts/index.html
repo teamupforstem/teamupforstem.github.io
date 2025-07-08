@@ -7,7 +7,7 @@
         <div class="row justify-center">
           {{/* Title */}}
           <div class="text-center py-8 px-0">
-            <h1 class="text-[7vw] lg:text-[8vw] xl:text-[9vw] font-semibold">
+            <h1 class="text-[5vw] lg:text-[6vw] xl:text-[7vw] font-semibold">
               {{ .title  | markdownify }}
             </h1>
           </div>
@@ -76,7 +76,7 @@
   {{ end }}
   {{/* End Hero */}}
 
-  <!-- {{/* start banner */}}
+  {{/* start banner */}}
   {{ with .Params.banner }}
     <section>
       <div class="container">
@@ -110,10 +110,10 @@
               </div>
             </div>
             <div class="flex flex-col xl:flex-row mt-8 gap-4 text-lg pb-10">
-              <p class="font-light"><b>{{T "date"}}:</b> {{ .date  | markdownify }}</p>
+              <!-- <p class="font-light"><b>{{T "date"}}:</b> {{ .date  | markdownify }}</p>
               <p class="font-light">
                 <b>{{T "venue"}}:</b> {{ .venue | markdownify }}
-              </p>
+              </p> -->
             </div>
           </div>
 
@@ -199,7 +199,7 @@
                 </p>
               </a>
 
-              {{/* highlight */}}
+              <!-- {{/* highlight */}}
               <div
                 class="md:col-6 relative overflow-hidden pt-4 md:pt-0 bg-light/10 dark:bg-darkmode-light/10 -z-10">
                 {{ partial "image" (dict "Src" "/images/union-shap.png" "Alt" "highlight image" "Class" "absolute w-full h-full object-cover z-0 top-5" ) }}
@@ -242,7 +242,7 @@
                     </div>
                   </div>
                 </div>
-              </div>
+              </div> -->
             </div>
           </div>
         </div>
@@ -250,7 +250,7 @@
       </div>
     </section>
   {{ end }}
-  {{/* End banner section */}} -->
+  {{/* End banner section */}}
 
   {{/* Features section start */}}
   {{ with .Params.features }}

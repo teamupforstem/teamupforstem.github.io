@@ -8,11 +8,12 @@ hero:
    - " Vex IQ"
    - " Drones"
    - " WRO"
+   - " Mathematics"
 # Banner
 banner:
-  title_start: "Team Up For STEM"
+  title_start: "About Us"
   title_end: ""
-  image: "/images/banner.webp"
+  image: "/images/image-placeholder.png"
   member_image:
    - "/images/banner_member_img_1.png"
    - "/images/banner_member_img_2.png"
@@ -20,7 +21,7 @@ banner:
   venue: "124th Collado, Madrid, Spain"
   mission:
    title:  "Missions & Visions"
-   content: "Driving impact through purpose, our great mission and vision define the long road for the meaningful growth and innovation."
+   content: "At Team Up For STEM, we are dedicated to supporting and promoting student participation in robotics, computer science, mathematics, and science competitions. Our mission is to provide resources, mentorship, and opportunities that inspire creativity, critical thinking, and innovation for the next generation of STEM leaders."
    image: "/images/banner_feature_img_mission.png"
    icon: "images/banner_mission_icon.svg"
    icon_darkmode: "images/banner_mission_icon_darkmode.svg"
@@ -37,7 +38,7 @@ banner:
 features:
   title: "All things to expect from TUFS"
   content: "Learn more about what we do and how to donate to our teams."
-  image: "/images/placeholder.jpg"
+  image: "/images/feature_image.png"
   items:  
     - title: "Robotics Competitions"
       content: "For the 2025-2026 season, we form teams for various robotics competitions."

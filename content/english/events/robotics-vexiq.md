@@ -8,12 +8,15 @@ date: 2022-06-01T05:00:00.000Z
 competition_group: Robotics
 
 event_list:
- - time: "9:00 AM - 12:30 PM"
-   short_details: 'Welcome Address & Opening Remarks. Keynote: "The Future of Design". Panel Discussion: "Designing Sustainability"'
- - time: "12:30 PM - 3:30 PM"
-   short_details: 'Welcome Address & Opening Remarks. Workshop: "Mastering (UX) Design". Afternoon Break & Social Networking.'
- - time: "3:30 PM - 6:30 PM"
-   short_details: 'Breakout Sessions. <br /> Networking Happy Hour.'
+ - time: "May 11"
+   short_details: 'Game Release'
+ - time: "July 21-23"
+   short_details: '2025 RECF Summit'
+ - time: "December 19"
+   short_details: '2025-2026 Season Registration Deadline'
+ - time: "April 21-30, 2026"
+   short_details: '2026 VEX Robotics World Championship'
+ 
 member: 
  name: "John Williams"
 points:

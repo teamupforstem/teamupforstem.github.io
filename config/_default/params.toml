@@ -33,9 +33,9 @@ custom_script = ""
 
 # copyright
 theme_copyright = true
-copyright = "© 2025 Team Up For STEM | All rights reserved."
-theme_owner = "Themefisher"
-theme_owner_website = "https://themefisher.com/"
+copyright = "© 2025 Team Up For STEM | All rights reserved"
+theme_owner = "Team Up for STEM"
+theme_owner_website = "https://teamupforstem.org/"
 
 # about conf
 footer_content = "We provide resources, mentorship, and opportunities to STEM competition teams to help foster the next generation of STEM leaders."
