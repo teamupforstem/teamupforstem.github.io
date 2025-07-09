@@ -7,7 +7,7 @@ image: /images/placeholder.jpg
 date: 2023-06-01T05:00:00.000Z
 competition_group: Robotics
 
-donation_items: 
+donation_items_temp: 
   - title: "basic donation"
     description: "For newcomers and those wanting a taste of fun at our conference event."
     price: "25"
