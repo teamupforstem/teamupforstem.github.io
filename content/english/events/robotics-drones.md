@@ -11,16 +11,18 @@ donation_items:
   - title: "basic donation"
     description: "For newcomers and those wanting a taste of fun at our conference event."
     price: "25"
-    stripe_id: price_1Riy9sHKFjE78McC5acmNmai
+    stripe_id: price_1Rj2rRH5BRP1wdS7iu5fnNqI
     donation_feature:
       - "Access to keynote presentations"
       - "Entry to the digital design showcase"
       - "Participation in one hands-on workshop"
       - "Digital goodie bag with resources"
+
   - title: "pro donation"
     description: "For newcomers and those wanting a taste of fun at our conference event."
     price: "50"
-    stripe_id: price_1Rj26zHKFjE78McC4sSepJd4
+    stripe_id: price_1Rj2rGH5BRP1wdS7goMRbMam
+    stripe_idold: price_1Rj26zHKFjE78McC4sSepJd4
     donation_feature:
       - "Access to keynote presentations"
       - "Entry to the digital design showcase"
