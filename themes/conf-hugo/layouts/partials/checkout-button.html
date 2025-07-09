@@ -6,7 +6,8 @@
   id="checkout-button-{{ .stripe_id }}"
   role="link"
   type="button"
->
+> 
+  
   {{ .button | default "Donate!"}}
 </button>
 
@@ -33,8 +34,8 @@
        * Instead use one of the strategies described in
        * https://docs.stripe.com/payments/checkout/fulfill-orders
        */
-      successUrl: '{{ .Site.BaseURL }}/donations/orders/order-successful/',
-      cancelUrl: '{{ .Site.BaseURL }}/donations/',
+      successUrl: '{{ absURL ""}}/donations/orders/order-successful/',
+      cancelUrl: '{{ absURL ""}}/donations/',
     })
     .then(function (result) {
       if (result.error) {
