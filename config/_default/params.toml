@@ -97,10 +97,10 @@ content = "You must replace the **baseURL** in **hugo.toml** file when deploying
 # seo module: https://github.com/gethugothemes/hugo-modules/tree/master/seo-tools/basic-seo
 [metadata]
 keywords = ["Conf", "Hugo"]
-description = "Conf Hugo Theme for Conference"
-author = "themefisher.com"
-twitter = "themefisher.com"
-image = "images/og-image.png"
+description = "Empowering young minds through teamwork & STEM competitions."
+author = "Asher Saunders"
+twitter = ""
+image = "images/team-wide.png"
 
 
 # site verifications
