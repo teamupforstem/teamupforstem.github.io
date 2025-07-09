@@ -338,7 +338,7 @@
           {{ $events := where site.RegularPages "Section" "events" }}
           {{ $latestEvents := first 3 (sort $events "Date" "desc") }}
           
-          {{ partial "components/events-card.html" (dict "List" $latestEvents "Image" "images/placeholder.jpg") }}
+          {{ partial "components/events-card.html" (dict "List" $latestEvents "Image" "images/events/robotics.jpg") }}
         
         </div>
       </section>

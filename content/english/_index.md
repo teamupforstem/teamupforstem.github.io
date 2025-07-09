@@ -13,7 +13,7 @@ hero:
 banner:
   title_start: "About Us"
   title_end: ""
-  image: "/images/image-placeholder.png"
+  image: "/images/team-wide.png"
   member_image:
    - "/images/banner_member_img_1.png"
    - "/images/banner_member_img_2.png"
@@ -36,7 +36,7 @@ banner:
 
 # Features
 features:
-  title: "All things to expect from TUFS"
+  title: "All things to expect from us"
   content: "Learn more about what we do and how to donate to our teams."
   image: "/images/feature_image.png"
   items:  
@@ -47,7 +47,7 @@ features:
         label: "Learn More"
         link: "events"
     - title: "Mathematics Competitions"
-      content: ""
+      content: "During the 2025-2026 season, we will host the following competitions: "
       button:
         enable: true
         label: "Learn More"
@@ -57,7 +57,7 @@ features:
       button:
         enable: true
         label: "Learn More"
-        link: "events"
+        link: "/blog/mentorship-opportunities"
 
 events:
  title: "Competition Schedule"

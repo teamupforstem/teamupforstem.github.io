@@ -7,6 +7,36 @@ image: /images/placeholder.jpg
 date: 2023-06-01T05:00:00.000Z
 competition_group: Robotics
 
+donation_items: 
+  - title: "basic donation"
+    description: "For newcomers and those wanting a taste of fun at our conference event."
+    price: "25"
+    stripe_id: price_1Riy9sHKFjE78McC5acmNmai
+    donation_feature:
+      - "Access to keynote presentations"
+      - "Entry to the digital design showcase"
+      - "Participation in one hands-on workshop"
+      - "Digital goodie bag with resources"
+  - title: "pro donation"
+    description: "For newcomers and those wanting a taste of fun at our conference event."
+    price: "50"
+    stripe_id: price_1Rj1IZHKFjE78McCOmsZcZvQ
+    donation_feature:
+      - "Access to keynote presentations"
+      - "Entry to the digital design showcase"
+      - "Participation in one hands-on workshop"
+      - "Digital goodie bag with resources"
+  - title: "vip donation"
+    description: "For newcomers and those wanting a taste of fun at our conference event."
+    price: "25"
+    stripe_id: price_1Riy9sHKFjE78McC5acmNmai
+    donation_feature:
+      - "Access to keynote presentations"
+      - "Entry to the digital design showcase"
+      - "Participation in one hands-on workshop"
+      - "Digital goodie bag with resources"
+
+      
 event_list:
  - time: "June 2025"
    short_details: 'Mission 2026 Season Opens for Team Registration'

@@ -8,6 +8,6 @@ button:
  enable: true
  label: "Donate"
  link: "donations"
-banner_image: "/images/placeholder.jpg"
-image: "/images/placeholder.jpg"
+banner_image: "/images/events/robotics.jpg"
+image: "/images/events/robotics.jpg"
 ---

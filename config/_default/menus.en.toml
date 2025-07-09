@@ -30,8 +30,8 @@ url = "/blog/budgets/"
 
 [[main]]
 parent = "More"
-name = "Membership Opportunities"
-url = "/blog/membership-opportunities"
+name = "Mentorship Opportunities"
+url = "/blog/mentorship-opportunities"
 
 
 [[main]]

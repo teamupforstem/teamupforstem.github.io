@@ -7,6 +7,45 @@ date: 2024-10-20T05:00:00.000Z
 image: /images/placeholder.jpg
 competition_group: Robotics
 
+
+
+donation_items: 
+  - title: "basic donation"
+    description: "For newcomers and those wanting a taste of fun at our conference event."
+    price: "25"
+    button: Donate to FLL
+    stripe_id: price_1Rj1O7HKFjE78McCvcyA5R8s
+    donation_feature:
+      - "Access to keynote presentations"
+      - "Entry to the digital design showcase"
+      - "Participation in one hands-on workshop"
+      - "Digital goodie bag with resources"
+
+
+  - title: "pro donation"
+    description: "For newcomers and those wanting a taste of fun at our conference event."
+    price: "50"
+    button: Donate to FLL
+    stripe_id: price_1Rj1IZHKFjE78McCOmsZcZvQ
+    donation_feature:
+      - "Access to keynote presentations"
+      - "Entry to the digital design showcase"
+      - "Participation in one hands-on workshop"
+      - "Digital goodie bag with resources"
+
+      
+  - title: "vip donation"
+    description: "For newcomers and those wanting a taste of fun at our conference event."
+    price: "75"
+    button: Donate to FLL
+    stripe_id: price_1Rj1OHHKFjE78McCZQCqjV6e
+    donation_feature:
+      - "Access to keynote presentations"
+      - "Entry to the digital design showcase"
+      - "Participation in one hands-on workshop"
+      - "Digital goodie bag with resources"
+
+
 event_list:
  - time: "August 5th"
    short_details: 'UNEARTHED Global Season Kickoff'
