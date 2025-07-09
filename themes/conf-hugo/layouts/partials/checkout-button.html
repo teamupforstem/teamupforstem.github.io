@@ -15,8 +15,8 @@
 
 <script>
 (function() {
-  var stripe = Stripe('pk_test_51Rbp2xHKFjE78McCTFCXqrdTAf3cK3HfAoHGcEvs4k7pvkan53ddsSmOtYz7f7kH6rETdapiTTJKhGyi6v0bSzON008uZb2fqx');
-  
+  // var stripe = Stripe('pk_test_51Rbp2xHKFjE78McCTFCXqrdTAf3cK3HfAoHGcEvs4k7pvkan53ddsSmOtYz7f7kH6rETdapiTTJKhGyi6v0bSzON008uZb2fqx');
+  var stripe = Stripe('{{ getenv "HUGO_STRIPE_KEY"}}')
   // console.log(price.innerHTML);
   var checkoutButton = document.getElementById(`checkout-button-{{.stripe_id}}`);
   checkoutButton.addEventListener('click', function () {

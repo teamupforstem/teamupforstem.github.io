@@ -55,7 +55,8 @@ event_list:
    short_details: 'Tournament / Festival Season'
 
 member: 
- name: "First Lego League Teams"
+ name: "Member 1"
+ name: "Member 2"
 
 points:
  - title: "Captivating Start"

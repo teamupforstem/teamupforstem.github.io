@@ -1,7 +1,7 @@
 ---
 enable: true
 title: "Donate now!"
-description: "We believe that brand identity design is essential. It captures the essence of your business and reflects your unique vision."
+description: "We need your help to reach our team donation goals"
 bg_image: "/images/cto-bg.png"
 button:
   enable: true

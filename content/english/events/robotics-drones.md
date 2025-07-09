@@ -20,7 +20,7 @@ donation_items:
   - title: "pro donation"
     description: "For newcomers and those wanting a taste of fun at our conference event."
     price: "50"
-    stripe_id: price_1Rj1IZHKFjE78McCOmsZcZvQ
+    stripe_id: price_1Rj26zHKFjE78McC4sSepJd4
     donation_feature:
       - "Access to keynote presentations"
       - "Entry to the digital design showcase"
@@ -28,8 +28,8 @@ donation_items:
       - "Digital goodie bag with resources"
   - title: "vip donation"
     description: "For newcomers and those wanting a taste of fun at our conference event."
-    price: "25"
-    stripe_id: price_1Riy9sHKFjE78McC5acmNmai
+    price: "75"
+    stripe_id: price_1Rj277HKFjE78McCya6ooTFM
     donation_feature:
       - "Access to keynote presentations"
       - "Entry to the digital design showcase"
@@ -45,21 +45,21 @@ event_list:
  - time: "June 2026"
    short_details: 'Regional Championships'
 member: 
- name: "John Williams"
+ name: "Member 1"
 points:
- - title: "Captivating Start"
+ - title: "Drones"
    content: "In the heart of the bustling city, a vibrant this community thrives, filled with creativity."
    icon: "/images/events/single/key-points-icon/icon-1.svg"
    icon_darkmode: "/images/events/single/key-points-icon/icon-1-darkmode.svg"
- - title: "Organized Flow"
+ - title: "Competition"
    content: "In the heart of the bustling city, a vibrant this community thrives, filled with creativity."
    icon: "/images/events/single/key-points-icon/icon-2.svg"
    icon_darkmode: "/images/events/single/key-points-icon/icon-2-darkmode.svg"
- - title: "Captivating Start"
+ - title: "Teamwork"
    content: "In the heart of the bustling city, a vibrant this community thrives, filled with creativity."
    icon: "/images/events/single/key-points-icon/icon-3.svg"
    icon_darkmode: "/images/events/single/key-points-icon/icon-3-darkmode.svg"
- - title: "Captivating Start"
+ - title: "STEM"
    content: "In the heart of the bustling city, a vibrant this community thrives, filled with creativity."
    icon: "/images/events/single/key-points-icon/icon-4.svg"
    icon_darkmode: "/images/events/single/key-points-icon/icon-4-darkmode.svg"

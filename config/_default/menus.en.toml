@@ -9,7 +9,6 @@ weight = 1
 
 [[main]]
 name = "Competitions"
-url = "/events/"
 weight = 2
 
 [[main]]
@@ -47,6 +46,35 @@ weight = 4
 
 
 
+[[main]]
+parent = "Competitions"
+name="All"
+url = "events"
+weight = 1
+
+[[main]]
+parent = "Competitions"
+name="Vex IQ"
+url = "events/robotics-vexiq"
+weight = 2
+
+[[main]]
+parent = "Competitions"
+name="FIRST Lego League"
+url = "events/robotics-fll"
+weight = 3
+
+[[main]]
+parent = "Competitions"
+name="FIRST Tech Challenge"
+url = "events/robotics-ftc"
+weight = 3
+
+[[main]]
+parent = "Competitions"
+name="Drones"
+url = "events/robotics-drones"
+weight = 4
 
 # footer menu
 [[footer]]
