@@ -2,7 +2,7 @@
 draft: false
 title: 'FIRST Lego League Challenge'
 meta_title: ""
-description: FIRST® LEGO® League (ages 4-16 / grades PreK-8) introduces STEM to children through fun, hands-on challenges using LEGO® technology. Participants gain real-world problem-solving experiences through a guided, global robotics program, helping students, families, and educators build a better future together.
+description: FIRST® LEGO® League introduces STEM to children through fun, hands-on challenges using LEGO® technology.
 date: 2024-10-20T05:00:00.000Z
 image: /images/placeholder.jpg
 competition_group: Robotics
@@ -78,26 +78,12 @@ points:
 
 ---
 
-{{< basic-overview title="Crafting Exceptional Digital Experiences" >}}
-In the heart of the bustling city, a vibrant community thrives,
-filled with creativity and innovation. The streets are alive with
-the sounds of laughter and the aroma of delicious food wafting
-through the air.
+{{< image src="images/events/robotics.jpg" caption="" alt="alter-text" height="" width="" position="center" command="fill" option="q100" class="img-fluid" title="image title"  webp="false" >}}
 
-Nestled between the mountains and the sea, a quaint village offers
-a peaceful retreat from the chaos of modern life. Here, the sun
-rises over rolling hills, casting a golden glow on the fields of
-wildflowers.
+{{< basic-overview title="FIRST LEGO League Divisions" >}}
+From Discover, to Explore, and then to Challenge, students will understand the basics of STEM and apply their skills in an exciting competition while building habits of learning, confidence, and teamwork skills along the way.
 
-People gather in parks, sharing stories and ideas, while artists
-display their work, adding color to the urban landscape. This is a
-place where dreams take flight and connections are made, fostering
-a spirit of collaboration and joy.
-
-People gather in parks, sharing stories and ideas, while artists
-display their work, adding color to the urban landscape. This is a
-place where dreams take flight and connections are made, fostering
-a spirit of collaboration and joy.
+Friendly competition is at the heart of Challenge, as teams of students ages 9-16* engage in research, problem-solving, coding, and engineering - building and programming a LEGO robot that navigates the missions of a robot game.
 {{< /basic-overview >}}
 
 

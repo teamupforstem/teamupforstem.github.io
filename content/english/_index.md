@@ -21,7 +21,7 @@ banner:
   venue: "124th Collado, Madrid, Spain"
   mission:
    title:  "Missions & Visions"
-   content: "At Team Up For STEM, we are dedicated to supporting and promoting student participation in robotics, computer science, mathematics, and science competitions. Our mission is to provide resources, mentorship, and opportunities that inspire creativity, critical thinking, and innovation for the next generation of STEM leaders."
+   content: "At Team Up For STEM, we are dedicated to supporting and promoting student participation in robotics, computer science, mathematics, and science competitions. <br><br> Our mission is to provide resources, mentorship, and opportunities that inspire creativity, critical thinking, and innovation for the next generation of STEM leaders."
    image: "/images/banner_feature_img_mission.png"
    icon: "images/banner_mission_icon.svg"
    icon_darkmode: "images/banner_mission_icon_darkmode.svg"
@@ -47,7 +47,7 @@ features:
         label: "Learn More"
         link: "events"
     - title: "Mathematics Competitions"
-      content: "During the 2025-2026 season, we will host the following competitions: "
+      content: "During the 2025-2026 season, we will additionally host mathematics competitions."
       button:
         enable: true
         label: "Learn More"

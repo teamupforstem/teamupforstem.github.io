@@ -5,9 +5,9 @@
 
 <div class="row py-16 border-b border-border dark:border-darkmode-border gap-y-6">
 
-    {{ range $page := (where .Site.Pages "Type" "events")}}
+    {{ range $page := union (where .Site.Pages "Type" "donations" ) (where .Site.Pages "Type" "events" ) }}
       {{ with $page.Params.donation_items }}
-      <h3>{{ $page.Params.title }} Team</h3>
+      <h3>{{ $page.Params.title }}</h3>
         {{ range $index, $donation := $page.Params.donation_items }}
         <div
           class="lg:col-6 xl:col-4 

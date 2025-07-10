@@ -1,7 +1,8 @@
 <div class="member-card">
-  {{ partial "image" (dict "Src" .Params.image "Alt" .Title "Class" "w-full md:h-[380px]! object-cover") }}
   
-
+  {{ partial "image" (dict "Src" .Params.image "Alt" .Title "Class" "w-full object-cover member-image")  }}
+  
+  
   <div class="member-card-content">
     <a href="{{ .RelPermalink }}" class="hover:text-primary hover:dark:text-darkmode-primary transition duration-300">{{ .Title }}</a>
 
@@ -10,7 +11,7 @@
       <ul class="social-icons -mt-4">
         {{ range .Params.social }}
         <li>
-          <a href="{{ .url | safeURL}}" aria-label="{{ .name }}" target="_blank">
+          <a href="{{ .link | safeURL}}" aria-label="{{ .name }}" target="_blank">
             <i class="{{ .icon }}"></i>
           </a>
         </li>

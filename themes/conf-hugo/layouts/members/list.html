@@ -4,7 +4,7 @@
     <div class="container">
       {{ partial "page-header" . }}
       <div class="row mt-20 border-b border-border dark:border-darkmode-border">
-        {{ range .RegularPages }}
+        {{ range  collections.Reverse .RegularPages }}
           <div class="md:col-6 lg:col-4 mb-14">
             {{ partial "components/member-card" . }}
           </div>

@@ -4,22 +4,22 @@
     {{/* post header and date */}}
     <div class="pb-14 border-b border-border dark:border-darkmode-border">
       <div class="flex gap-3 uppercase items-center mb-4 font-light">
-        <span>{{ .Params.author }}</span>
-        <span><svg width="20" height="2" viewBox="0 0 20 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <!-- <span>{{ .Params.author }}</span> -->
+        <!-- <span><svg width="20" height="2" viewBox="0 0 20 2" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect y="0.5" width="19.0698" height="1" fill="#999999" />
           </svg>
-        </span>
-        <span>{{ .Date | time.Format "January 2, 2006" }}</span>
+        </span> -->
+        <span>Updated {{ .Date | time.Format "January 2, 2006" }}</span>
       </div>
       <h1 class="uppercase text-h4 md:text-h2 xl:text-h1-lg leading-tight xl:pr-20">
         {{ .Title }}
       </h1>
     </div>
 
-    {{/* post banner */}}
+    <!-- {{/* post banner */}}
     <div class="py-20 border-b border-border dark:border-darkmode-border">
       {{ partial "image" (dict "Src" .Params.image "Alt" .Title "Class" "w-full object-cover") }}
-    </div>
+    </div> -->
 
     <div class="row py-10">
       {{/* Table of content */}}

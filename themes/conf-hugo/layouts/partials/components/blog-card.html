@@ -9,7 +9,7 @@
       >{{ .Title }}</a
     >
     <div class="flex mt-4 items-center gap-x-3 xl:gap-x-5">
-      <span>{{ .Params.author }}</span>
+      <!-- <span>{{ .Params.author }}</span>
       <span
         ><svg
           width="20"
@@ -23,8 +23,8 @@
             height="1"
             class="fill-dark dark:fill-white" />
         </svg>
-      </span>
-      <span>{{ .Date | time.Format "January 2, 2006" }}</span>
+      </span> -->
+      <span>Updated {{ .Date | time.Format "January 2, 2006" }}</span>
     </div>
   </div>
 </div>

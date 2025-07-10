@@ -88,9 +88,28 @@
             class="lg:col-6 pt-20 lg:border-r xl:border-r-border dark:border-darkmode-border">
             <div class="pr-0 lg:pr-16">
               <h2
-                class="text-h3 sm:text-h2 2xl:text-h1-xl uppercase leading-tight 2xl:leading-none font-medium mb-3 sm:mb-0">
+                class="text-h3 sm:text-h2 2xl:text-h2-xl uppercase leading-tight 2xl:leading-none font-medium mb-3 sm:mb-0">
                 {{ .title_start | markdownify }}
               </h2>
+              {{/* Missions & Visions */}}
+              <div
+                class="2xl py-6 flex flex-col md:flex-row border-b border-border dark:border-darkmode-border 2xl:border-b-0">
+                {{ partial "image" (dict "Src" .mission.image "Alt" "banner image" "Class" "mr-auto aspect-auto") }}
+                <div class="py-5 md:px-8 mt-5 md:mt-0">
+                  {{/* svg */}}
+                  <span class="mb-10 md:mb-20 block">
+                    {{ partial "image" (dict "Src" .mission.icon "Alt" "mission icon" "Class" "block dark:hidden") }}
+                    {{ partial "image" (dict "Src" .mission.icon_darkmode "Alt" "mission icon" "Class" "hidden dark:block") }}
+                  </span>
+                  <h3 class="text-2xl font-normal uppercase mb-6">
+                    {{ .mission.title | markdownify }}
+                  </h3>
+                  <p
+                    class="font-light uppercase leading-7 text-darkmode-text-light dark:text-text-light">
+                    {{ .mission.content | markdownify }}
+                  </p>
+                </div>
+              </div>
               {{/* Speaker Image */}}
               <div class="flex items-center">
                 <div class="flex">
@@ -117,40 +136,24 @@
             </div>
           </div>
 
-          {{/* Image */}}
+          {{/* Team Image */}}
           <div class="lg:col-6 px-0 mt-16 lg:mt-0 justify-center items-center">
-            {{ partial "image" (dict "Src" .image "Alt" "banner image" "DisplayXL" "520x" "DisplayLG" "425x" "DisplayMD" "360x" "Class" "mx-auto size-full aspect-auto") }}
+            {{ partial "image" (dict "Src" .image "Alt" "banner image" "DisplayXL" "520x" "DisplayLG" "425x" "DisplayMD" "360x" "Class" "mx-auto xl:sticky xl:top-32 size-full aspect-auto") }}
+          
           </div>
+          
         </div>
         {{/* banner end */}}
 
         {{/* Banner features Start */}}
         <div
           class="row px-0 border-y border-y-border dark:border-darkmode-border">
-          {{/* Missions & Visions */}}
-          <div
-            class="2xl:col-6 py-6 flex flex-col md:flex-row border-b border-border dark:border-darkmode-border 2xl:border-b-0">
-            {{ partial "image" (dict "Src" .mission.image "Alt" "banner image" "Class" "mr-auto aspect-auto") }}
-            <div class="py-5 md:px-8 mt-5 md:mt-0">
-              {{/* svg */}}
-              <span class="mb-10 md:mb-20 block">
-                {{ partial "image" (dict "Src" .mission.icon "Alt" "mission icon" "Class" "block dark:hidden") }}
-                {{ partial "image" (dict "Src" .mission.icon_darkmode "Alt" "mission icon" "Class" "hidden dark:block") }}
-              </span>
-              <h3 class="text-2xl font-normal uppercase mb-6">
-                {{ .mission.title | markdownify }}
-              </h3>
-              <p
-                class="font-light uppercase leading-7 text-darkmode-text-light dark:text-text-light">
-                {{ .mission.content | markdownify }}
-              </p>
-            </div>
-          </div>
+          
 
           {{/* others */}}
           <div class="2xl:col-6">
             <div class="row md:h-full">
-              {{/* speakers */}}
+              <!-- {{/* speakers */}}
               <a
                 href="/members"
                 class="md:col-6 !border-l-0 2xl:!border-l border-b md:border-b-0 md:border-r md:border-r-border xl:border-x xl:border-x-border dark:border-darkmode-border h-full flex flex-col relative pb-5 md:pb-0 member-feature group">
@@ -197,7 +200,7 @@
                   class="font-light text-darkmode-text-light dark:text-text-light uppercase mt-3">
                   {{ .members.content | markdownify }}
                 </p>
-              </a>
+              </a> -->
 
               <!-- {{/* highlight */}}
               <div
@@ -399,7 +402,7 @@
                 <div
                   class="row xl:border-l xl:border-l-border dark:border-darkmode-border px-5">
                   {{ $members := where .Pages "Type" "members" }}
-                  {{ range $index, $member := first 4 $members }}
+                  {{ range $index, $member := first 4 (collections.Reverse $members) }}
                     <div
                       class="mb-10 md:mb-0 md:col-6{{ if lt $index 2 }}
                         md:border-b md:border-border

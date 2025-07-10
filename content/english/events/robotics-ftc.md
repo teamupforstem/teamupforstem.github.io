@@ -2,7 +2,7 @@
 draft: false
 title: 'FIRST Tech Challenge'
 meta_title: ""
-description: Join us for an as we unveil the most exciting highlights at our upcoming designer event.
+description: FIRST® Tech Challenge students work together with their mentors to design and build robots to compete in an exciting challenge.
 image: /images/placeholder.jpg
 date: 2022-06-01T05:00:00.000Z
 competition_group: Robotics
@@ -69,7 +69,8 @@ donation_items:
 
 
 member: 
- name: "John Williams"
+ name: "Member 1"
+ name: "Member 2"
 points:
  - title: "Captivating Start"
    content: "In the heart of the bustling city, a vibrant this community thrives, filled with creativity."
@@ -90,24 +91,11 @@ points:
 
 ---
 
-{{< basic-overview title="Crafting Exceptional Digital Experiences" >}}
-In the heart of the bustling city, a vibrant community thrives,
-filled with creativity and innovation. The streets are alive with
-the sounds of laughter and the aroma of delicious food wafting
-through the air.
+{{< image src="images/robotics/event-experience.jpg" caption="" alt="alter-text" height="" width="" position="center" command="fill" option="q100" class="img-fluid" title="image title"  webp="false" >}}
 
-Nestled between the mountains and the sea, a quaint village offers
-a peaceful retreat from the chaos of modern life. Here, the sun
-rises over rolling hills, casting a golden glow on the fields of
-wildflowers.
 
-People gather in parks, sharing stories and ideas, while artists
-display their work, adding color to the urban landscape. This is a
-place where dreams take flight and connections are made, fostering
-a spirit of collaboration and joy.
+{{< basic-overview title="Code, Design, and Compete with Robots!" >}}
+Teams program classroom-scale robots to follow autonomous commands before student drivers take control in two-on-two matches. 
 
-People gather in parks, sharing stories and ideas, while artists
-display their work, adding color to the urban landscape. This is a
-place where dreams take flight and connections are made, fostering
-a spirit of collaboration and joy.
+On and off the field, students develop STEM skills, engage in community outreach, practice engineering innovation, and build confidence to help them succeed.
 {{< /basic-overview >}}

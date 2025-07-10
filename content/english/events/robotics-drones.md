@@ -2,7 +2,7 @@
 draft: false
 title: 'Aerial Drones Robotics Competition'
 meta_title: ""
-description: Join us for an as we unveil the most exciting highlights at our upcoming designer event.
+description: Supported by the REC Foundation, the Aerial Drone Competition offers an exciting educational drone sporting event that focuses on hands-on, student-centered learning. 
 image: /images/placeholder.jpg
 date: 2023-06-01T05:00:00.000Z
 competition_group: Robotics
@@ -48,44 +48,20 @@ event_list:
    short_details: 'Regional Championships'
 member: 
  name: "Member 1"
-points:
- - title: "Drones"
-   content: "In the heart of the bustling city, a vibrant this community thrives, filled with creativity."
-   icon: "/images/events/single/key-points-icon/icon-1.svg"
-   icon_darkmode: "/images/events/single/key-points-icon/icon-1-darkmode.svg"
- - title: "Competition"
-   content: "In the heart of the bustling city, a vibrant this community thrives, filled with creativity."
-   icon: "/images/events/single/key-points-icon/icon-2.svg"
-   icon_darkmode: "/images/events/single/key-points-icon/icon-2-darkmode.svg"
- - title: "Teamwork"
-   content: "In the heart of the bustling city, a vibrant this community thrives, filled with creativity."
-   icon: "/images/events/single/key-points-icon/icon-3.svg"
-   icon_darkmode: "/images/events/single/key-points-icon/icon-3-darkmode.svg"
- - title: "STEM"
-   content: "In the heart of the bustling city, a vibrant this community thrives, filled with creativity."
-   icon: "/images/events/single/key-points-icon/icon-4.svg"
-   icon_darkmode: "/images/events/single/key-points-icon/icon-4-darkmode.svg"
+
 
 ---
 
-{{< basic-overview title="Crafting Exceptional Digital Experiences" >}}
-In the heart of the bustling city, a vibrant community thrives,
-filled with creativity and innovation. The streets are alive with
-the sounds of laughter and the aroma of delicious food wafting
-through the air.
+{{< basic-overview title="Aerial Drone Competition Experience" >}}
+ The Robotics Education & Competition Foundation's (RECF) Aerial Drone Competition provides a unique hands-on learning experience, fostering crucial STEM skills including drone piloting, programming, and problem-solving.
 
-Nestled between the mountains and the sea, a quaint village offers
-a peaceful retreat from the chaos of modern life. Here, the sun
-rises over rolling hills, casting a golden glow on the fields of
-wildflowers.
+The competition environment mirrors the real world, requiring teamwork, critical thinking, and innovation to navigate mission challenges. Students learn to collaborate effectively, hone their communication skills, and build the resilience to tackle future challenges. This fosters a deep understanding of flight principles, documentation, and interpersonal skills, all while igniting a passion for drone-related careers.
 
-People gather in parks, sharing stories and ideas, while artists
-display their work, adding color to the urban landscape. This is a
-place where dreams take flight and connections are made, fostering
-a spirit of collaboration and joy.
-
-People gather in parks, sharing stories and ideas, while artists
-display their work, adding color to the urban landscape. This is a
-place where dreams take flight and connections are made, fostering
-a spirit of collaboration and joy.
 {{< /basic-overview >}}
+
+
+{{< image src="images/robotics/drones.png" caption="" alt="alter-text" height="" width="" position="center" command="fill" option="q100" class="img-fluid" title="image title"  webp="false" >}}
+
+Teams learn about drones, flight principles, programming, documentation, and communication skills while expanding their understanding of and building interest in drone-related workforce and career opportunities. 
+
+Teams compete in four missions: Teamwork, Piloting, Autonomous Flight, and Communications.

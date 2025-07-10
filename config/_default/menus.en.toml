@@ -72,7 +72,7 @@ weight = 3
 
 [[main]]
 parent = "Competitions"
-name="Drones"
+name="Aerial Drones"
 url = "events/robotics-drones"
 weight = 4
 
@@ -110,8 +110,8 @@ url = "/donations"
 weight = 1
 
 [[footer_menu_get_started]]
-name = "Membership Opportunities"
-url = "/blog/membership-opportunities"
+name = "Mentorship Opportunities"
+url = "/blog/mentorship-opportunities"
 weight = 2
 
 [[footer_menu_get_started]]
