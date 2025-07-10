@@ -1,20 +1,16 @@
 ---
 title: David Evans
-position: "Chairmember"
+position: "Member - Board of Directors"
 image: "/images/members/david.png"
 description: this is meta description
-quote: "I love FTC! It is awesome!"
+quote: "Placeholder Quote"
 featured: true
 social:
   - name: github
     icon: fa-brands fa-github
-    link: https://github.com/asaunde78
+    link: https://github.com/
   
 ---
 
-### WHO IS ASHER SAUNDERS...
-
-People gather in parks, sharing stories and ideas, while artists
-display their work, adding color to the urban landscape. This is
-a place where dreams take flight and connections are made,
-fostering a spirit of collaboration and joy.
+### WHO IS DAVID ...
+...

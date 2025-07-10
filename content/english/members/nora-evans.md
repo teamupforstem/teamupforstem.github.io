@@ -1,9 +1,9 @@
 ---
 title: Nora Evans
-position: "CEO"
+position: "Head at Team Up For STEM"
 image: "/images/members/nora.png"
 description: this is meta description
-quote: "I love FTC! It is awesome!"
+quote: "Placeholder Quote"
 featured: true
 social:
   - name: github
@@ -12,14 +12,6 @@ social:
   
 ---
 
-### WHO IS TEAM MEMBER 1...
+### WHO IS NORA ...
 
-In the heart of the bustling city, a vibrant community thrives,filled with creativity and innovation. The streets are alivewith the sounds of laughter and the aroma of delicious food wafting through the air.
-
-
-<br/>
-
-People gather in parks, sharing stories and ideas, while artists
-display their work, adding color to the urban landscape. This is
-a place where dreams take flight and connections are made,
-fostering a spirit of collaboration and joy.
+...

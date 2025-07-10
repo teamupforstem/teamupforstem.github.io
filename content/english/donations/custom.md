@@ -3,33 +3,25 @@ title: Donate to Team Up For STEM!
 
 donation_items: 
   - title: "basic donation"
-    description: "For newcomers and those wanting a taste of fun at our conference event."
+    description: ""
     price: "25"
     button: Donate To Us
-    stripe_id: price_1Rj1O7HKFjE78McCvcyA5R8s
+    stripe_id: price_1RjOm1H5BRP1wdS78pVJ7ylw
     donation_feature:
-      - "Access to keynote presentations"
-      - "Entry to the digital design showcase"
-      - "Participation in one hands-on workshop"
-      - "Digital goodie bag with resources"
+      - "Thank you for your kind donation!"
   - title: "pro donation"
-    description: "For newcomers and those wanting a taste of fun at our conference event."
-    price: "25"
+    description: ""
+    price: "100"
     button: Donate To Us
-    stripe_id: price_1Rj1O7HKFjE78McCvcyA5R8s
+    stripe_id: price_1RjOmLH5BRP1wdS78FQG5mxB
     donation_feature:
-      - "Access to keynote presentations"
-      - "Entry to the digital design showcase"
-      - "Participation in one hands-on workshop"
-      - "Digital goodie bag with resources"
+      - "Wow! Many thanks for such a generous donation!!"
   - title: "mvp donation"
-    description: "For newcomers and those wanting a taste of fun at our conference event."
-    price: "25"
+    description: ""
+    price: "500"
     button: Donate To Us
-    stripe_id: price_1Rj1O7HKFjE78McCvcyA5R8s
+    stripe_id: price_1RjOmVH5BRP1wdS70sfTaNDO
     donation_feature:
-      - "Access to keynote presentations"
-      - "Entry to the digital design showcase"
-      - "Participation in one hands-on workshop"
-      - "Digital goodie bag with resources"
+      - "A whole-hearted thank you from the whole team." 
+      - "Thank you so very much for your donation!"
 ---
