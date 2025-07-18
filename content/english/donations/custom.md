@@ -24,4 +24,11 @@ donation_items:
     donation_feature:
       - "A whole-hearted thank you from the whole team." 
       - "Thank you so very much for your donation!"
+  - title: "custom donation"
+    description: ""
+    price: "$"
+    button: "Custom Donation"
+    stripe_id: price_1RmIKDH5BRP1wdS7HmbEa5G1
+    donation_feature:
+     - "We appreciate any and all donations!"
 ---
