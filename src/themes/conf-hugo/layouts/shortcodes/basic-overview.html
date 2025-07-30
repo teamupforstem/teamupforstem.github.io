@@ -1,0 +1,10 @@
+<h4 class="uppercase">
+  {{ .Get "title" }}
+</h4>
+<div class="row g-4">
+  {{ range (split (.Inner | plainify) "\n\n") }}
+    <div class="sm:col-6">
+      <p>{{ . | safeHTML }}</p>
+    </div>
+  {{ end }}
+</div>

@@ -1,0 +1,33 @@
+.btn {
+  @apply inline-block rounded-sm p-2 text-center font-normal uppercase cursor-pointer transition duration-300 text-sm;
+}
+.btn-lg {
+  @apply w-full py-4 text-lg;
+}
+.btn-sm {
+  @apply px-8 py-4 text-sm;
+}
+.btn-icon {
+  @apply flex items-center space-x-2;
+  &:hover {
+    @apply text-primary dark:text-darkmode-primary;
+    i {
+      @apply bg-primary! dark:bg-darkmode-primary!;
+    }
+  }
+  i {
+    @apply h-7 w-7 rounded-full bg-dark! dark:bg-darkmode-dark/20! flex! items-center! justify-center! text-white! dark:text-white! transition duration-300;
+  }
+}
+
+.btn-primary {
+  @apply bg-dark text-white dark:bg-darkmode-dark dark:text-text-dark hover:bg-primary hover:dark:bg-darkmode-primary  hover:dark:text-white!;
+}
+
+.btn-outline-primary {
+  @apply border border-border dark:border-darkmode-border hover:bg-primary hover:dark:bg-darkmode-primary hover:text-white hover:dark:text-darkmode-text hover:border-primary hover:dark:border-darkmode-primary;
+}
+
+.stroke-hover {
+  @apply stroke-white transition-all duration-500;
+}
