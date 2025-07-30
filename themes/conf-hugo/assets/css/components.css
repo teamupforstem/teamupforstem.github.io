@@ -1,0 +1,232 @@
+/* section style */
+.section {
+  @apply pt-24 xl:pt-28;
+}
+.section-sm {
+  @apply pt-16 xl:pt-20;
+}
+
+/* container */
+.container {
+  @apply mx-auto px-4 2xl:max-w-[1620px]!;
+}
+.section-header {
+  @apply flex flex-col xl:flex-row justify-center xl:justify-between items-center xl:items-end pb-14 border-b border-border dark:border-darkmode-border;
+  h2 {
+    @apply text-h5 sm:text-h3 md:text-h1-sm uppercase 2xl:w-6/12 text-center xl:text-left mb-5 xl:mb-0 leading-tight md:leading-[85px];
+  }
+
+  p {
+    @apply sm:text-lg font-light xl:w-4/12 text-darkmode-text-light dark:text-text-light text-center xl:text-right;
+  }
+  div {
+    p {
+      @apply w-full;
+    }
+  }
+}
+
+/* swipper */
+.tickets-slide {
+  width: 100%;
+  overflow: hidden; /* Hide overflow */
+}
+
+.swiper-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+/* TableOfContents */
+.table-of-content.custom #TableOfContents {
+  background-color: transparent !important;
+}
+.table-of-content.custom #TableOfContents li ol > li {
+  @apply mb-8 border-b border-border dark:border-darkmode-border;
+}
+.table-of-content.custom #TableOfContents a {
+  @apply pb-3 text-text-dark dark:text-darkmode-text-dark inline-block w-10/12 lg:w-8/12 truncate  uppercase font-light;
+}
+#TableOfContents {
+  padding: 0 !important;
+}
+
+/* social icons */
+.social-icons {
+  list-style-type: none !important;
+  @apply flex space-x-4;
+  li {
+    a {
+      @apply flex h-9 w-9 items-center justify-center rounded-full  border border-border/20 dark:border-darkmode-border hover:border-primary hover:dark:border-darkmode-primary  hover:bg-primary hover:dark:bg-darkmode-primary hover:text-white transition-all duration-300;
+
+      i {
+        @apply text-base;
+      }
+    }
+  }
+}
+
+/* content style */
+.content {
+  @apply prose max-w-none;
+  @apply prose-headings:mb-[.3em] prose-headings:mt-[.6em] prose-headings:text-text-dark prose-headings:dark:text-darkmode-text-dark prose-headings:font-normal;
+  @apply prose-h1:text-h1-sm md:prose-h1:text-h1;
+  @apply prose-h2:text-h2-sm md:prose-h2:text-h2;
+  @apply prose-h3:text-h3-sm md:prose-h3:text-h3;
+  @apply prose-img:max-w-full prose-img:rounded;
+  @apply prose-hr:border-border prose-hr:dark:border-darkmode-border;
+  @apply prose-p:text-base prose-p:text-text prose-p:dark:text-darkmode-text prose-p:font-light;
+  @apply prose-blockquote:rounded-lg prose-blockquote:border prose-blockquote:border-l-[10px] prose-blockquote:border-primary prose-blockquote:bg-light prose-blockquote:px-8 prose-blockquote:py-10  prose-blockquote:text-2xl prose-blockquote:not-italic prose-blockquote:text-text-dark prose-blockquote:dark:border-darkmode-primary prose-blockquote:dark:bg-darkmode-light prose-blockquote:dark:text-darkmode-text-dark prose-blockquote:font-normal;
+  @apply prose-pre:rounded-lg prose-pre:bg-light prose-pre:dark:bg-darkmode-light;
+  @apply prose-code:px-1 prose-code:dark:text-darkmode-text-dark;
+  @apply prose-strong:text-text-dark prose-strong:dark:text-darkmode-text;
+  @apply prose-a:text-text prose-a:no-underline prose-a:dark:text-darkmode-text;
+  @apply prose-li:text-text prose-li:dark:text-darkmode-text;
+  @apply prose-table:relative prose-table:overflow-hidden prose-table:rounded-lg prose-table:before:absolute prose-table:before:left-0 prose-table:before:top-0 prose-table:before:h-full prose-table:before:w-full prose-table:before:rounded-[inherit] prose-table:before:border prose-table:before:content-[""] prose-table:before:dark:border-darkmode-border;
+  @apply prose-thead:border-border prose-thead:bg-light prose-thead:dark:border-darkmode-border prose-thead:dark:bg-darkmode-light;
+  @apply prose-th:relative prose-th:z-10 prose-th:px-4 prose-th:py-[18px] prose-th:text-text-dark prose-th:dark:text-darkmode-text;
+  @apply prose-tr:border-border prose-tr:dark:border-darkmode-border;
+  @apply prose-td:relative prose-td:z-10 prose-td:px-3 prose-td:py-[18px] prose-td:dark:text-darkmode-text;
+  .btn {
+    @apply dark:hover:text-text-dark no-underline hover:text-white!;
+  }
+}
+
+/* ticket item */
+.ticket-item {
+  @apply flex flex-col rounded-sm p-9 h-full; /* Flexbox layout */
+  .ticket-item-header {
+    @apply flex flex-col; /* Header stays at the top */
+    h3 {
+      @apply text-2xl uppercase mb-2;
+    }
+    p {
+      @apply text-lg font-light text-darkmode-text-light dark:text-darkmode-text;
+    }
+  }
+  .ticket-item-body {
+    @apply flex-grow flex flex-col mb-8;
+    h2 {
+      @apply text-h2 sm:text-h1-sm 2xl:text-h1 uppercase my-6 font-light;
+      span {
+        @apply text-sm font-light;
+      }
+    }
+    ul {
+      li {
+        @apply flex mb-2 text-lg font-light;
+        svg {
+          @apply mr-2 mt-1;
+        }
+      }
+    }
+  }
+  .ticket-item-footer {
+    @apply mt-auto flex justify-center items-center;
+  }
+}
+
+/* speaker card */
+.member-card {
+  @apply flex flex-col;
+  .member-card-content {
+    @apply flex flex-col mt-4;
+    a {
+      @apply text-2xl mb-1;
+    }
+  }
+  .other {
+    @apply flex justify-between;
+    p {
+      @apply font-light text-text-dark dark:text-darkmode-text;
+    }
+  }
+}
+
+/* sponsor logo */
+/* logo effecct */
+.sponsor-logo-effect {
+  @apply w-full px-10 h-[130px] bg-dark/10 dark:bg-darkmode-light hover:dark:bg-darkmode-dark/30 hover:bg-light flex justify-center items-center transition-all duration-200;
+
+  img {
+    @apply w-[170px] object-contain grayscale  transition-all duration-200;
+  }
+}
+.sponsor-logo-effect:hover img {
+  @apply grayscale-0;
+}
+
+.sponsor-logo {
+  @apply block px-6 py-9 rounded-sm bg-light dark:bg-darkmode-light;
+  &:hover {
+    img {
+      @apply grayscale-0;
+    }
+  }
+  img {
+    @apply grayscale  transition  duration-300  w-[170px] object-contain;
+  }
+  div {
+    @apply mt-10;
+    h4 {
+      @apply text-2xl text-text-dark dark:text-darkmode-text uppercase mb-2;
+    }
+    p {
+      @apply font-light text-darkmode-text-light dark:text-text-light;
+    }
+  }
+}
+
+.active-table {
+  @apply text-primary dark:text-white;
+}
+
+/* page header */
+.page-header {
+  @apply row items-end justify-between border-b border-border dark:border-darkmode-border pb-14;
+  .page-title {
+    @apply xl:col-8 mb-8 xl:mb-0 xl:pr-0;
+    span {
+      @apply uppercase text-lg font-light;
+    }
+    h1 {
+      @apply text-h3 sm:text-h2-sm xl:text-h1-sm 2xl:text-h1-lg leading-tight uppercase font-normal mt-6;
+    }
+  }
+  .page-meta {
+    @apply xl:col-4 xl:pl-24;
+    p {
+      @apply text-lg font-light text-darkmode-text-light dark:text-text-light  mb-6;
+    }
+  }
+}
+
+
+
+/* footer */
+.footer-links {
+  @apply justify-between;
+  h2 {
+    @apply mb-4 xl:mb-8 text-2xl lg:text-xl font-normal leading-7 uppercase;
+  }
+  ul {
+    @apply flex flex-col uppercase text-base-sm md:text-base;
+    li {
+      @apply my-3 inline-block;
+      a {
+        @apply hover:text-primary hover:dark:text-darkmode-primary transition duration-300;
+      }
+    }
+  }
+}
+
+/* speaker feature */
+.member-feature {
+  @apply transition-all duration-500;
+  svg {
+    @apply transition-all duration-500;
+  }
+}
+.member-feature:hover svg {
+  @apply -translate-y-2 translate-x-2;
+}

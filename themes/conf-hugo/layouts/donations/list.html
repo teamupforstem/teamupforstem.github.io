@@ -1,0 +1,56 @@
+{{ define "main" }}
+  <section class="section">
+    <div class="container">
+      {{ partial "page-header" . }}
+      
+      
+      {{ partial "components/donations.html" . }}
+      
+      <div class="row pt-16 pb-14">
+        <!-- accordion -->
+        <div
+          class="2xl:col-4 2xl:pr-10 text-center 2xl:text-left mb-10 2xl:mb-0 flex flex-col justify-center 2xl:justify-stretch items-center 2xl:items-stretch">
+          <h3 class="text-h3 md:text-h1-sm leading-tight uppercase mb-5">
+            {{ .Params.faq.title }}
+          </h3>
+          <p
+            class="text-lg font-light text-darkmode-text-light dark:text-text-light mb-10">
+            {{ .Params.faq.desc }}
+          </p>
+        </div>
+
+        <div
+          class="2xl:col-8 2xl:border-l 2xl:border-l-border dark:border-darkmode-border pl-5 2xl:pl-12">
+          <div class="row gap-y-3 pl-3 pr-5">
+            {{ range .Params.faq.qna }}
+              <div
+                class="accordion !bg-transparent !border-x-0 !border-t-0 !rounded-none !px-0">
+                <button
+                  class="accordion-header text-xl! font-normal! p-0! mb-5"
+                  data-accordion="">
+                  {{ .question }}
+                  <svg
+                    class="accordion-icon"
+                    x="0px"
+                    y="0px"
+                    viewBox="0 0 512 512"
+                    xmlspace="preserve">
+                    <path
+                      fill="currentColor"
+                      d="M505.755,123.592c-8.341-8.341-21.824-8.341-30.165,0L256.005,343.176L36.421,123.592c-8.341-8.341-21.824-8.341-30.165,0 s-8.341,21.824,0,30.165l234.667,234.667c4.16,4.16,9.621,6.251,15.083,6.251c5.462,0,10.923-2.091,15.083-6.251l234.667-234.667 C514.096,145.416,514.096,131.933,505.755,123.592z"></path>
+                  </svg>
+                </button>
+                <div class="accordion-content !px-0 !mb-2">
+                  <p class="text-text-dark dark:text-darkmode-text pb-2">
+                    {{ .answer }}
+                  </p>
+                </div>
+              </div>
+            {{ end }}
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+{{ end }}

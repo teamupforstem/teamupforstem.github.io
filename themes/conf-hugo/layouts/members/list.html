@@ -1,0 +1,17 @@
+{{ define "main" }}
+
+  <section class="section mb-10">
+    <div class="container">
+      {{ partial "page-header" . }}
+      <div class="row mt-20 border-b border-border dark:border-darkmode-border">
+        {{ range  collections.Reverse .RegularPages }}
+          <div class="md:col-6 lg:col-4 mb-14">
+            {{ partial "components/member-card" . }}
+          </div>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+
+  {{ partial "call-to-action"  }}
+{{ end }}

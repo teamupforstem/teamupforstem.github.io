@@ -1,0 +1,587 @@
+{{ define "main" }}
+  {{/* Start Hero */}}
+  {{ with .Params.hero }}
+    <section>
+      <div class="container">
+        {{/* Hero title start */}}
+        <div class="row justify-center">
+          {{/* Title */}}
+          <div class="text-center py-8 px-0">
+            <h1 class="text-[5vw] lg:text-[6vw] xl:text-[7vw] font-semibold">
+              {{ .title  | markdownify }}
+            </h1>
+          </div>
+
+          {{/* Teams slide start */}}
+          <div
+            class="flex justify-between items-center bg-dark py-5 px-3 gap-2 flex-row">
+            
+              <span>
+                <svg
+                  width="45"
+                  height="21"
+                  viewBox="0 0 45 21"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M20 10.5C14.4706 10.5 10 6.02941 10 0.5C10 6.02941 5.52941 10.5 0 10.5C5.52941 10.5 10 14.9706 10 20.5C10 14.9706 14.4706 10.5 20 10.5Z"
+                    fill="white" />
+                  <path
+                    d="M45 10.5C39.4706 10.5 35 6.02941 35 0.5C35 6.02941 30.5294 10.5 25 10.5C30.5294 10.5 35 14.9706 35 20.5C35 14.9706 39.4706 10.5 45 10.5Z"
+                    fill="white" />
+                </svg>
+              </span>
+              <!-- <span
+                class="text-gold uppercase font-semibold text-lg mx-1 whitespace-nowrap">
+                {{ T "tickets_available" }}
+                  TEAMS
+              </span> -->
+              
+            <!-- </div> -->
+            
+            {{/* slide */}}
+            <div class="tickets-slide text-white">
+              <div class="swiper-wrapper">
+                {{ range .teams }}
+                  <div
+                    class="swiper-slide flex gap-1 sm:gap-1 justify-center whitespace-nowrap">
+                    <p class="text-lg font-light uppercase whitespace-nowrap">
+                      {{ . }}
+                    </p>
+                  </div>
+                {{ end }}
+              </div>
+            </div>
+            <span>
+                <svg
+                  width="45"
+                  height="21"
+                  viewBox="0 0 45 21"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M20 10.5C14.4706 10.5 10 6.02941 10 0.5C10 6.02941 5.52941 10.5 0 10.5C5.52941 10.5 10 14.9706 10 20.5C10 14.9706 14.4706 10.5 20 10.5Z"
+                    fill="white" />
+                  <path
+                    d="M45 10.5C39.4706 10.5 35 6.02941 35 0.5C35 6.02941 30.5294 10.5 25 10.5C30.5294 10.5 35 14.9706 35 20.5C35 14.9706 39.4706 10.5 45 10.5Z"
+                    fill="white" />
+                </svg>
+              </span>
+          </div>
+          {{/* Teams slide end */}}
+        </div>
+        {{/* Hero Title end */}}
+      </div>
+    </section>
+  {{ end }}
+  {{/* End Hero */}}
+
+  {{/* start banner */}}
+  {{ with .Params.banner }}
+    <section>
+      <div class="container">
+        {{/* banner start */}}
+        <div
+          class="row pl-0 mt-20 border-t border-t-border dark:border-darkmode-border flex-col-reverse lg:flex-row">
+          {{/* Text */}}
+          <div
+            class="lg:col-6 pt-20 lg:border-r xl:border-r-border dark:border-darkmode-border">
+            <div class="pr-0 lg:pr-16">
+              <h2
+                class="text-h3 sm:text-h2 2xl:text-h2-xl uppercase leading-tight 2xl:leading-none font-medium mb-3 sm:mb-0">
+                {{ .title_start | markdownify }}
+              </h2>
+              {{/* Missions & Visions */}}
+              <div
+                class="2xl py-6 flex flex-col md:flex-row border-b border-border dark:border-darkmode-border 2xl:border-b-0">
+                {{ partial "image" (dict "Src" .mission.image "Alt" "banner image" "Class" "mr-auto aspect-auto") }}
+                <div class="py-5 md:px-8 mt-5 md:mt-0">
+                  {{/* svg */}}
+                  <span class="mb-10 md:mb-20 block">
+                    {{ partial "image" (dict "Src" .mission.icon "Alt" "mission icon" "Class" "block dark:hidden") }}
+                    {{ partial "image" (dict "Src" .mission.icon_darkmode "Alt" "mission icon" "Class" "hidden dark:block") }}
+                  </span>
+                  <h3 class="text-2xl font-normal uppercase mb-6">
+                    {{ .mission.title | markdownify }}
+                  </h3>
+                  <p
+                    class="font-light uppercase leading-7 text-darkmode-text-light dark:text-text-light">
+                    {{ .mission.content | markdownify }}
+                  </p>
+                </div>
+              </div>
+              {{/* Speaker Image */}}
+              <div class="flex items-center">
+                <div class="flex">
+                  {{ range .member_image }}
+                    <span class="-mr-6 relative z-2 flex items-center">
+                      {{ partial "image" (dict "Src" . "Alt" "user image" "Class" "w-16 sm:w-20 2xl:w-24 rounded-full object-cover aspect-auto") }}
+                    </span>
+                  {{ end }}
+                  <span class="relative z-0 flex items-center">
+                    {{ partial "image" (dict "Src" "images/banner_plus_btn.png"  "Alt" "plus icon image" "Class" "w-16 sm:w-20 2xl:w-24") }}
+                  </span>
+                </div>
+                <p
+                  class="ml-4 text-h3 sm:text-h2 2xl:text-h1-xl uppercase leading-tight font-medium">
+                  {{ .title_end | markdownify }}
+                </p>
+              </div>
+            </div>
+            <div class="flex flex-col xl:flex-row mt-8 gap-4 text-lg pb-10">
+              <!-- <p class="font-light"><b>{{T "date"}}:</b> {{ .date  | markdownify }}</p>
+              <p class="font-light">
+                <b>{{T "venue"}}:</b> {{ .venue | markdownify }}
+              </p> -->
+            </div>
+          </div>
+
+          {{/* Team Image */}}
+          <div class="lg:col-6 px-0 mt-16 lg:mt-0 justify-center items-center">
+            {{ partial "image" (dict "Src" .image "Alt" "banner image" "DisplayXL" "520x" "DisplayLG" "425x" "DisplayMD" "360x" "Class" "mx-auto xl:sticky xl:top-32 size-full aspect-auto") }}
+          
+          </div>
+          
+        </div>
+        {{/* banner end */}}
+
+        {{/* Banner features Start */}}
+        <div
+          class="row px-0 border-y border-y-border dark:border-darkmode-border">
+          
+
+          {{/* others */}}
+          <div class="2xl:col-6">
+            <div class="row md:h-full">
+              <!-- {{/* speakers */}}
+              <a
+                href="/members"
+                class="md:col-6 !border-l-0 2xl:!border-l border-b md:border-b-0 md:border-r md:border-r-border xl:border-x xl:border-x-border dark:border-darkmode-border h-full flex flex-col relative pb-5 md:pb-0 member-feature group">
+                {{/* arrow */}}
+                <span class="absolute top-5 right-4">
+                  <svg
+                    width="50"
+                    height="50"
+                    viewBox="0 0 50 50"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <rect
+                      width="49.8373"
+                      height="3.324"
+                      transform="matrix(1 0 0 -1 0 3.46411)"
+                      fill="#DBDBDB" class="group-hover:fill-primary transition-all duration-500" />
+                    <rect
+                      width="3.32249"
+                      height="49.8599"
+                      transform="matrix(1 0 0 -1 46.5156 50)"
+                      fill="#DBDBDB" class="group-hover:fill-primary transition-all duration-500" />
+                    <rect
+                      width="3.32324"
+                      height="66.4648"
+                      transform="matrix(0.706946 0.707267 0.706946 -0.707267 0.664062 47.0083)"
+                      fill="#DBDBDB" class="group-hover:fill-primary transition-all duration-500" />
+                  </svg>
+                </span>
+                <div class="flex mt-28 2xl:mt-36">
+                  {{ $member := where site.RegularPages "Section" "members" }}
+                  {{ $featuredMembers := where $member "Params.featured" true }}
+                              
+                  {{ range $featuredMembers }}
+                    <span class="-mr-4 relative z-3 border-2 border-darkmode-border dark:border-border rounded-full">
+                      {{ partial "image" (dict "Src" .Params.image "Alt" "user image" "Class" "rounded-full object-cover aspect-square size-[70px] "  ) }}
+                    </span>
+                  {{ end }}
+
+                </div>
+                <h3 class="text-h5 uppercase font-thin mt-9">
+                  {{ .members.title | markdownify }}
+                </h3>
+                <p
+                  class="font-light text-darkmode-text-light dark:text-text-light uppercase mt-3">
+                  {{ .members.content | markdownify }}
+                </p>
+              </a> -->
+
+              <!-- {{/* highlight */}}
+              <div
+                class="md:col-6 relative overflow-hidden pt-4 md:pt-0 bg-light/10 dark:bg-darkmode-light/10 -z-10">
+                {{ partial "image" (dict "Src" "/images/union-shap.png" "Alt" "highlight image" "Class" "absolute w-full h-full object-cover z-0 top-5" ) }}
+                <div class="py-5 lg:p-8">
+                  <span>
+                    <svg
+                      width="48"
+                      height="24"
+                      viewBox="0 0 48 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <circle
+                        cx="12"
+                        cy="12"
+                        r="12"
+                        class="fill-primary dark:fill-darkmode-primary" />
+                      <circle cx="36" cy="12" r="12" fill="white" />
+                    </svg>
+                  </span>
+                  <h3 class="text-h5 font-thin uppercase mt-6">
+                    {{ .highlight.title | markdownify }}
+                  </h3>
+                  <div class="flex mt-20 gap-6 justify-between">
+                    <div>
+                      <span
+                        class="uppercase text-darkmode-text-light dark:text-text-light"
+                        >{{ .highlight.hashtag | markdownify }}</span
+                      >
+                      <p
+                        class="uppercase text-darkmode-text-light dark:text-text-light font-light">
+                        {{ .highlight.content | markdownify }}
+                      </p>
+                    </div>
+                    <div
+                      class="bg-dark text-white dark:bg-darkmode-primary rounded-full w-24 h-24 flex flex-col justify-center items-center relative z-10 aspect-square">
+                      <span class="text-xs uppercase">{{ T "joined" }}</span>
+                      <b class="text-2xl uppercase font-semibold"
+                        >{{ .highlight.joined }}</b
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div> -->
+            </div>
+          </div>
+        </div>
+        {{/* Banner features End */}}
+      </div>
+    </section>
+  {{ end }}
+  {{/* End banner section */}}
+
+  {{/* Features section start */}}
+  {{ with .Params.features }}
+    <section class="section">
+      <div class="container">
+        {{/* Title */}}
+        <div class="section-header">
+          <h2>{{ .title | markdownify }}</h2>
+          <p>
+            {{ .content | markdownify }}
+          </p>
+        </div>
+
+        {{/* Features */}}
+        <div
+          class="row py-14 border-b border-border dark:border-darkmode-border">
+          <div class="xl:col-5 mb-10 xl:mb-0 xl:pr-12">
+            {{ partial "image" (dict "Src" .image "Alt" "feature image" "Class" "w-full xl:sticky xl:top-32") }}
+
+          </div>
+          <div
+            class="xl:col-7 xl:border-l xl:border-l-border dark:border-darkmode-border pl-4 xl:pl-16">
+            {{/* features */}}
+            {{ if .items }}
+              {{ $itemsLen := len .items }}
+              {{ range $index, $item := .items }}
+                <div
+                  class="row 
+                 {{ if eq $index 0 }}pt-0{{ end }} 
+                {{ if lt $index (sub $itemsLen 1) }}
+                    border-b border-border dark:border-darkmode-border
+                  {{ end }} 
+                  py-10">
+                  <div class="sm:col-4 md:col-6 p-0 mb-4 sm:mb-0 ml-3 sm:ml-0">
+                    <h3
+                      class="uppercase text-xl md:text-2xl md:w-7/12 sm:pl-2 xl:pl-0">
+                      {{ $item.title }}
+                    </h3>
+                  </div>
+                  <div class="sm:col-8 md:col-6">
+                    <p
+                      class="md:text-lg font-light text-darkmode-text-light dark:text-text-light">
+                      {{ $item.content }}
+                    </p>
+
+                    {{ if $item.button.enable }}
+                      <a
+                        href="{{ $item.button.link }}"
+                        class="btn btn-icon mt-4 px-0">
+                        <span class="sr-only">{{ $item.title }}</span>
+                        <span class="!ml-0 uppercase font-normal"
+                          >{{ $item.button.label }}</span
+                        >
+                        <i class="fa fa-arrow-right text-xs"></i>
+                      </a>
+                    {{ end }}
+                  </div>
+                </div>
+              {{ end }}
+            {{ end }}
+
+          </div>
+        </div>
+      </div>
+    </section>
+  {{ end }}
+  {{/* Features section end */}}
+
+  {{/* start events section */}}
+    {{ with .Params.events }}
+    {{ if .enable }}
+      <section class="section">
+        <div class="container">
+          <div class="section-header">
+            <h2>{{ .title }}</h2>
+            {{ if .button.enable }}
+              <a href="{{ .button.link }}" class="btn btn-icon">
+                <span class="whitespace-nowrap">{{ .button.label }}</span>
+                <i class="fa fa-arrow-right text-xs"></i>
+              </a>
+            {{ end }}
+
+          </div>
+
+          {{ $events := where site.RegularPages "Section" "events" }}
+          {{ $latestEvents := first 3 (sort $events "Date" "desc") }}
+          
+          {{ partial "components/events-card.html" (dict "List" $latestEvents "Image" "images/events/robotics.jpg") }}
+        
+        </div>
+      </section>
+    {{end}}
+  {{end}}
+  {{/* end events section */}}
+
+  {{/* Start Ticket section */}}
+  {{ with .Params.donations }}
+    {{ if .enable }}
+      <section class="section">
+        <div class="container">
+          <div class="section-header">
+            <h2>{{ .title }}</h2>
+            <p>{{ .content | markdownify }}</p>
+          </div>
+          {{ with site.GetPage "donations/_index" }}
+            {{ partial "components/donations.html" . }}
+          {{ end }}
+        </div>
+      </section>
+    {{ end }}
+  {{ end }}
+  {{/* End ticket section */}}
+
+  {{/* Start members section */}}
+  {{ with .Params.members }}
+    {{ if .enable }}
+      <section class="section">
+        <div class="container">
+          <div
+            class="row pb-14 border-b border-border dark:border-darkmode-border">
+            {{/* Title */}}
+            <div
+              class="xl:col-4 xl:pr-10 text-center xl:text-left mb-10 xl:mb-0 flex flex-col justify-center xl:justify-stretch items-center xl:items-stretch">
+              <div class="xl:sticky xl:top-32 2xl:pr-10">
+                <h2 class="text-h3 md:text-h1-sm uppercase mb-5 leading-tight">
+                  {{ .title }}
+                </h2>
+                <p
+                  class="text-lg font-light text-darkmode-text-light dark:text-text-light mb-10">
+                  {{ .content }}
+                </p>
+                {{ if .button.enable }}
+                    <div class="mt-4 px-0 flex justify-center xl:justify-stretch">
+                    <a href="{{ .button.link }}" class="flex items-center btn btn-icon">
+                      <span>{{ .button.label }}</span>
+                    <i class="fa fa-arrow-right text-xs"></i>
+                  </a>
+                  </div>
+                {{ end }}
+              </div>
+            </div>
+
+            {{/* Speaker Cards */}}
+            {{ with site.GetPage "members/_index" }}
+              <div class="xl:col-8">
+                <div
+                  class="row xl:border-l xl:border-l-border dark:border-darkmode-border px-5">
+                  {{ $members := where .Pages "Type" "members" }}
+                  {{ range $index, $member := first 4 (collections.Reverse $members) }}
+                    <div
+                      class="mb-10 md:mb-0 md:col-6{{ if lt $index 2 }}
+                        md:border-b md:border-border
+                        dark:border-darkmode-border pb-10 !mb-10
+                      {{ end }}">
+                      <div
+                        class="{{ if or (eq $index 0) (eq $index 2) }}
+                          md:border-r md:border-r-border
+                          dark:border-darkmode-border md:pr-6
+                        {{ end }} ">
+                        {{ partial "components/member-card.html" $member }}
+                      </div>
+                    </div>
+                  {{ end }}
+                </div>
+              </div>
+            {{ end }}
+
+          </div>
+        </div>
+      </section>
+    {{ end }}
+  {{ end }}
+  {{/* End speaker section */}}
+
+
+  <!-- {{/* Start sponsors section */}}
+  {{ with .Params.sponsors }}
+   {{ if .enable }}
+    <section class="section">
+      <div
+        class="container border-b border-border dark:border-darkmode-border">
+        <div class="section-header mb-10">
+          <h2>{{ .title }}</h2>
+         
+          {{ if .button.enable }}
+          <a href="{{ .button.link }}" class="btn btn-icon">
+            <span>{{ .button.label }}</span>
+            <i class="fa fa-arrow-right text-xs"></i>
+          </a>
+          {{ end }}
+        </div>
+        {{/* Logos */}}
+        {{ with site.GetPage "our-sponsors/_index" }}
+        <div class="row mb-10">
+    
+          {{ range $index, $logo := .Params.sponsors }}
+            <div
+              class="col-6 sm:col-4 md:col-3 xl:col-2 g-4 {{ if lt $index 5 }}
+                relative
+              {{ end }}">
+              <a
+                href="{{$logo.website}}"
+                target="_blank"
+                class="sponsor-logo-effect">
+                {{ partial "image" (dict "Src" $logo.logo "Alt" "sponsors-logo" "Class" "block dark:hidden") }}
+                {{ partial "image" (dict "Src" $logo.logo_darkmode "Alt" "sponsors-logo" "Class" "hidden dark:block") }}
+
+              </a>
+              {{ if lt $index 5 }}
+                <svg
+                  class="hidden xl:block absolute -bottom-7 -right-3"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_1_1062)">
+                    <rect
+                      x="-808"
+                      y="11"
+                      width="1640"
+                      height="1"
+                      fill="#BBBBBB" />
+                    <rect
+                      x="12.5"
+                      y="-808.5"
+                      width="1640"
+                      height="1"
+                      transform="rotate(90 12.5 -808.5)"
+                      fill="#BBBBBB" />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_1_1062">
+                      <rect width="24" height="24" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              {{ end }}
+            </div>
+          {{ end }}
+        </div>
+        {{ end }}
+      </div>
+    </section>
+  {{end}}
+ {{end}}
+  {{/* end sponsors section */}} -->
+
+  {{/* Start Key benefits section */}}
+  {{ with .Params.benefits }}
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2>{{ .title }}</h2>
+          <p>
+            {{ .content }}
+          </p>
+        </div>
+        <div class="pt-16">
+          <div
+            class="row text-white w-full h-[750px] relative"
+            {{ partial `bg-image.html` (dict `Src` .bg_image `Class` `bg-no-repeat` ) | safeHTMLAttr }}>
+            <div class="absolute w-full h-full top-0 right-0 bg-dark/40 z-0"> </div>
+            {{ range $index, $item := .items }}
+              <div
+                class="md:col-6 lg:col-4 {{ if lt $index 2 }}
+                  sm:border-r sm:border-body/10
+                {{ end }} xl:pr-16 pl-8 pb-10 lg:h-full justify-end flex flex-col relative z-10">
+                <span>
+                  <svg
+                    width="48"
+                    height="24"
+                    viewBox="0 0 48 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <circle
+                      cx="12"
+                      cy="12"
+                      r="12"
+                      class="fill-primary dark:fill-darkmode-primary" />
+                    <circle cx="36" cy="12" r="12" fill="white" />
+                  </svg>
+                </span>
+                <h3 class="uppercase text-2xl font-normal mt-6 mb-5">
+                  {{ $item.title }}
+                </h3>
+                <p class="uppercase font-light">
+                  {{ $item.content }}
+                </p>
+              </div>
+            {{ end }}
+          </div>
+        </div>
+      </div>
+    </section>
+  {{ end }}
+  {{/* end Key benefits section */}}
+ 
+ 
+   {{/* start blog section */}}
+  {{ with .Params.blogs }}
+   {{ if .enable }}
+    <section class="section pb-20">
+      <div class="container">
+        <div class="section-header">
+          <h2>{{ .title }}</h2>
+          {{ if .button.enable }}
+          <a href="{{ .button.link }}" class="btn btn-icon">
+            <span>{{ .button.label }}</span>
+            <i class="fa fa-arrow-right text-xs"></i>
+          </a>
+          {{ end }}
+        </div>
+    
+        <div class="row my-16! gap-y-16!">
+          {{ $posts := where site.RegularPages "Section" "blog" }}
+          {{ range $index, $post := first 3 $posts }}
+          <div class="md:col-6 lg:col-4 px-4 xl:px-8 
+                  {{ if and (ne (add $index 1) 3) (ne (add $index 1) (len $posts)) }} 
+                    md:border-r border-r-border dark:border-darkmode-border
+                  {{ end }}">
+            {{ partial "components/blog-card.html" . }}
+          </div>
+          {{ end }}
+        </div>
+      </div>
+    </section>
+   {{ end }}
+  {{ end }}
+   {{/* end blog section */}}
+{{ end }}

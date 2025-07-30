@@ -1,0 +1,189 @@
+{{ define "main" }}
+  <section class="section-sm">
+    <div class="container">
+      {{ partial "page-header" . }}
+
+      {{/* Google map */}}
+      <div class="py-10">
+        {{ with site.Params.google_map }}
+          {{ if .enable }}
+            <div
+              id="map"
+              style="height: 400px;"
+              data-latitude="{{ .map_latitude }}"
+              data-longitude="{{ .map_longitude }}"
+              data-marker="{{ .map_marker | relURL }}"
+              data-marker-name="{{ site.Title }}"></div>
+          {{ end }}
+        {{ end }}
+      </div>
+
+      {{/* Contact section */}}
+      <div class="py-16 border-t border-t-border dark:border-darkmode-border">
+        <div class="row">
+          <!-- contact info -->
+          <div
+            class="xl:col-6 xl:pr-20 text-center xl:text-left mb-10 xl:mb-0 flex flex-col justify-center xl:justify-stretch items-center xl:items-stretch">
+            <h3 class="text-h3 md:text-h1-sm leading-tight uppercase mb-5">
+              {{ .Params.contact_form.title }}
+            </h3>
+            <p class="text-lg font-light text-darkmode-text-light dark:text-text-light">
+              {{ .Params.contact_form.content }}
+            </p>
+            <div class="mt-10">
+              <div class="flex items-center gap-3 font-light mb-6">
+                <svg
+                  width="52"
+                  height="52"
+                  viewBox="0 0 52 52"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <rect width="52" height="52" rx="26" fill="#494848" />
+                  <g clip-path="url(#clip0_1_3019)">
+                    <path
+                      d="M37.2969 22.2844H34.9601C34.6003 17.656 30.7191 14 26 14C21.2809 14 17.3997 17.656 17.0399 22.2844H14.7031C14.3148 22.2844 14 22.5992 14 22.9875V30.5187C14 30.9071 14.3148 31.2219 14.7031 31.2219H17.7156C18.104 31.2219 18.4188 30.9071 18.4188 30.5187V22.9875C18.4188 18.8072 21.8197 15.4062 26 15.4062C30.1803 15.4062 33.5812 18.8072 33.5812 22.9875V30.5187C33.5812 33.038 31.5317 35.0875 29.0125 35.0875H28.094C27.7996 34.2131 26.9724 33.5813 26 33.5813C24.7818 33.5813 23.7906 34.5724 23.7906 35.7906C23.7906 37.0089 24.7818 38 26 38C26.9724 38 27.7996 37.3682 28.094 36.4938H29.0125C32.0692 36.4938 34.5968 34.1863 34.9459 31.2219H37.2969C37.6852 31.2219 38 30.9071 38 30.5187V22.9875C38 22.5992 37.6852 22.2844 37.2969 22.2844ZM17.0125 29.8156H15.4062V23.6906H17.0125V29.8156ZM26 36.5938C25.5572 36.5938 25.1968 36.2335 25.1968 35.7906C25.1968 35.3478 25.5572 34.9875 26 34.9875C26.4428 34.9875 26.8032 35.3478 26.8032 35.7906C26.8032 36.2335 26.4428 36.5938 26 36.5938ZM36.5938 29.8156H34.9875V23.6906H36.5938V29.8156Z"
+                      fill="white" />
+                    <path
+                      d="M31.1637 22.338C30.901 22.2291 30.5986 22.2892 30.3975 22.4903C30.3974 22.4903 28.2022 24.6849 27.1613 25.7249C26.6939 26.195 26.4258 26.8443 26.4258 27.5063C26.4258 27.8946 26.7406 28.2095 27.1289 28.2095H30.1914V29.7657C30.1914 30.154 30.5062 30.4688 30.8946 30.4688C31.2829 30.4688 31.5977 30.154 31.5977 29.7657V28.2095H31.6477C32.036 28.2095 32.3508 27.8946 32.3508 27.5063C32.3508 27.118 32.036 26.8032 31.6477 26.8032H31.5977V22.9876C31.5977 22.7032 31.4264 22.4469 31.1637 22.338ZM30.1914 26.8032H28.0808C28.1047 26.7736 28.1301 26.7452 28.1569 26.7181C28.6836 26.1919 29.5072 25.3686 30.1914 24.6846V26.8032Z"
+                      fill="white" />
+                    <path
+                      d="M25.1972 29.7657C25.1972 29.3774 24.8824 29.0625 24.4941 29.0625H21.6803C21.7042 29.0329 21.7296 29.0045 21.7564 28.9775C22.7958 27.9389 24.9912 25.7442 24.9912 25.7442C25.1231 25.6123 25.1973 25.4334 25.1973 25.2469V24.8704C25.1973 23.4445 24.0372 22.2844 22.6113 22.2844C21.1713 22.2844 20.0254 23.4512 20.0254 24.8696V24.8703C20.0254 25.2586 20.3402 25.5731 20.7285 25.5731C21.1168 25.5731 21.4316 25.2579 21.4316 24.8696C21.4316 24.225 21.9506 23.6907 22.6113 23.6907C23.2618 23.6907 23.791 24.2199 23.791 24.8704V24.9556C23.2209 25.5255 21.6083 27.1375 20.7609 27.9843C20.2934 28.4543 20.0254 29.1037 20.0254 29.7657C20.0254 30.154 20.3402 30.4688 20.7285 30.4688H24.4941C24.8824 30.4688 25.1972 30.154 25.1972 29.7657Z"
+                      fill="white" />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_1_3019">
+                      <rect
+                        width="24"
+                        height="24"
+                        fill="white"
+                        transform="translate(14 14)" />
+                    </clipPath>
+                  </defs>
+                </svg>
+                <div class="flex flex-col items-start">
+                  <a href="tel:{{ site.Params.contact_info.phone }}">
+                    {{ site.Params.contact_info.phone |  markdownify }}</a
+                  >
+                  <a href="mailto:{{ site.Params.contact_info.mail }}">
+                    {{ site.Params.contact_info.mail }}</a
+                  >
+                </div>
+              </div>
+              <div class="flex items-center gap-3 font-light">
+                <svg
+                  width="52"
+                  height="52"
+                  viewBox="0 0 52 52"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <rect width="52" height="52" rx="26" fill="#494848" />
+                  <path
+                    d="M33.4274 32.205C32.3116 31.8189 30.8578 31.5268 29.2444 31.3595C29.492 30.9836 29.7456 30.589 29.9998 30.1804C32.3039 26.4766 33.4722 23.5464 33.4722 21.471C33.4722 17.3515 30.1207 14 26.0013 14C21.8818 14 18.5303 17.3515 18.5303 21.471C18.5303 23.5464 19.6986 26.4766 22.0027 30.1804C22.2569 30.589 22.5105 30.9836 22.7582 31.3595C21.1448 31.5268 19.6909 31.8188 18.5752 32.205C16.8353 32.807 15.9531 33.6125 15.9531 34.5987C15.9531 35.704 17.0531 36.5777 19.2226 37.1957C21.0433 37.7144 23.4507 38 26.0013 38C28.5518 38 30.9592 37.7143 32.78 37.1957C34.9494 36.5777 36.0494 35.7039 36.0494 34.5987C36.0494 33.6125 35.1673 32.807 33.4274 32.205ZM20.0375 21.471C20.0375 18.1825 22.7128 15.5072 26.0013 15.5072C29.2897 15.5072 31.965 18.1825 31.965 21.471C31.965 23.2331 30.8455 25.9652 28.7278 29.3717C27.6855 31.0483 26.633 32.5099 26.0012 33.3565C25.3695 32.51 24.317 31.0483 23.2746 29.3717C21.157 25.9652 20.0375 23.2332 20.0375 21.471ZM32.367 35.7461C30.6768 36.2276 28.416 36.4928 26.0013 36.4928C23.5865 36.4928 21.3257 36.2276 19.6355 35.7461C17.8384 35.2342 17.4603 34.6855 17.4603 34.5987C17.4603 34.5168 17.7464 34.0867 19.0681 33.6293C20.2595 33.2171 21.9018 32.921 23.728 32.7866C24.6677 34.1274 25.3661 35.0107 25.4108 35.0671C25.5538 35.2473 25.7712 35.3524 26.0013 35.3524C26.2313 35.3524 26.4487 35.2473 26.5917 35.0671C26.6364 35.0107 27.3348 34.1274 28.2745 32.7866C30.1007 32.921 31.7431 33.217 32.9345 33.6293C34.2561 34.0867 34.5422 34.5168 34.5422 34.5987C34.5422 34.6855 34.1641 35.2342 32.367 35.7461Z"
+                    fill="white" />
+                  <path
+                    d="M25.9995 17.9792C24.0742 17.9792 22.5078 19.5457 22.5078 21.471C22.5078 23.3963 24.0742 24.9627 25.9995 24.9627C27.9248 24.9627 29.4913 23.3963 29.4913 21.471C29.4913 19.5457 27.9249 17.9792 25.9995 17.9792ZM25.9995 23.4555C24.9053 23.4555 24.015 22.5653 24.015 21.471C24.015 20.3767 24.9053 19.4865 25.9995 19.4865C27.0938 19.4865 27.984 20.3768 27.984 21.471C27.984 22.5653 27.0938 23.4555 25.9995 23.4555Z"
+                    fill="white" />
+                </svg>
+
+                <div class="flex flex-col items-start">
+                  <p class="text-left">
+                    {{ site.Params.contact_info.address |  markdownify }}
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Contact form -->
+          <div
+            class="xl:col-6 xl:border-l xl:border-l-border dark:border-darkmode-border xl:pl-10">
+            <form
+              action="{{ .Params.contact_form_action }}"
+              class="row mt-2 gy-4">
+              <div class="col-6">
+                <div
+                  class="border-b border-border dark:border-darkmode-border">
+                  <input
+                    type="text"
+                    required
+                    placeholder="Name*"
+                    name="name"
+                    class="bg-transparent border-none border-b focus:outline-none focus:border-none focus:shadow-none focus:ring-0 w-full placeholder:text-text-light pl-0 placeholder:font-light" />
+                </div>
+              </div>
+
+              <div class="col-6">
+                <div
+                  class="border-b border-border dark:border-darkmode-border">
+                  <input
+                    type="email"
+                    required
+                    placeholder="Email*"
+                    name="email"
+                    class="bg-transparent focus:outline-none focus:border-none focus:shadow-none focus:ring-0 border-none border-b focus:outline-0 w-full placeholder:text-text-light pl-0 placeholder:font-light" />
+                </div>
+              </div>
+              <div class="col-6">
+                <div
+                  class="border-b border-border dark:border-darkmode-border">
+                  <input
+                    type="tel"
+                    required
+                    placeholder="Phone*"
+                    name="phone"
+                    class="bg-transparent border-none border-b focus:outline-none focus:border-none focus:shadow-none focus:ring-0 w-full placeholder:text-text-light pl-0 placeholder:font-light focus:border-b" />
+                </div>
+              </div>
+              <div class="col-6">
+                <div
+                  class="border-b border-border dark:border-darkmode-border">
+                  <input
+                    type="text"
+                    required
+                    name="subject"
+                    placeholder="Subject*"
+                    class="bg-transparent focus:outline-none focus:border-none focus:shadow-none focus:ring-0 border-none border-b focus:outline-0 w-full placeholder:text-text-light pl-0 placeholder:font-light" />
+                </div>
+              </div>
+
+              <div class="">
+                <div
+                  class="border-b border-border dark:border-darkmode-border">
+                  <input
+                    type="text"
+                    required
+                    name="country_region"
+                    placeholder="CountryRegion*"
+                    class="bg-transparent focus:outline-none focus:border-none focus:shadow-none focus:ring-0 border-none border-b focus:outline-0 w-full placeholder:text-text-light pl-0 placeholder:font-light" />
+                </div>
+              </div>
+              <div class="mt-5">
+                <div
+                  class="border-b border-border dark:border-darkmode-border">
+                  <textarea
+                    rows="1"
+                    required
+                    name="message"
+                    placeholder="Message*"
+                    class="bg-transparent focus:outline-none focus:border-none focus:shadow-none focus:ring-0 border-none border-b focus:outline-0 w-full placeholder:text-text-light resize-none pl-0 placeholder:font-light pb-12"></textarea>
+                </div>
+              </div>
+
+              <div class="mt-20">
+                <button class="btn btn-primary btn-sm rounded-none">
+                  {{ T "submit" }}
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {{ if site.Params.google_map.enable }}
+    {{ $gmap:= resources.Get "plugins/maps/google-map.js" }}
+    <script defer src="{{ $gmap.RelPermalink }}"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key={{ site.Params.google_map.map_api_key }}&libraries=places"></script>
+  {{ end }}
+
+{{ end }}

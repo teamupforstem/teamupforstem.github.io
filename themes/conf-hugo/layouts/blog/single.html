@@ -1,0 +1,108 @@
+{{ define "main" }}
+<section class="section">
+  <div class="container">
+    {{/* post header and date */}}
+    <div class="pb-14 border-b border-border dark:border-darkmode-border">
+      <div class="flex gap-3 uppercase items-center mb-4 font-light">
+        <!-- <span>{{ .Params.author }}</span> -->
+        <!-- <span><svg width="20" height="2" viewBox="0 0 20 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect y="0.5" width="19.0698" height="1" fill="#999999" />
+          </svg>
+        </span> -->
+        <span>Updated {{ .Date | time.Format "January 2, 2006" }}</span>
+      </div>
+      <h1 class="uppercase text-h4 md:text-h2 xl:text-h1-lg leading-tight xl:pr-20">
+        {{ .Title }}
+      </h1>
+    </div>
+
+    <!-- {{/* post banner */}}
+    <div class="py-20 border-b border-border dark:border-darkmode-border">
+      {{ partial "image" (dict "Src" .Params.image "Alt" .Title "Class" "w-full object-cover") }}
+    </div> -->
+
+    <div class="row py-10">
+      {{/* Table of content */}}
+      <div class="lg:col-4 mb-4 lg:mb-0">
+        <div class="2xl:w-4/5 lg:sticky lg:top-32">
+          {{ $class:= .Params.Class }}
+          {{ $scratch := newScratch }}
+          {{ if not (.Params.Collapsed | default true) }}
+          {{ $scratch.Set "openAttr" "open" }}
+          {{ else }}
+          {{ $scratch.Set "openAttr" "" }}
+          {{ end }}
+          <div {{ $scratch.Get "openAttr" | safeHTMLAttr }} class="table-of-content custom {{ $class }}">
+            <h5 class="uppercase text-2xl mb-6">
+              {{ with i18n "toc" }}
+              {{ . }}
+              {{ else }}
+              {{ T "toc" }}
+              {{ end }}
+            </h5>
+            {{ .TableOfContents }}
+            {{ if .Params.comment.enable }}
+
+            <h5 class="border-b border-border dark:border-darkmode-border pb-5">
+              <a href="#leave-a-comment"
+              class="font-light hover:underline uppercase text-base">
+              {{ T "leave_comment" }}
+            </a>
+            </h5>
+            {{ end }}
+          </div>
+        </div>
+      </div>
+
+      {{/* content */}}
+      <div class="lg:col-8 lg:border-l lg:border-l-border dark:border-darkmode-border pl-7">
+        <div class="content scroll-mt-52">
+          {{ .Content | safeHTML }}
+        </div>
+
+        <!-- leave comment -->
+        {{ if .Params.comment.enable }}
+        <div class="mt-4">
+          <h3 id="leave-a-comment" class="scroll-mt-52 uppercase"> {{ T "leave_comment" }}</h3>
+          <p class="text-text-light font-light text-sm">
+            {{ T "comment_message"}}
+          </p>
+          <form action="{{ site.Params.comment_form_action }}" class="row mt-2 gy-4">
+            <div class="col-6">
+              <div class="border-b border-border dark:border-darkmode-border">
+                <input type="text" required placeholder="Name*"
+                  class="bg-transparent border-none border-b focus:outline-none focus:border-none focus:shadow-none focus:ring-0 w-full placeholder:uppercase placeholder:text-text-light pl-0 placeholder:font-light" />
+              </div>
+            </div>
+            <div class="col-6 mb-5">
+              <div class="border-b border-border dark:border-darkmode-border">
+                <input type="email" required placeholder="Email*"
+                  class="bg-transparent focus:outline-none focus:border-none focus:shadow-none focus:ring-0 border-none border-b focus:outline-0 w-full placeholder:uppercase placeholder:text-text-light pl-0 placeholder:font-light" />
+              </div>
+            </div>
+            <div>
+              <div class="border-b border-border dark:border-darkmode-border">
+                <textarea rows="1" required placeholder="Message*"
+                  class="bg-transparent focus:outline-none focus:border-none focus:shadow-none focus:ring-0 border-none border-b focus:outline-0 w-full placeholder:uppercase placeholder:text-text-light resize-none pl-0 placeholder:font-light"></textarea>
+              </div>
+            </div>
+            <label for="save" class="flex items-center gap-2">
+              <input type="checkbox" required id="save" />
+
+              <p>{{ T "save_email" }}</p>
+            </label>
+
+            <div class="mt-20">
+              <button class="btn btn-primary btn-sm rounded-none uppercase">
+                {{ T "leave_comment" }}
+              </button>
+            </div>
+          </form>
+        </div>
+        {{ end }}
+
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}

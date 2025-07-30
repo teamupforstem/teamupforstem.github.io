@@ -1,0 +1,18 @@
+<div class="page-header">
+  <div class="page-title">
+    <span>{{ .Params.sub_title }}</span>
+    <h1>{{ .Title }}</h1>
+  </div>
+  <div class="page-meta">
+    <p>
+      {{.Params.description | markdownify}}
+    </p>
+
+    {{ if .Params.button.enable }}
+    <a href="/{{ .Params.button.link }}" class="pl-0 btn btn-icon">
+      <span>{{ .Params.button.label }}</span>
+      <i class="fa fa-arrow-right text-xs"></i>
+    </a>
+    {{ end }}
+  </div>
+</div>

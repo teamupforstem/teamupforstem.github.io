@@ -1,0 +1,103 @@
+{{ define "main" }}
+  <section class="section">
+    <div class="container">
+      {{ partial "page-header" . }}
+      
+
+      <!-- banner -->
+      <!-- <div
+        class="size-full 2xl:min-h-[800px] py-14 border-b border-border dark:border-darkmode-border">
+        {{ partial "image" (dict "Src" .Params.image "Alt" "banner image" "Class" "size-full object-cover") }}
+
+      </div> -->
+      <!-- Basic overview -->
+      <div class="row py-14">
+        <div
+          class="xl:col-5 xl:border-r xl:border-r-border dark:border-darkmode-border mb-4 xl:mb-0">
+          <p class="uppercase">{{ T "basic" }}</p>
+        </div>
+        <div class="xl:col-7 pl-5 content">
+          {{ .Content | safeHTML }}
+        </div>
+      </div>
+
+      <!--  Key Points -->
+      <!-- <div
+        class="row py-14 border-t border-t-border dark:border-darkmode-border">
+        <div
+          class="xl:col-5 xl:border-r xl:border-r-border dark:border-darkmode-border mb-4 xl:mb-0">
+          <p class="uppercase">{{ T "points" }}</p>
+        </div>
+        <div class="xl:col-7 pl-5">
+          <div class="row g-4">
+            {{ range .Params.points }}
+              <div class="md:col-6">
+                <div
+                  class="flex flex-col bg-light text-text-dark dark:bg-dark dark:text-white px-5 py-6 rounded-sm">
+                  {{ partial "image" (dict "Src" .icon "Alt" "event image" "Class" "w-12 h-12 hidden dark:block") "Size" "72x72" }}
+                  {{ partial "image" (dict "Src" .icon_darkmode "Alt" "event image" "Class" "w-12 h-12 block dark:hidden") "Size" "72x72" }}
+
+
+                  <h4 class="uppercase text-2xl mt-8 mb-3">{{ .title }}</h4>
+                  <p class="font-light text-darkmode-text-light dark:text-text-light">
+                    {{ .content }}
+                  </p>
+                </div>
+              </div>
+            {{ end }}
+          </div>
+        </div>
+      </div> -->
+
+      <!--  speaker-->
+      <!-- <div
+        class="row py-14 border-t border-t-border dark:border-darkmode-border">
+        <div
+          class="lg:col-5 lg:border-r lg:border-r-border dark:border-darkmode-border mb-4 lg:mb-0">
+          <p class="uppercase">{{ T "members" }}</p>
+        </div>
+        <div class="lg:col-7 pl-5">
+          <div
+            class="row bg-light text-text-dark dark:bg-dark dark:text-white py-4 ml-1">
+            {{ $memberName := .Params.member.name }}
+            {{ $members := where site.RegularPages "Section" "members" }}
+            {{ $memberDetails := (where $members "Params.title" $memberName) | first 1 }}
+            {{ if $memberDetails }}
+              {{ $member := index $memberDetails 0 }}
+              <div class="sm:col-3 mb-4 sm:mb-0">
+                {{ partial "image" (dict "Src" $member.Params.image "Alt" $memberName "Class" "h-full! w-full object-cover") }}
+              </div>
+              <div class="sm:col-9 sm:pl-0">
+                <h4 class="text-2xl mb-1">{{ $memberName }}</h4>
+                <p class="font-light mb-12">
+                  {{ index $member.Params.position }}
+                </p>
+                <div class="flex justify-between items-center">
+                  <ul class="social-icons">
+                    {{ range  $member.Params.social }}
+                      <li>
+                        <a
+                          href="{{ .url }}"
+                          target="_blank"
+                          class="hover:text-white">
+                          <i class="{{ .icon }}"></i>
+                        </a>
+                      </li>
+                    {{ end }}
+                  </ul>
+                  <a href="{{ $member.RelPermalink }}" class="btn btn-icon">
+                    <span class="uppercase font-normal">Member details</span>
+                    <i class="fa fa-arrow-right text-xs"></i>
+                  </a>
+                </div>
+              </div>
+            {{ else }}
+              <p>Member details not found for {{ $memberName }}</p>
+            {{ end }}
+
+          </div>
+        </div>
+      </div> -->
+    </div>
+  </section>
+{{ end }}
