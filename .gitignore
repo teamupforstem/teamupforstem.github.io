@@ -11,9 +11,8 @@ package-lock.json
 public
 resources
 .hugo_build.lock
-src/jsconfig.json
-src/hugo_stats.json
-src/go.sum
+jsconfig.json
+hugo_stats.json
+go.sum
 yarn.lock
 .env
-.vscode
