@@ -53,19 +53,7 @@
               </ul>
             </div>
             <div class="ticket-item-footer">
-              {{ if $donation.stripe_id }}
-                {{ partial "checkout-button" . }}
-              {{ else }}
-                <script async
-                    src="https://js.stripe.com/v3/buy-button.js">
-                  </script>
-
-                  <stripe-buy-button
-                    buy-button-id="buy_btn_1RmIhFH5BRP1wdS7nl67gYXO"
-                    publishable-key="pk_live_51Rbp2lH5BRP1wdS75rdUMgAAaThFPGMhf0qPhWWmEOVY6YT59LIznmg2sPdjY50dCF2XcDEtjYlrp1UrugR8ND4b00nnTB7iTl"
-                  >
-                  </stripe-buy-button>
-              {{ end }}
+              {{ partial "checkout-button" . }}
             </div>
           </div>
         </div>
