@@ -1,0 +1,11 @@
+{{ define "main" }}
+  <section class="section">
+    <div class="container">
+      {{ partial "page-header" . }}
+
+      {{ partial "components/events-card.html" (dict "List" .RegularPages "Image" .Params.image) }}
+
+    </div>
+  </section>
+  {{ partial "call-to-action.html" }}
+{{ end }}

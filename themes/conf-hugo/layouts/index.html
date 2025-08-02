@@ -6,7 +6,7 @@
         {{/* Hero title start */}}
         <div class="row justify-center">
           {{/* Title */}}
-          <div class="text-center py-8 px-0">
+          <div class="text-center py-2 px-0">
             <h1 class="text-[5vw] lg:text-[6vw] xl:text-[7vw] font-semibold">
               {{ .title  | markdownify }}
             </h1>
@@ -31,13 +31,6 @@
                     fill="white" />
                 </svg>
               </span>
-              <!-- <span
-                class="text-gold uppercase font-semibold text-lg mx-1 whitespace-nowrap">
-                {{ T "tickets_available" }}
-                  TEAMS
-              </span> -->
-              
-            <!-- </div> -->
             
             {{/* slide */}}
             <div class="tickets-slide text-white">
@@ -82,57 +75,22 @@
       <div class="container">
         {{/* banner start */}}
         <div
-          class="row pl-0 mt-20 border-t border-t-border dark:border-darkmode-border flex-col-reverse lg:flex-row">
+          class="row pl-0 mt-10 border-t border-t-border dark:border-darkmode-border flex-col-reverse lg:flex-row">
           {{/* Text */}}
           <div
-            class="lg:col-6 pt-20 lg:border-r xl:border-r-border dark:border-darkmode-border">
+            class="lg:col-6 pt-10 lg:border-r xl:border-r-border dark:border-darkmode-border">
             <div class="pr-0 lg:pr-16">
               <h2
-                class="text-h3 sm:text-h2 2xl:text-h2-xl uppercase leading-tight 2xl:leading-none font-medium mb-3 sm:mb-0">
+                class="text-h3 sm:text-h2 2xl:text-h2-xl uppercase leading-tight 2xl:leading-none font-medium mb-0">
                 {{ .title_start | markdownify }}
               </h2>
-              {{/* Missions & Visions */}}
               <div
-                class="2xl py-6 flex flex-col md:flex-row border-b border-border dark:border-darkmode-border 2xl:border-b-0">
-                {{ partial "image" (dict "Src" .mission.image "Alt" "banner image" "Class" "mr-auto aspect-auto") }}
-                <div class="py-5 md:px-8 mt-5 md:mt-0">
-                  {{/* svg */}}
-                  <span class="mb-10 md:mb-20 block">
-                    {{ partial "image" (dict "Src" .mission.icon "Alt" "mission icon" "Class" "block dark:hidden") }}
-                    {{ partial "image" (dict "Src" .mission.icon_darkmode "Alt" "mission icon" "Class" "hidden dark:block") }}
-                  </span>
-                  <h3 class="text-2xl font-normal uppercase mb-6">
-                    {{ .mission.title | markdownify }}
-                  </h3>
-                  <p
+                class="2xl py-2 flex flex-col md:flex-row border-b border-border dark:border-darkmode-border 2xl:border-b-0">
+                <p
                     class="font-light uppercase leading-7 text-darkmode-text-light dark:text-text-light">
-                    {{ .mission.content | markdownify }}
+                    {{ .mission | markdownify }}
                   </p>
                 </div>
-              </div>
-              {{/* Speaker Image */}}
-              <div class="flex items-center">
-                <div class="flex">
-                  {{ range .member_image }}
-                    <span class="-mr-6 relative z-2 flex items-center">
-                      {{ partial "image" (dict "Src" . "Alt" "user image" "Class" "w-16 sm:w-20 2xl:w-24 rounded-full object-cover aspect-auto") }}
-                    </span>
-                  {{ end }}
-                  <span class="relative z-0 flex items-center">
-                    {{ partial "image" (dict "Src" "images/banner_plus_btn.png"  "Alt" "plus icon image" "Class" "w-16 sm:w-20 2xl:w-24") }}
-                  </span>
-                </div>
-                <p
-                  class="ml-4 text-h3 sm:text-h2 2xl:text-h1-xl uppercase leading-tight font-medium">
-                  {{ .title_end | markdownify }}
-                </p>
-              </div>
-            </div>
-            <div class="flex flex-col xl:flex-row mt-8 gap-4 text-lg pb-10">
-              <!-- <p class="font-light"><b>{{T "date"}}:</b> {{ .date  | markdownify }}</p>
-              <p class="font-light">
-                <b>{{T "venue"}}:</b> {{ .venue | markdownify }}
-              </p> -->
             </div>
           </div>
 
@@ -146,109 +104,10 @@
         {{/* banner end */}}
 
         {{/* Banner features Start */}}
-        <div
-          class="row px-0 border-y border-y-border dark:border-darkmode-border">
-          
-
-          {{/* others */}}
           <div class="2xl:col-6">
             <div class="row md:h-full">
-              <!-- {{/* speakers */}}
-              <a
-                href="/members"
-                class="md:col-6 !border-l-0 2xl:!border-l border-b md:border-b-0 md:border-r md:border-r-border xl:border-x xl:border-x-border dark:border-darkmode-border h-full flex flex-col relative pb-5 md:pb-0 member-feature group">
-                {{/* arrow */}}
-                <span class="absolute top-5 right-4">
-                  <svg
-                    width="50"
-                    height="50"
-                    viewBox="0 0 50 50"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <rect
-                      width="49.8373"
-                      height="3.324"
-                      transform="matrix(1 0 0 -1 0 3.46411)"
-                      fill="#DBDBDB" class="group-hover:fill-primary transition-all duration-500" />
-                    <rect
-                      width="3.32249"
-                      height="49.8599"
-                      transform="matrix(1 0 0 -1 46.5156 50)"
-                      fill="#DBDBDB" class="group-hover:fill-primary transition-all duration-500" />
-                    <rect
-                      width="3.32324"
-                      height="66.4648"
-                      transform="matrix(0.706946 0.707267 0.706946 -0.707267 0.664062 47.0083)"
-                      fill="#DBDBDB" class="group-hover:fill-primary transition-all duration-500" />
-                  </svg>
-                </span>
-                <div class="flex mt-28 2xl:mt-36">
-                  {{ $member := where site.RegularPages "Section" "members" }}
-                  {{ $featuredMembers := where $member "Params.featured" true }}
-                              
-                  {{ range $featuredMembers }}
-                    <span class="-mr-4 relative z-3 border-2 border-darkmode-border dark:border-border rounded-full">
-                      {{ partial "image" (dict "Src" .Params.image "Alt" "user image" "Class" "rounded-full object-cover aspect-square size-[70px] "  ) }}
-                    </span>
-                  {{ end }}
-
-                </div>
-                <h3 class="text-h5 uppercase font-thin mt-9">
-                  {{ .members.title | markdownify }}
-                </h3>
-                <p
-                  class="font-light text-darkmode-text-light dark:text-text-light uppercase mt-3">
-                  {{ .members.content | markdownify }}
-                </p>
-              </a> -->
-
-              <!-- {{/* highlight */}}
-              <div
-                class="md:col-6 relative overflow-hidden pt-4 md:pt-0 bg-light/10 dark:bg-darkmode-light/10 -z-10">
-                {{ partial "image" (dict "Src" "/images/union-shap.png" "Alt" "highlight image" "Class" "absolute w-full h-full object-cover z-0 top-5" ) }}
-                <div class="py-5 lg:p-8">
-                  <span>
-                    <svg
-                      width="48"
-                      height="24"
-                      viewBox="0 0 48 24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg">
-                      <circle
-                        cx="12"
-                        cy="12"
-                        r="12"
-                        class="fill-primary dark:fill-darkmode-primary" />
-                      <circle cx="36" cy="12" r="12" fill="white" />
-                    </svg>
-                  </span>
-                  <h3 class="text-h5 font-thin uppercase mt-6">
-                    {{ .highlight.title | markdownify }}
-                  </h3>
-                  <div class="flex mt-20 gap-6 justify-between">
-                    <div>
-                      <span
-                        class="uppercase text-darkmode-text-light dark:text-text-light"
-                        >{{ .highlight.hashtag | markdownify }}</span
-                      >
-                      <p
-                        class="uppercase text-darkmode-text-light dark:text-text-light font-light">
-                        {{ .highlight.content | markdownify }}
-                      </p>
-                    </div>
-                    <div
-                      class="bg-dark text-white dark:bg-darkmode-primary rounded-full w-24 h-24 flex flex-col justify-center items-center relative z-10 aspect-square">
-                      <span class="text-xs uppercase">{{ T "joined" }}</span>
-                      <b class="text-2xl uppercase font-semibold"
-                        >{{ .highlight.joined }}</b
-                      >
-                    </div>
-                  </div>
-                </div>
-              </div> -->
             </div>
           </div>
-        </div>
         {{/* Banner features End */}}
       </div>
     </section>
@@ -322,50 +181,6 @@
   {{ end }}
   {{/* Features section end */}}
 
-  {{/* start events section */}}
-    {{ with .Params.events }}
-    {{ if .enable }}
-      <section class="section">
-        <div class="container">
-          <div class="section-header">
-            <h2>{{ .title }}</h2>
-            {{ if .button.enable }}
-              <a href="{{ .button.link }}" class="btn btn-icon">
-                <span class="whitespace-nowrap">{{ .button.label }}</span>
-                <i class="fa fa-arrow-right text-xs"></i>
-              </a>
-            {{ end }}
-
-          </div>
-
-          {{ $events := where site.RegularPages "Section" "events" }}
-          {{ $latestEvents := first 3 (sort $events "Date" "desc") }}
-          
-          {{ partial "components/events-card.html" (dict "List" $latestEvents "Image" "images/events/robotics.jpg") }}
-        
-        </div>
-      </section>
-    {{end}}
-  {{end}}
-  {{/* end events section */}}
-
-  {{/* Start Ticket section */}}
-  {{ with .Params.donations }}
-    {{ if .enable }}
-      <section class="section">
-        <div class="container">
-          <div class="section-header">
-            <h2>{{ .title }}</h2>
-            <p>{{ .content | markdownify }}</p>
-          </div>
-          {{ with site.GetPage "donations/_index" }}
-            {{ partial "components/donations.html" . }}
-          {{ end }}
-        </div>
-      </section>
-    {{ end }}
-  {{ end }}
-  {{/* End ticket section */}}
 
   {{/* Start members section */}}
   {{ with .Params.members }}

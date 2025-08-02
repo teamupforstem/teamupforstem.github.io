@@ -34,7 +34,7 @@ url = "/blog/mentorship-opportunities"
 
 
 [[main]]
-name = "Members"
+name = "Team"
 url = "/members/"
 weight = 3
 
@@ -49,32 +49,56 @@ weight = 4
 [[main]]
 parent = "Competitions"
 name="All"
-url = "events"
+url = "robotics"
 weight = 1
 
 [[main]]
 parent = "Competitions"
 name="Vex IQ"
-url = "events/robotics-vexiq"
+url = "robotics/robotics-vexiq"
 weight = 2
 
 [[main]]
 parent = "Competitions"
 name="FIRST Lego League"
-url = "events/robotics-fll"
+url = "robotics/robotics-fll"
 weight = 3
 
 [[main]]
 parent = "Competitions"
 name="FIRST Tech Challenge"
-url = "events/robotics-ftc"
+url = "robotics/robotics-ftc"
 weight = 3
 
 [[main]]
 parent = "Competitions"
 name="Aerial Drones"
-url = "events/robotics-drones"
+url = "robotics/robotics-drones"
 weight = 4
+
+[[main]]
+parent = "Competitions"
+name="MOEMS"
+url = "math/moems"
+weight = 5
+
+[[main]]
+parent = "Competitions"
+name="Math Kangaroo"
+url = "math/mk"
+weight = 6
+
+[[main]]
+parent = "Competitions"
+name="AMC 8"
+url = "math/amc8"
+weight = 7
+
+[[main]]
+parent = "Competitions"
+name="AMC 10"
+url = "math/amc10"
+weight = 7
 
 # footer menu
 [[footer]]
