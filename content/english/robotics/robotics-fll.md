@@ -8,7 +8,7 @@ image: /images/placeholder.jpg
 competition_group: Robotics
 
 event_list:
- - time: "August 5th, 2025"
+ - time: "August 5th, 2025. 5:00 PM to 7:00 PM."
    short_details: 'UNEARTHED Season Kickoff Party'
    price: "25"
    stripe_id: price_1RrPKLH5BRP1wdS74v4L3CVU
