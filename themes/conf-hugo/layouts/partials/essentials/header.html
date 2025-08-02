@@ -151,16 +151,16 @@
         </ul>
       {{ end }}
       {{/* theme switcher */}}
-      {{ partial "components/theme-switcher" (dict "Class" "mr-5") }}
+      {{/*  {{ partial "components/theme-switcher" (dict "Class" "mr-5") }}  */}}
       <!-- navigation btn -->
-      {{ if site.Params.navigation_button.enable }}
+      {{/*  {{ if site.Params.navigation_button.enable }}
         <a
           href="{{ site.Params.navigation_button.link | relLangURL }}"
           class="!hidden lg:!flex btn btn-icon">
           <span> {{ site.Params.navigation_button.label }}</span>
           <i class="fa fa-arrow-right text-xs"></i>
         </a>
-      {{ end }}
+      {{ end }}  */}}
     </div>
   </nav>
 </header>

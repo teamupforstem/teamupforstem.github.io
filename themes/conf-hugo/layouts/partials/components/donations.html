@@ -6,59 +6,8 @@
 <div class="row py-16 border-b border-border dark:border-darkmode-border gap-y-6">
 
     {{ range $page := union (where .Site.Pages "Type" "donations" ) (where .Site.Pages "Type" "events" ) }}
-      {{ with $page.Params.donation_items }}
-      <h3>{{ $page.Params.title }}</h3>
-        {{ range $index, $donation := $page.Params.donation_items }}
-        <div
-          class="lg:col-6 xl:col-4 
-          {{ if lt $index ( sub ( $page.Params.donation_items | len )  2) }}2xl:pr-6 lg:border-r lg:border-r-border dark:border-darkmode-border border-b-0{{ end }}
-          {{ if eq $index ( sub ( $page.Params.donation_items | len )  2) }}2xl:px-6 xl:border-r xl:border-r-border dark:border-darkmode-border border-b-0{{ end }}
-          {{ if eq $index ( sub ( $page.Params.donation_items | len )  1)}}2xl:pl-6{{ end }}">
-          <div
-            class="ticket-item 
-            {{ if lt $index ( sub ( $page.Params.donation_items | len )  2) }}bg-light dark:bg-darkmode-light/90 text-text-dark dark:text-darkmode-text-dark{{ end }}
-            {{ if eq $index ( sub ( $page.Params.donation_items | len )  2)}} bg-dark/10 dark:bg-darkmode-light/90 text-text-dark dark:text-darkmode-text-dark{{ end }}
-            {{ if eq $index ( sub ( $page.Params.donation_items | len )  1) }}bg-dark dark:bg-light text-white! dark:text-text-dark!{{ end }}">
-            <div class="ticket-item-header">
-              <h3>{{ $donation.title}}</h3>
-              <p class="{{ if eq $index ( sub ( $page.Params.donation_items | len )  1) }}text-text-light dark:!text-text-dark{{ end }}">{{ $donation.description }}</p>
-            </div>
-            <div class="ticket-item-body">
-              <h2>
-                ${{ $donation.price }}
-                
-              </h2>
-                
-              <ul>
-                {{ range $donation.donation_feature }}
-                <li>
-                  <svg
-                    width="20"
-                    height="20"
-                    viewBox="0 0 20 20"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <g opacity="0.5">
-                      <path
-                        d="M3.125 11.25L7.5 15.625L17.5 5.625"
-                        class="stroke-dark dark:stroke-darkmode-dark {{ if eq $index ( sub ( $page.Params.donation_items | len )  1) }}stroke-light dark:stroke-darkmode-light{{ end }}"
-                        stroke-width="1.8"
-                        stroke-linecap="round"
-                        stroke-linejoin="round" />
-                    </g>
-                  </svg>
-                  {{ . }}
-                </li>
-                {{ end }}
-              </ul>
-            </div>
-            <div class="ticket-item-footer">
-              {{ partial "checkout-button" . }}
-            </div>
-          </div>
-        </div>
-        {{ end }}
-      {{end}}
+      {{ partial "donations-list.html" $page.Params.donation_items }}
     {{ end }}
-  </div>
+
+</div>
   
