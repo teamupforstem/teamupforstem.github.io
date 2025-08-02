@@ -1,9 +1,9 @@
 /* section style */
 .section {
-  @apply pt-24 xl:pt-28;
+  @apply pt-12 xl:pt-14;
 }
 .section-sm {
-  @apply pt-16 xl:pt-20;
+  @apply pt-8 xl:pt-10;
 }
 
 /* container */
