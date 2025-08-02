@@ -3,20 +3,21 @@ draft: false
 title: 'FIRST Tech Challenge'
 meta_title: ""
 description: FIRST® Tech Challenge students work together with their mentors to design and build robots to compete in an exciting challenge.
-image: /images/placeholder.jpg
+image: /images/robotics/ftc.jpg
 date: 2022-06-01T05:00:00.000Z
 competition_group: Robotics
-donations:
   
+competition_details: "Please visit the website maintained by the FTC Team #26502, <a href='https://brbrobotics.org/'>BRB Robotics</a> [<a href='https://brbrobotics.org/'>https://brbrobotics.org/</a>]."
+
 event_list:
- - time: "September"
-   short_details: 'Kick-Off'
- - time: "September - January"
-   short_details: 'Build & Practice Season'
- - time: "December - March"
-   short_details: 'State/Regional Championships'
- - time: "April 2026"
-   short_details: 'FIRST Championship'
+    - time: "August 5th, 2025. 5:00 PM to 7:00 PM."
+      short_details: 'UNEARTHED Season Kickoff Party'
+      price: "25"
+      stripe_id: 'price_1RrPKLH5BRP1wdS74v4L3CVU'
+    - time: "August 9th, 16th, and 23rd, 2025. 1:00 PM to 4:00 PM."
+      short_details: 'Build, Code, Compete!'
+      price: "199.99"
+      stripe_id: "price_1RnoFRH5BRP1wdS75igV7ag7"
   
 donation_items: 
   - title: "Just Quacking By"
@@ -67,27 +68,6 @@ donation_items:
       - "2 more social media posts."
       - "Your logo on our 2' x 3' competition pit banner."
 
-
-member: 
- name: "Member 1"
- name: "Member 2"
-points:
- - title: "Captivating Start"
-   content: "In the heart of the bustling city, a vibrant this community thrives, filled with creativity."
-   icon: "/images/events/single/key-points-icon/icon-1.svg"
-   icon_darkmode: "/images/events/single/key-points-icon/icon-1-darkmode.svg"
- - title: "Organized Flow"
-   content: "In the heart of the bustling city, a vibrant this community thrives, filled with creativity."
-   icon: "/images/events/single/key-points-icon/icon-2.svg"
-   icon_darkmode: "/images/events/single/key-points-icon/icon-2-darkmode.svg"
- - title: "Captivating Start"
-   content: "In the heart of the bustling city, a vibrant this community thrives, filled with creativity."
-   icon: "/images/events/single/key-points-icon/icon-3.svg"
-   icon_darkmode: "/images/events/single/key-points-icon/icon-3-darkmode.svg"
- - title: "Captivating Start"
-   content: "In the heart of the bustling city, a vibrant this community thrives, filled with creativity."
-   icon: "/images/events/single/key-points-icon/icon-4.svg"
-   icon_darkmode: "/images/events/single/key-points-icon/icon-4-darkmode.svg"
 
 ---
 
