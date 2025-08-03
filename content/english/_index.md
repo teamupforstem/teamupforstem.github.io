@@ -13,28 +13,28 @@ hero:
 banner:
   title_start: "About Us"
   image: "/images/team-wide.png"
-  mission: "At Team Up For STEM, we are dedicated to supporting and promoting student participation in robotics, computer science, mathematics, and science competitions. <br><br> Our mission is to provide resources, mentorship, and opportunities that inspire creativity, critical thinking, and innovation for the next generation of STEM leaders."
+  mission: "At Team Up For STEM, we are dedicated to supporting and promoting student participation in robotics, computer science, mathematics, and science. <br><br> Our mission is to provide resources, mentorship, and opportunities that inspire creativity, critical thinking, and innovation for the next generation of STEM leaders."
 
 # Features
 features:
   title: "Everything we offer"
-  content: "Learn more about what we do and how to donate to our teams."
+  content: ""
   image: "/images/feature_image.png"
   items:  
     - title: "Robotics Competitions"
-      content: "For the 2025-2026 season, we form teams for various robotics competitions."
+      content: "FIRST Lego League, Aerial Drones, VEX IQ, FIRST Tech Challenge"
       button:
         enable: true
         label: "Learn More"
         link: "robotics"
     - title: "Mathematics Competitions"
-      content: "During the 2025-2026 season, we will additionally host mathematics competitions."
+      content: "Math Olympiads, AMC, Kangaroo"
       button:
         enable: true
         label: "Learn More"
         link: "math"
     - title: "Mentorship Opportunities"
-      content: "Our mentorship program connects students with experienced professionals and educators in STEM fields."
+      content: "Connecting students with experienced professionals and educators in STEM fields."
       button:
         enable: true
         label: "Learn More"

@@ -1,5 +1,8 @@
 /* Add your own custom styles here */
 
+a {
+  color: #1d29f9;
+}
 
 .member-image {
     height:475px;
