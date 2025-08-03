@@ -7,14 +7,14 @@
       <div class="row py-14">
         <div
           class="xl:col-5 xl:border-r xl:border-r-border dark:border-darkmode-border mb-4 xl:mb-0">
-          <p class="uppercase"></p>
+          <p></p>
           {{ .Params.competition_details | safeHTML }}
         </div>
         <div class="xl:col-7 pl-5 content">
           {{ partial "image" (dict "Src" .Params.image "Alt" "banner image" "DisplayXL" "520x" "DisplayLG" "425x" "DisplayMD" "360x" "Class" "mx-auto xl:sticky xl:top-32 size-full aspect-auto") }}
           {{ $eventList := .Params.event_list }}
           {{ range $index, $event := $eventList }}
-              <h3 class="text-sm uppercase">{{ $event.time }} &mdash; {{ $event.short_details | safeHTML }}</h3>
+              <h3 class="text-sm">{{ $event.time }} &mdash; {{ $event.short_details | safeHTML }}</h3>
               {{ if $event.price }}
                 <p> Suggested donation: ${{ $event.price | safeHTML }}</p>
                 <p> {{partial "checkout-button.html" .}} </p>

@@ -9,7 +9,7 @@
     >
       <div class="row justify-center items-center">
         <div class=" lg:col-8 mb-10 lg:mb-0">
-          <h2 class="uppercase text-h5 sm:text-h4 lg:text-h2 font-normal mb-6 leading-tight text-center lg:text-left">{{ .Title }}</h2>
+          <h2 class="text-h5 sm:text-h4 lg:text-h2 font-normal mb-6 leading-tight text-center lg:text-left">{{ .Title }}</h2>
           <p class="text-darkmode-text-light dark:text-text-light text-lg text-center lg:text-left">
             {{.Params.description}}
           </p>
@@ -17,7 +17,7 @@
         <div class="lg:col-4 flex justify-center items-center">
           {{ if  .Params.button.enable  }}
           <a href="/{{ .Params.button.link }}" class="group bg-dark dark:bg-darkmode-dark text-white dark:text-text-dark rounded-full flex justify-center items-center w-44 h-44 hover:bg-primary hover:text-white hover:dark:bg-darkmode-primary hover:dark:text-darkmode-text transition-all duration-300">
-            <div class="flex justify-center items-center gap-2 uppercase text-sm w-full hover:text-white" >
+            <div class="flex justify-center items-center gap-2 text-sm w-full hover:text-white" >
               <span>{{ .Params.button.label }}</span>
         
               <svg

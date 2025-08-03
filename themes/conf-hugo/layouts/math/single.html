@@ -14,7 +14,7 @@
       <div class="row py-14">
         <div
           class="xl:col-5 xl:border-r xl:border-r-border dark:border-darkmode-border mb-4 xl:mb-0">
-          <p class="uppercase">{{ T "basic" }}</p>
+          <p>{{ T "basic" }}</p>
         </div>
         <div class="xl:col-7 pl-5 content">
           {{ .Content | safeHTML }}
@@ -26,7 +26,7 @@
         class="row py-14 border-t border-t-border dark:border-darkmode-border">
         <div
           class="xl:col-5 xl:border-r xl:border-r-border dark:border-darkmode-border mb-4 xl:mb-0">
-          <p class="uppercase">{{ T "points" }}</p>
+          <p>{{ T "points" }}</p>
         </div>
         <div class="xl:col-7 pl-5">
           <div class="row g-4">
@@ -38,7 +38,7 @@
                   {{ partial "image" (dict "Src" .icon_darkmode "Alt" "event image" "Class" "w-12 h-12 block dark:hidden") "Size" "72x72" }}
 
 
-                  <h4 class="uppercase text-2xl mt-8 mb-3">{{ .title }}</h4>
+                  <h4 class="text-2xl mt-8 mb-3">{{ .title }}</h4>
                   <p class="font-light text-darkmode-text-light dark:text-text-light">
                     {{ .content }}
                   </p>
@@ -54,7 +54,7 @@
         class="row py-14 border-t border-t-border dark:border-darkmode-border">
         <div
           class="lg:col-5 lg:border-r lg:border-r-border dark:border-darkmode-border mb-4 lg:mb-0">
-          <p class="uppercase">{{ T "members" }}</p>
+          <p>{{ T "members" }}</p>
         </div>
         <div class="lg:col-7 pl-5">
           <div
@@ -86,7 +86,7 @@
                     {{ end }}
                   </ul>
                   <a href="{{ $member.RelPermalink }}" class="btn btn-icon">
-                    <span class="uppercase font-normal">Member details</span>
+                    <span class="font-normal">Member details</span>
                     <i class="fa fa-arrow-right text-xs"></i>
                   </a>
                 </div>

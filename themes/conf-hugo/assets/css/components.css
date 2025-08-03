@@ -13,7 +13,7 @@
 .section-header {
   @apply flex flex-col xl:flex-row justify-center xl:justify-between items-center xl:items-end pb-14 border-b border-border dark:border-darkmode-border;
   h2 {
-    @apply text-h5 sm:text-h3 md:text-h1-sm uppercase 2xl:w-6/12 text-center xl:text-left mb-5 xl:mb-0 leading-tight md:leading-[85px];
+    @apply text-h5 sm:text-h3 md:text-h1-sm 2xl:w-6/12 text-center xl:text-left mb-5 xl:mb-0 leading-tight md:leading-[85px];
   }
 
   p {
@@ -45,7 +45,7 @@
   @apply mb-8 border-b border-border dark:border-darkmode-border;
 }
 .table-of-content.custom #TableOfContents a {
-  @apply pb-3 text-text-dark dark:text-darkmode-text-dark inline-block w-10/12 lg:w-8/12 truncate  uppercase font-light;
+  @apply pb-3 text-text-dark dark:text-darkmode-text-dark inline-block w-10/12 lg:w-8/12 truncate font-light;
 }
 #TableOfContents {
   padding: 0 !important;
@@ -98,7 +98,7 @@
   .ticket-item-header {
     @apply flex flex-col; /* Header stays at the top */
     h3 {
-      @apply text-2xl uppercase mb-2;
+      @apply text-2xl mb-2;
     }
     p {
       @apply text-lg font-light text-darkmode-text-light dark:text-darkmode-text;
@@ -107,7 +107,7 @@
   .ticket-item-body {
     @apply flex-grow flex flex-col mb-8;
     h2 {
-      @apply text-h2 sm:text-h1-sm 2xl:text-h1 uppercase my-6 font-light;
+      @apply text-h2 sm:text-h1-sm 2xl:text-h1 my-6 font-light;
       span {
         @apply text-sm font-light;
       }
@@ -169,7 +169,7 @@
   div {
     @apply mt-10;
     h4 {
-      @apply text-2xl text-text-dark dark:text-darkmode-text uppercase mb-2;
+      @apply text-2xl text-text-dark dark:text-darkmode-text mb-2;
     }
     p {
       @apply font-light text-darkmode-text-light dark:text-text-light;
@@ -187,10 +187,10 @@
   .page-title {
     @apply xl:col-8 mb-8 xl:mb-0 xl:pr-0;
     span {
-      @apply uppercase text-lg font-light;
+      @apply text-lg font-light;
     }
     h1 {
-      @apply text-h3 sm:text-h2-sm xl:text-h1-sm 2xl:text-h1-lg leading-tight uppercase font-normal mt-6;
+      @apply text-h3 sm:text-h2-sm xl:text-h1-sm 2xl:text-h1-lg leading-tight font-normal mt-6;
     }
   }
   .page-meta {
@@ -207,10 +207,10 @@
 .footer-links {
   @apply justify-between;
   h2 {
-    @apply mb-4 xl:mb-8 text-2xl lg:text-xl font-normal leading-7 uppercase;
+    @apply mb-4 xl:mb-8 text-2xl lg:text-xl font-normal leading-7;
   }
   ul {
-    @apply flex flex-col uppercase text-base-sm md:text-base;
+    @apply flex flex-col text-base-sm md:text-base;
     li {
       @apply my-3 inline-block;
       a {
