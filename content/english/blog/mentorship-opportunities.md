@@ -7,21 +7,21 @@ date: 2025-07-09T05:00:00Z
 image: "/images/mentorship.png"
 card_image: "/images/mentorship.png"
 categories: ["Technology", "Data"]
-author: "Sam Wilson"
+author: "Ana Nora Evans"
 tags: ["technology", "tailwind"]
 comment:
   enable: false
 ---
 
-## MENTORING THE NEXT GENERATION IN STEM
+## Mentoring the Next STEM Generation
 
 Mentors provide guidance, share expertise, and inspire innovation, helping students achieve their full potential. 
 
 {{< image src="/images/mentorship.png" class="w-full" >}}
 
-### Introducing the youth to STEM
+### Introducing STEM
 
 Mentorship opportunities provided by STEM competitions and the teamwork required to surpass such challenges allow for students to develop necessary STEM skills.
 
-{{< quote Title="Learning is experience. Everything else is just information." Author="ALbert Einstein" >}}
+{{< quote Title="Learning is experience. Everything else is just information." Author="Albert Einstein" >}}
 

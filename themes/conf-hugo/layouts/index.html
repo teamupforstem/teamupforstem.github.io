@@ -11,7 +11,6 @@
               {{ .title  | markdownify }}
             </h1>
           </div>
-
           {{/* Teams slide start */}}
           <div
             class="flex justify-between items-center bg-dark py-5 px-3 gap-2 flex-row">
@@ -38,7 +37,7 @@
                 {{ range .teams }}
                   <div
                     class="swiper-slide flex gap-1 sm:gap-1 justify-center whitespace-nowrap">
-                    <p class="text-lg font-light uppercase whitespace-nowrap">
+                    <p class="text-lg font-light whitespace-nowrap">
                       {{ . }}
                     </p>
                   </div>
@@ -81,13 +80,13 @@
             class="lg:col-6 pt-10 lg:border-r xl:border-r-border dark:border-darkmode-border">
             <div class="pr-0 lg:pr-16">
               <h2
-                class="text-h3 sm:text-h2 2xl:text-h2-xl uppercase leading-tight 2xl:leading-none font-medium mb-0">
+                class="text-h3 sm:text-h2 2xl:text-h2-xl leading-tight 2xl:leading-none font-medium mb-0">
                 {{ .title_start | markdownify }}
               </h2>
               <div
                 class="2xl py-2 flex flex-col md:flex-row border-b border-border dark:border-darkmode-border 2xl:border-b-0">
                 <p
-                    class="font-light uppercase leading-7 text-darkmode-text-light dark:text-text-light">
+                    class="font-light leading-7 text-darkmode-text-light dark:text-text-light">
                     {{ .mission | markdownify }}
                   </p>
                 </div>
@@ -148,8 +147,10 @@
                   py-10">
                   <div class="sm:col-4 md:col-6 p-0 mb-4 sm:mb-0 ml-3 sm:ml-0">
                     <h3
-                      class="uppercase text-xl md:text-2xl md:w-7/12 sm:pl-2 xl:pl-0">
-                      {{ $item.title }}
+                      class="text-xl md:text-2xl md:w-7/12 sm:pl-2 xl:pl-0">
+                      <a
+                        href="{{ $item.button.link }}">
+                     {{ $item.title }}</a>
                     </h3>
                   </div>
                   <div class="sm:col-8 md:col-6">
@@ -163,7 +164,7 @@
                         href="{{ $item.button.link }}"
                         class="btn btn-icon mt-4 px-0">
                         <span class="sr-only">{{ $item.title }}</span>
-                        <span class="!ml-0 uppercase font-normal"
+                        <span class="!ml-0 font-normal"
                           >{{ $item.button.label }}</span
                         >
                         <i class="fa fa-arrow-right text-xs"></i>
@@ -193,7 +194,7 @@
             <div
               class="xl:col-4 xl:pr-10 text-center xl:text-left mb-10 xl:mb-0 flex flex-col justify-center xl:justify-stretch items-center xl:items-stretch">
               <div class="xl:sticky xl:top-32 2xl:pr-10">
-                <h2 class="text-h3 md:text-h1-sm uppercase mb-5 leading-tight">
+                <h2 class="text-h3 md:text-h1-sm mb-5 leading-tight">
                   {{ .title }}
                 </h2>
                 <p
@@ -352,10 +353,10 @@
                     <circle cx="36" cy="12" r="12" fill="white" />
                   </svg>
                 </span>
-                <h3 class="uppercase text-2xl font-normal mt-6 mb-5">
+                <h3 class="text-2xl font-normal mt-6 mb-5">
                   {{ $item.title }}
                 </h3>
-                <p class="uppercase font-light">
+                <p class="font-light">
                   {{ $item.content }}
                 </p>
               </div>
