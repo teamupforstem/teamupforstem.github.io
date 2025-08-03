@@ -70,12 +70,3 @@ donation_items:
 
 
 ---
-
-{{< image src="images/robotics/event-experience.jpg" caption="" alt="alter-text" height="" width="" position="center" command="fill" option="q100" class="img-fluid" title="image title"  webp="false" >}}
-
-
-{{< basic-overview title="Code, Design, and Compete with Robots!" >}}
-Teams program classroom-scale robots to follow autonomous commands before student drivers take control in two-on-two matches. 
-
-On and off the field, students develop STEM skills, engage in community outreach, practice engineering innovation, and build confidence to help them succeed.
-{{< /basic-overview >}}
