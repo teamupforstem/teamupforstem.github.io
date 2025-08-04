@@ -47,18 +47,20 @@ donation_items:
       - "All Innovation Champion Benefits."
       - "Your logo on our 2' x 3' competition pit banner."
 
-competition_details: '<p>Friendly competition is at the heart of Challenge, as teams of students grades 4-8 engage in research, problem-solving, coding, and engineering - building and programming a LEGO robot that navigates the missions of a robot game.</p>  <p>
+competition_details: '<p>Friendly competition is at the heart of FLL Challenge, as teams of students in grades 4-8 engage in research, problem-solving, coding, and engineering to build and program a LEGO robot that navigates the missions of a robot game.</p> <p></p> <p>
       Each team in the FIRST LEGO League is judged on four key aspects:
     </p>
     <ul style="text-align: left; margin: 20px 0; padding: 0 20px; ">
-      <li><strong>Robot Design</strong>: The creativity, functionality, and reliability of the team’s robot.</li>
-      <li><strong>Core Values</strong>: How well the team demonstrates teamwork, inclusion, and professionalism.</li>
-      <li><strong>Innovation Project</strong>: The originality and feasibility of the team’s solution to a real-world problem.</li>
-      <li><strong>Robot Performance</strong>: The ability of the robot to successfully complete missions in the Robot Game.</li>
-    </ul><p>All team members must make significant contributions on all aspects of the competition.</p>
-    <p>Teams present their work during the <strong>judging session</strong>. Judges evaluate each team 
-      based on three of the four aspects of the competition: <strong>Robot Design</strong>, <strong>Core Values</strong>, <strong>Innovation Project</strong>. Teams must not only excel in technical and innovative skills but also demonstrate outstanding teamwork, 
-      creativity, and professionalism.</p><p>
+      <li><strong>Robot Design</strong>: Creativity, functionality, and reliability of the team’s robot.</li>
+      <li><strong>Core Values</strong>: Demonstrating teamwork, inclusion, and professionalism.</li>
+      <li><strong>Innovation Project</strong>: Originality and feasibility of the team’s solution to a real-world problem.</li>
+      <li><strong>Robot Performance</strong>: Ability of the robot to successfully complete missions in the Robot Game.</li>
+    </ul><p>All team members are expected to make significant contributions on all aspects of the competition.</p>
+    <p>
+    Teams must not only excel in technical and innovative skills but also demonstrate outstanding teamwork, creativity, and professionalism.</p>
+  <p>
+    Teams present their work during the <strong>judging session</strong> where they will be evaluated on <strong>Robot Design</strong>, <strong>Core Values</strong>, and their <strong>Innovation Project</strong>. </p>
+      <p></p><p>
       <strong>Note:</strong> Students who are solely interested in coding or robot building and are not eager to contribute to all aspects of the competition, 
       such as teamwork, innovation, and core values, may find this competition unsuitable for their interests. FIRST LEGO League celebrates 
       holistic participation and collaboration in every aspect of the event.</p>'
