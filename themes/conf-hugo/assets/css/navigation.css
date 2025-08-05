@@ -1,5 +1,5 @@
 .header {
-  @apply bg-body dark:bg-darkmode-body pt-7 sm:pt-8 uppercase;
+  @apply bg-body dark:bg-darkmode-body pt-7 sm:pt-8;
 }
 /* navbar items */
 .navbar {
