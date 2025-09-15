@@ -9,24 +9,26 @@ competition_group: Math
   
 competition_details: "The Math Olympiads for Elementary and Middle Schools (MOEMS®) is a globally recognized math competition program aimed at fostering problem-solving skills, mathematical creativity, and ingenuity among students. Established in 1979, MOEMS® serves over 120,000 participants annually from all 50 U.S. states and 39 countries. The program offers contests for two divisions: Grades 4-6 (Division E) and Grades 6-8 (Division M), with teams of up to 35 students. MOEMS® provides both paper-based and online test formats, making it accessible for traditional and remote settings. It emphasizes teaching multiple strategies for innovative problem-solving in a fun and challenging environment."
 
+registration_form: "https://form.jotform.com/252576801183055"
+
 event_list:
-    - time: "November 10, 2025 – December 1, 2025. Exact day and time to be determined."
+    - time: "Sunday, November 16, 2025 – 4:30 PM."
       short_details: 'Contest 1'
       price: "25"
       stripe_id: 'price_1Rs0vWH5BRP1wdS7iEErr5rI'
-    - time: "December 8, 2025 – December 29, 2025. Exact day and time to be determined."
+    - time: "Sunday, December 14, 2025 – 4:30 PM."
       short_details: 'Contest 2'
       price: "25"
       stripe_id: 'price_1Rs0vWH5BRP1wdS7iEErr5rI'
-    - time: "January 5, 2026 – January 26, 2026. Exact day and time to be determined."
+    - time: "Sunday, January 25, 2026 – 4:30 PM."
       short_details: 'Contest 3'
       price: "25"
       stripe_id: 'price_1Rs0vWH5BRP1wdS7iEErr5rI'
-    - time: "February 2, 2026 – February 23, 2026. Exact day and time to be determined."
+    - time: "Sunday, February 22, 2026 – 4:30 PM."
       short_details: 'Contest 4'
       price: "25"
       stripe_id: 'price_1Rs0vWH5BRP1wdS7iEErr5rI'
-    - time: "March 2, 2026 – March 23, 2026. Exact day and time to be determined."
+    - time: "Sunday, March 15, 2026 - 4:30 PM."
       short_details: 'Contest 5'
       price: "25"
       stripe_id: 'price_1Rs0vWH5BRP1wdS7iEErr5rI'
