@@ -6,13 +6,13 @@
       <div
         class="xl:col-5 xl:border-r xl:border-r-border dark:border-darkmode-border mb-4 xl:mb-0">
         <p></p>
-        {{ .Params.competition_details | safeHTML }}
+        {{ .Content | safeHTML }}
       </div>
       <div class="xl:col-7 pl-5 content">
         {{ with .Params.registration_fee }}
           <p>
-            One-time registration fee: $35.<br>
-            Please register you contestant before {{ .duedate }} 
+            Registration fee: ${{ .price }}.<br>
+            Please register you contestant before {{ .Params.duedate }} 
             <a href="{{ .registrationform }}" class="text-primary hover:underline" target="_blank" rel="noopener">
               here!
             </a>
