@@ -6,27 +6,34 @@ description: "MOEMS® is an exciting global math competition that inspires creat
 image: 
 date: 2022-06-01T05:00:00.000Z
 competition_group: Math
-  
-competition_details: "The Math Olympiads for Elementary and Middle Schools (MOEMS®) is a globally recognized math competition program aimed at fostering problem-solving skills, mathematical creativity, and ingenuity among students. Established in 1979, MOEMS® serves over 120,000 participants annually from all 50 U.S. states and 39 countries. The program offers contests for two divisions: Grades 4-6 (Division E) and Grades 6-8 (Division M), with teams of up to 35 students. MOEMS® provides both paper-based and online test formats, making it accessible for traditional and remote settings. It emphasizes teaching multiple strategies for innovative problem-solving in a fun and challenging environment."
 
+short_description: "MOEMS® (Math Olympiads for Elementary and Middle Schools) is an international math competition that develops students’ problem-solving skills and mathematical creativity through engaging, challenging contests for Grades 4–8."
+
+registration_fee:
+  price: "35"
+  duedate: "November 1, 2025"
+  message: "The registration fees are utilized to cover the costs associated with team registration for MOEMS and the administrative tasks required to manage the contests. This fee is a one-time payment for the 2025-2026 academic year. Registrations after December 1 are accepted if there are spots left on the team."
+  registrationform: "https://form.jotform.com/252576801183055"
+
+event_message: "Please pay for each contest you plan to attend at least a week before the contest. The contest fees are used to cover the proctors' compensation and other costs related to running the contest."
 event_list:
-    - time: "November 10, 2025 – December 1, 2025. Exact day and time to be determined."
+    - time: "Sunday, November 16, 2025 – 4:30 PM."
       short_details: 'Contest 1'
       price: "25"
       stripe_id: 'price_1Rs0vWH5BRP1wdS7iEErr5rI'
-    - time: "December 8, 2025 – December 29, 2025. Exact day and time to be determined."
+    - time: "Sunday, December 14, 2025 – 4:30 PM."
       short_details: 'Contest 2'
       price: "25"
       stripe_id: 'price_1Rs0vWH5BRP1wdS7iEErr5rI'
-    - time: "January 5, 2026 – January 26, 2026. Exact day and time to be determined."
+    - time: "Sunday, January 25, 2026 – 4:30 PM."
       short_details: 'Contest 3'
       price: "25"
       stripe_id: 'price_1Rs0vWH5BRP1wdS7iEErr5rI'
-    - time: "February 2, 2026 – February 23, 2026. Exact day and time to be determined."
+    - time: "Sunday, February 22, 2026 – 4:30 PM."
       short_details: 'Contest 4'
       price: "25"
       stripe_id: 'price_1Rs0vWH5BRP1wdS7iEErr5rI'
-    - time: "March 2, 2026 – March 23, 2026. Exact day and time to be determined."
+    - time: "Sunday, March 15, 2026 - 4:30 PM."
       short_details: 'Contest 5'
       price: "25"
       stripe_id: 'price_1Rs0vWH5BRP1wdS7iEErr5rI'
@@ -65,3 +72,11 @@ donation_items:
       - "Three thank you social media posts"
 
 ---
+
+<p>The Math Olympiads for Elementary and Middle Schools (MOEMS®) is a globally recognized program that builds problem-solving skills, mathematical creativity, and perseverance. Founded in 1979, MOEMS® now serves over 120,000 students each year across all 50 U.S. states and 39 countries. It offers two divisions—Division E (Grades 4–6) and Division M (Grades 6–8)—with teams of up to 35 students.</p>
+
+<p>MOEMS® contests are administered at Team Up for STEM in a paper-based format, where students receive printed problem sheets and record answers on paper during a proctored session. Each contest consists of 5 problems to be completed individually within 30 minutes, with no calculators allowed unless specifically permitted by the organizer. Teams (up to 35 students) meet in person, follow standardized instructions, and submit their papers for scoring—1 point per correct answer—contributing to each student’s season total out of 25 points across the five contests. </p>
+
+<p>Is this right for my child? Try the sample tests at <a href="https://moems.org/sample/" target="_blank" rel="noopener">https://moems.org/sample/</a> to gauge interest and fit.</p>
+
+<p>How do we prepare? You can use the official MOEMS® <a href="https://moems.org/moems-shops/">practice materials and past problems</a>, form a study group, and practice regularly with timed sets. Focus on learning multiple solution strategies and reviewing mistakes. Many families also supplement with problem-solving books and math circles. For local support, <a href="https://blueridgeboost.com/">Blue Ridge Boost</a> offers in-person preparation <a href="https://blueridgeboost.com/classes/math/">classes</a> that cover problem-solving techniques, contest strategies, and targeted practice.</p>
