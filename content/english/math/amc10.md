@@ -9,6 +9,8 @@ competition_group: Math
   
 competition_details: "AMC 10 is a 25-question, 75-minute multiple-choice math contest covering high school algebra, geometry, number theory, and combinatorics. It’s intended for students in grades 10 and below (typically grades 9–10; strong 7th–8th graders may also participate)."
 
+weight: 4
+
 registration_fee:
   price: "35"
   duedate: "November 1, 2025."

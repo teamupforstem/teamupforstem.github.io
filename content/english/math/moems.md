@@ -7,6 +7,8 @@ image:
 date: 2022-06-01T05:00:00.000Z
 competition_group: Math
 
+weight: 2
+
 short_description: "MOEMS® (Math Olympiads for Elementary and Middle Schools) is an international math competition that develops students’ problem-solving skills and mathematical creativity through engaging, challenging contests for Grades 4–8."
 
 registration_fee:

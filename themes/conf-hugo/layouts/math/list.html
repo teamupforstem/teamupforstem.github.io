@@ -3,7 +3,7 @@
     <div class="container">
       {{ partial "page-header" . }}
       
-      {{ partial "components/events-card.html" (dict "List" .RegularPages) }}
+      {{ partial "components/events-card.html" (dict "List" (sort .RegularPages "Weight")) }}
 
     </div>
   </section>
