@@ -6,6 +6,8 @@ description: ""
 image: 
 date: 2022-06-01T05:00:00.000Z
 competition_group: Math
+
+weight: 3
   
 competition_details: "AMC 8 is a 25-question, 40-minute multiple-choice math contest that focuses on problem-solving and logical reasoning. It’s designed for middle schoolers, with participation recommended for students in grades 6–8 (strong 5th graders may also take it)"
 
