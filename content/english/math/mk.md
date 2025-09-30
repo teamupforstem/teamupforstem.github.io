@@ -7,6 +7,8 @@ image:
 date: 2022-06-01T05:00:00.000Z
 competition_group: Math
 
+weight: 1
+
 competition_details: "Math Kangaroo is an international math competition for students in grades 1–12 that promotes logical reasoning and problem-solving through engaging, multiple-choice challenges held annually in a friendly, low-stress environment."
 
 registration_fee:
