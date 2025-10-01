@@ -15,7 +15,7 @@ registration_fee:
   price: "35"
   duedate: "January 10, 2025."
   message: "The registration fees are utilized to cover the costs associated with team registration with Mathematical Association of America and the administrative tasks required to manage the contest."
-  registrationform: "https://form.jotform.com/252576801183055"
+  registrationform: "https://pci.jotform.com/form/252704396579066"
 
 event_list:
     - time: "January 24, 2026 at 2:00 PM."
