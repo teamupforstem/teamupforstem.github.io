@@ -22,15 +22,4 @@ In the VEX IQ Competition teams of students are tasked with designing and buildi
 VEX Robotics hosts the world’s largest robotics competition for students all over the world to compete against one another using a robot of their own design. In the VEX IQ Competition, classroom STEM concepts are put to the test as students learn lifelong skills in teamwork, leadership, communications, and more. Tournaments to determine the best teams are held year-round at the regional, state, and national levels and culminate at the VEX Robotics World Championship each April. 
 </p>
 "
-
-competition_details: '<p>The VEX IQ competition guides students under age 16 through the full design process, encouraging creativity, perseverance, and strategic thinking as teams start from scratch with a set of challenges and a 6&#39; x 8&#39; field of scoring objects.</p> <p>
-      From the construction to control of their own robot, students must work together to complete the following tasks:</p>
-      <ul style="text-align: left; margin: 20px 0; padding: 0 20px; ">
-        <li><strong>Robot Design:</strong> Using VEX plastic construction pieces, students research, model, and build the robot that they will rely on through each endeavor.</li>
-        <li><strong>Teamwork Challenge:</strong> Students collaborate to create a strategy that plays to the strengths of two robots and completes the Robot Game missions.</li>
-        <li><strong>Driving Skills Matches:</strong> The team must apply their thought out game plan in manipulating field elements to score points before their time runs out.</li>
-        <li><strong>Autonomous Coding Skills Matches:</strong> The robot is sent off on its own, trusting rigorously tested programs to carefully complete point-scoring objectives.</li>
-        <li><strong>Engineering Notebook:</strong> The record of the team&#39s ideas, triumphs, and lessons, displaying their ability to execute the engineering design process.</li>
-      </ul>'
-
 ---
