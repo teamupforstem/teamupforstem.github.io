@@ -6,39 +6,10 @@ description: Supported by the <a href="https://recf.org/teams/competition/aerial
 image: /images/placeholder.jpg
 date: 2023-06-01T05:00:00.000Z
 competition_group: Robotics
+price: 199.99
+   
+form: "https://form.jotform.com/252917747222057"
 
-donation_items_temp: 
-  - title: "basic donation"
-    description: "For newcomers and those wanting a taste of fun at our conference event."
-    price: "25"
-    stripe_id: price_1Rj2rRH5BRP1wdS7iu5fnNqI
-    donation_feature:
-      - "Access to keynote presentations"
-      - "Entry to the digital design showcase"
-      - "Participation in one hands-on workshop"
-      - "Digital goodie bag with resources"
-
-  - title: "pro donation"
-    description: "For newcomers and those wanting a taste of fun at our conference event."
-    price: "50"
-    stripe_id: price_1Rj2rGH5BRP1wdS7goMRbMam
-    stripe_idold: price_1Rj26zHKFjE78McC4sSepJd4
-    donation_feature:
-      - "Access to keynote presentations"
-      - "Entry to the digital design showcase"
-      - "Participation in one hands-on workshop"
-      - "Digital goodie bag with resources"
-  - title: "vip donation"
-    description: "For newcomers and those wanting a taste of fun at our conference event."
-    price: "75"
-    stripe_id: price_1Rj277HKFjE78McCya6ooTFM
-    donation_feature:
-      - "Access to keynote presentations"
-      - "Entry to the digital design showcase"
-      - "Participation in one hands-on workshop"
-      - "Digital goodie bag with resources"
-
-      
 event_list:
  - time: "June 2025"
    short_details: 'Mission 2026 Season Opens for Team Registration'
@@ -77,6 +48,13 @@ The competition environment mirrors the real world, requiring teamwork, critical
 
 {{< image src="images/robotics/drones.png" caption="" alt="alter-text" height="" width="" position="center" command="fill" option="q100" class="img-fluid" title="image title"  webp="false" >}}
 
+competition_details: "<p>The Robotics Education & Competition Foundation's Aerial Drone Competition provides a unique hands-on learning experience, fostering crucial STEM skills including drone piloting, programming, and problem-solving.
+</p><p>
 Teams learn about drones, flight principles, programming, documentation, and communication skills while expanding their understanding of and building interest in drone-related workforce and career opportunities. 
-
+</p><p>
 Teams compete in four missions: Teamwork, Piloting, Autonomous Flight, and Communications.
+</p><p>
+Aerial Drone competition is open to grades 3 and above. Team UP for STEM organizes elementary, middle, and high school teams. Recommended team size: 2 to 4.
+</p>"
+
+---
