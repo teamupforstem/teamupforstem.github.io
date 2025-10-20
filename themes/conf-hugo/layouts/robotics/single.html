@@ -1,38 +1,53 @@
 {{ define "main" }}
-  <section class="section">
-    <div class="container">
-      {{ partial "page-header" . }}
-      
-      <!-- Basic overview -->
-      <div class="row py-14">
-        <div
-          class="xl:col-5 xl:border-r xl:border-r-border dark:border-darkmode-border mb-4 xl:mb-0">
-          <p></p>
-          {{ .Params.competition_details | safeHTML }}
-        </div>
-        <div class="xl:col-7 pl-5 content">
-          {{ partial "image" (dict "Src" .Params.image "Alt" "banner image" "DisplayXL" "520x" "DisplayLG" "425x" "DisplayMD" "360x" "Class" "mx-auto xl:sticky xl:top-32 size-full aspect-auto") }}
-          {{ $eventList := .Params.event_list }}
-          {{ range $index, $event := $eventList }}
-              <h3 class="text-sm">{{ $event.time }} &mdash; {{ $event.short_details | safeHTML }}</h3>
-              {{ if $event.price }}
-                <p> Suggested donation: ${{ $event.price | safeHTML }}</p>
-                <p> {{partial "checkout-button.html" .}} </p>
-              {{ end}}
-          {{ end }}
-        </div>
+<section class="section">
+  <div class="container">
+    {{ partial "page-header" . }}
+    <div class="row py-14">
+      <div
+        class="xl:col-5 xl:border-r xl:border-r-border dark:border-darkmode-border mb-4 xl:mb-0">
+        <p></p>
+        {{ .Params.competition_details | safeHTML }}
+      </div>
+      <div class="xl:col-7 pl-5 content">
+        {{ with .Params.price }}
+          <p>
+            <b>Team dues: ${{ . }}/month.</b> The dues help cover the cost of competition registration, equipment, and materials.
+          </p>
+        {{ end }}
+        <h2 class="mt-8">Season Schedule</h2>
+        {{ $eventList := .Params.event_list }}
+        {{ range $index, $event := $eventList }}
+          <h3 class="text-sm">
+            {{ $event.time }} &mdash; {{ $event.short_details | safeHTML }}
+          </h3>
+        {{ end }}
+
+        {{ with .Params.form }}
+          <p>
+            <b>Ready to join?</b>
+
+          Please fill in this <a href="{{ . }}">registration form</a> to sign up for a team. 
+        </p>
+        {{ else }}
+          <p>
+            <b>Registration closed!</b> 
+          </p>
+        {{ end }}
+      </div>
     </div>
   </div>
-      </div>
+
+  {{/*  <div class="container">
+    <h2>Sponsorship Opportunities</h2>
+    <p>We welcome sponsorships to support our math programs.</p>
+    <p>
+      Sponsorships help us cover the costs of materials and resources needed
+      for our activities and initiatives.
+    </p>
+
+    <div class="row py-16 border-b border-border dark:border-darkmode-border gap-y-6">
+      {{ partial "donations-list.html" .Params.donation_items }}
     </div>
-    <div class="container">
-      <h2>Sponsorship Opportunities</h2>
-      <p>We welcome sponsorships to support our robotics programs.</p>
-      <p>Sponsorships help us cover the costs of materials, equipment, and resources needed for our activities and initiatives.</p>
-      
-      <div class="row py-16 border-b border-border dark:border-darkmode-border gap-y-6">
-        {{ partial "donations-list.html" .Params.donation_items }}
-      </div>
-    </div>
-  </section>
+  </div>  */}}
+</section>
 {{ end }}
