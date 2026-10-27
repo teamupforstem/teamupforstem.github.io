@@ -1,14 +1,13 @@
 ---
 # Hero
 hero:
-  title: 'Team up for STEM'
+  title: 'Team Up for STEM'
   teams:
    - " FIRST Tech Challenge"
-   - " FIRST Lego League"
-   - " Vex IQ"
-   - " Drones"
-   - " WRO"
-   - " Mathematics"
+   - " FIRST LEGO League Challenge"
+   - " World Robot Olympiad"
+   - " Math Kangaroo"
+   - " AMC 8/10/12"
 # Banner
 banner:
   title_start: "About Us"
@@ -17,22 +16,28 @@ banner:
 
 # Features
 features:
-  title: "Everything we offer"
+  title: "What we do"
   content: ""
   image: "/images/feature_image.png"
   items:  
     - title: "Robotics Competitions"
-      content: "FIRST Lego League, Aerial Drones, VEX IQ, FIRST Tech Challenge"
+      content: "FIRST LEGO League Challenge, FIRST Tech Challenge, World Robot Olympiad"
       button:
         enable: true
         label: "Learn More"
         link: "robotics"
-    - title: "Mathematics Competitions"
-      content: "Math Olympiads, AMC, Kangaroo"
+    - title: "Math Competitions"
+      content: "AMC 8/10/12, Math Kangaroo"
       button:
         enable: true
         label: "Learn More"
         link: "math"
+    - title: "After-school Programs"
+      content: "In-school, on-site, affordable STEM programs"
+      button:
+        enable: true
+        label: "Learn More"
+        link: "/placeholder"
     - title: "Mentorship Opportunities"
       content: "Connecting students with experienced professionals and educators in STEM fields."
       button:
