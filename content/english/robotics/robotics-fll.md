@@ -1,27 +1,27 @@
 ---
 draft: false
-title: 'FIRST Lego League Challenge'
+title: 'FIRST LEGO League Challenge'
 meta_title: ""
 description: FIRST® LEGO® League introduces STEM to children through fun, hands-on challenges using LEGO® technology.
-date: 2024-10-20T05:00:00.000Z
+date: 2026-11-10T05:00:00.000Z
 image: /images/placeholder.jpg
 competition_group: Robotics
 
 event_list:
- - time: "August 5th, 2025. 5:00 PM to 7:00 PM."
-   short_details: 'UNEARTHED Season Kickoff Party'
+ - time: "August 4th, 2026"
+   short_details: 'Season 2026/2027 Theme Kickoff: BIOGLOW'
    price: "25"
    stripe_id: price_1RrPKLH5BRP1wdS74v4L3CVU
- - time: "August 10, 17, 24, and 31, 2025. 12:30 PM to 3:30 PM."
-   short_details: 'Tryout practice sessions.'
-   price: "100"
-   stripe_id: price_1RrPQmH5BRP1wdS7ScOx78u4
- - time: "September 7 through October 26, 2025"
+#  - time: "August 10, 17, 24, and 31, 2025. 12:30 PM to 3:30 PM."
+#    short_details: 'Tryout practice sessions.'
+#    price: "100"
+#    stripe_id: price_1RrPQmH5BRP1wdS7ScOx78u4
+ - time: "September through October"
    short_details: 'Practice sessions, every Sunday from 12:30 PM to 3:30 PM'
    price: "300"
-   stripe_id: price_1RrPuuH5BRP1wdS7FrBQQiW8
- - time: "One of the first three weekends in November"
-   short_details: 'Compete in one regional qualifier'
+   stripe_id: price_1RrPuuH5BRP1wdS7FrBQQiW8 #unsure what these links are for but I am nervous to remove them. Asher thinks they were used in the past to register - Lain Oct 26
+#  - time: "One of the first three weekends in November"
+#    short_details: 'Compete in one regional qualifier'
 
 donation_items: 
   - title: "Robotics Advocate"
@@ -48,7 +48,7 @@ donation_items:
       - "Your logo on our 2' x 3' competition pit banner."
 
 competition_details: '<p>Friendly competition is at the heart of FLL Challenge, as teams of students in grades 4-8 engage in research, problem-solving, coding, and engineering to build and program a LEGO robot that navigates the missions of a robot game.</p> <p></p> <p>
-      Each team in the FIRST LEGO League is judged on four key aspects:
+      Each team in the FIRST LEGO League Challenge is judged on four key aspects:
     </p>
     <ul style="text-align: left; margin: 20px 0; padding: 0 20px; ">
       <li><strong>Robot Design</strong>: Creativity, functionality, and reliability of the team’s robot.</li>
@@ -65,7 +65,7 @@ competition_details: '<p>Friendly competition is at the heart of FLL Challenge, 
       such as teamwork, innovation, and core values, may find this competition unsuitable for their interests. FIRST LEGO League celebrates 
       holistic participation and collaboration in every aspect of the event.</p>'
 
-image: "images/events/robotics.jpg"
+# image: "images/events/robotics.jpg"
 ---
 
 
