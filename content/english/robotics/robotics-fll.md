@@ -3,13 +3,13 @@ draft: false
 title: 'FIRST LEGO League Challenge'
 meta_title: ""
 description: FIRST® LEGO® League introduces STEM to children through fun, hands-on challenges using LEGO® technology.
-date: 2026-11-10T05:00:00.000Z
+date: 2026-10-10T05:00:00.000Z
 image: /images/placeholder.jpg
 competition_group: Robotics
 
 event_list:
  - time: "August 4th, 2026"
-   short_details: 'Season 2026/2027 Theme Kickoff: BIOGLOW'
+   short_details: 'BIOGLOW Season Kickoff'
    price: "25"
    stripe_id: price_1RrPKLH5BRP1wdS74v4L3CVU
 #  - time: "August 10, 17, 24, and 31, 2025. 12:30 PM to 3:30 PM."

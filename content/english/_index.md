@@ -3,11 +3,11 @@
 hero:
   title: 'Team Up for STEM'
   teams:
-   - " FIRST Tech Challenge"
-   - " FIRST LEGO League Challenge"
-   - " World Robot Olympiad"
-   - " Math Kangaroo"
-   - " AMC 8/10/12"
+   - " FIRST Tech Challenge "
+   - " FIRST LEGO League "
+   - " World Robot Olympiad "
+   - " Math Kangaroo "
+   - " AMC 8/10/12 "
 # Banner
 banner:
   title_start: "About Us"
