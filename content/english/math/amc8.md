@@ -1,6 +1,6 @@
 ---
 draft: false
-title: 'Math AMC 8'
+title: 'AMC 8'
 meta_title: ""
 description: ""
 image: 
