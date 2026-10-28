@@ -13,13 +13,13 @@ competition_details: "AMC 8 is a 25-question, 40-minute multiple-choice math con
 
 registration_fee:
   price: "35"
-  duedate: "January 10, 2025."
+  duedate: "January 14, 2027."
   message: "The registration fees are utilized to cover the costs associated with team registration with Mathematical Association of America and the administrative tasks required to manage the contest."
   registrationform: "https://pci.jotform.com/form/252704396579066"
 
 event_list:
-    - time: "January 24, 2026 at 2:00 PM."
-      short_details: "AMC 8"
+    - time: "January 21-17, 2027"
+      short_details: "AMC 8 Competition Window"
 
 ---
 

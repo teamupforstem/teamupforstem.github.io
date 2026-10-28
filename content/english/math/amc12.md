@@ -13,15 +13,16 @@ competition_details: "The AMC 12 is a 25-question, multiple-choice high school m
 
 registration_fee:
   price: "35"
-  duedate: "November 1, 2025."
-  message: "The registration fees are utilized to cover the costs associated with team registration with Mathematical Association of America and the administrative tasks required to manage the contest."
+  duedate: "October 28, 2026."
+  message: "The registration fees are utilized to cover the costs associated with team registration with Mathematical Association of America and the administrative tasks required to manage the contest.
+  Registration for the AMC 12 is currentlty closed. Please contact us for details on registering for the next test."
   registrationform: "https://pci.jotform.com/form/252726615636159"
 
 
 event_list: 
-    - time: "November 5, 2025, 5:00 PM"
+    - time: "November 5"
       short_details: 'AMC 12 A'
-    - time: "November 13, 2025, 5:00 PM"
+    - time: "November 13"
       short_details: 'AMC 12 B'
 
 donation_items: 
