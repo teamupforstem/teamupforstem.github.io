@@ -3,7 +3,7 @@ draft: false
 title: 'FIRST LEGO League Challenge'
 meta_title: ""
 description: FIRST® LEGO® League introduces STEM to children through fun, hands-on challenges using LEGO® technology.
-date: 2026-10-10T05:00:00.000Z
+date: 2023-10-10T05:00:00.000Z
 image: /images/placeholder.jpg
 competition_group: Robotics
 
