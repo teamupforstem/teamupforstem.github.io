@@ -1,11 +1,10 @@
 ---
 draft: false
-title: 'After-school Programs'
+title: 'After-School Programs'
 meta_title: ""
-description: ""
+description: "Team Up for STEM offers after-school programs to encourage students to engage with STEM."
 image: 
 date: 2022-06-01T05:00:00.000Z
-competition_group: Math
 
 weight: 1
 
