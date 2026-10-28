@@ -17,7 +17,7 @@ event_list:
 #    price: "100"
 #    stripe_id: price_1RrPQmH5BRP1wdS7ScOx78u4
  - time: "September through October"
-   short_details: 'Practice sessions, every Sunday from 12:30 PM to 3:30 PM'
+   short_details: 'Weekly Practice'
    price: "300"
    stripe_id: price_1RrPuuH5BRP1wdS7FrBQQiW8 #unsure what these links are for but I am nervous to remove them. Asher thinks they were used in the past to register - Lain Oct 26
 #  - time: "One of the first three weekends in November"
