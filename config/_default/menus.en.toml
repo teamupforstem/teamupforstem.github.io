@@ -11,40 +11,6 @@ weight = 1
 name = "Competitions"
 weight = 2
 
-[[main]]
-weight = 5
-name = "More"
-
-[[main]]
-parent = "More"
-name = "Info"
-url = "/blog/"
-
-[[main]]
-parent = "More"
-name = "Team Budgets"
-url = "/blog/budgets/"
-
-
-
-[[main]]
-parent = "More"
-name = "Mentorship Opportunities"
-url = "/blog/mentorship-opportunities"
-
-
-[[main]]
-name = "Team"
-url = "/members/"
-weight = 3
-
-[[main]]
-name = "Donate"
-url = "/donations/"
-weight = 4
-
-
-
 
 [[main]]
 parent = "Competitions"
@@ -104,6 +70,46 @@ parent = "Competitions"
 name="-  AMC 12"
 url = "math/amc12"
 weight = 7
+
+
+[[main]]
+name = "After-School Programs"
+weight = 3
+url = "/afterschool/"
+
+
+[[main]]
+weight = 6
+name = "More"
+
+[[main]]
+parent = "More"
+name = "Info"
+url = "/blog/"
+
+[[main]]
+parent = "More"
+name = "Team Budgets"
+url = "/blog/budgets/"
+
+
+[[main]]
+parent = "More"
+name = "Mentorship Opportunities"
+url = "/blog/mentorship-opportunities"
+
+
+[[main]]
+name = "Team"
+url = "/members/"
+weight = 4
+
+[[main]]
+name = "Donate"
+url = "/donations/"
+weight = 5
+
+
 
 # footer menu
 [[footer]]
