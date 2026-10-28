@@ -1,6 +1,6 @@
 ---
 draft: false
-title: "Competitions"
+title: "Robotics Competitions"
 sub_title: "// Competition Schedule"
 meta_title: ""
 description: "Make a donation today and help our teams compete."
