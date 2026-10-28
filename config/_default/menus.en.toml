@@ -140,7 +140,7 @@ weight = 3
 [[footer_menu_quick_links]]
 name = "After-school Programs"
 url = "/afterschool"
-weight = 2\4
+weight = 2
 
 [[footer_menu_quick_links]]
 name = "Members"
