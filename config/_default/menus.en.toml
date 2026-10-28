@@ -48,56 +48,59 @@ weight = 4
 
 [[main]]
 parent = "Competitions"
-name="All"
+name="All Robotics Competitions"
 url = "robotics"
 weight = 1
 
-[[main]]
-parent = "Competitions"
-name="Vex IQ"
-url = "robotics/robotics-vexiq"
-weight = 2
 
 [[main]]
 parent = "Competitions"
-name="FIRST Lego League"
+name="All Math Competitions"
+url = "math"
+weight = 5
+
+
+[[main]]
+parent = "Competitions"
+name="   FIRST Lego League"
 url = "robotics/robotics-fll"
 weight = 3
 
 [[main]]
 parent = "Competitions"
-name="FIRST Tech Challenge"
+name="   FIRST Tech Challenge"
 url = "robotics/robotics-ftc"
 weight = 3
 
 [[main]]
 parent = "Competitions"
-name="Aerial Drones"
-url = "robotics/robotics-drones"
+name="   World Robot Olympiad"
+url = "robotics/robotics-WRO"
 weight = 4
 
-[[main]]
-parent = "Competitions"
-name="MOEMS"
-url = "math/moems"
-weight = 5
 
 [[main]]
 parent = "Competitions"
-name="Math Kangaroo"
+name="   Math Kangaroo"
 url = "math/mk"
 weight = 6
 
 [[main]]
 parent = "Competitions"
-name="AMC 8"
+name="   AMC 8"
 url = "math/amc8"
 weight = 7
 
 [[main]]
 parent = "Competitions"
-name="AMC 10"
+name="   AMC 10"
 url = "math/amc10"
+weight = 7
+
+[[main]]
+parent = "Competitions"
+name="   AMC 12"
+url = "math/amc12"
 weight = 7
 
 # footer menu
@@ -118,7 +121,7 @@ weight = 1
 
 [[footer_menu_quick_links]]
 name = "Competitions"
-url = "/events"
+url = "/robotics"
 weight = 2
 
 [[footer_menu_quick_links]]
