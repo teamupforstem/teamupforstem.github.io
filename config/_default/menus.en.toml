@@ -128,14 +128,24 @@ url = "/"
 weight = 1
 
 [[footer_menu_quick_links]]
-name = "Competitions"
+name = "Robotics Competitions"
 url = "/robotics"
 weight = 2
 
 [[footer_menu_quick_links]]
+name = "Math Competitions"
+url = "/math"
+weight = 3
+
+[[footer_menu_quick_links]]
+name = "After-school Programs"
+url = "/afterschool"
+weight = 2\4
+
+[[footer_menu_quick_links]]
 name = "Members"
 url = "/members"
-weight = 3
+weight = 5
 
 
 
