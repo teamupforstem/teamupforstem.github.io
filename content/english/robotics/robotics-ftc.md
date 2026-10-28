@@ -10,8 +10,8 @@ competition_group: Robotics
 competition_details: "Please visit the website maintained by the FTC Team #26502, <a href='https://brbrobotics.org/'>BRB Robotics</a> [<a href='https://brbrobotics.org/'>https://brbrobotics.org/</a>]."
 
 event_list:
-    - time: "August 5th, 2025. 5:00 PM to 7:00 PM."
-      short_details: 'UNEARTHED Season Kickoff Party'
+    - time: "August 4th, 2026"
+      short_details: 'BIOGLOW Season Kickoff'
       price: "25"
       stripe_id: 'price_1RrPKLH5BRP1wdS74v4L3CVU'
     - time: "August 9th, 16th, and 23rd, 2025. 1:00 PM to 4:00 PM."
