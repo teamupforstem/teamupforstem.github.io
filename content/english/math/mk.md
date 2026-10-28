@@ -18,9 +18,15 @@ registration_fee:
   registrationform: "https://pci.jotform.com/form/252714999666174"
 
 event_list:
-    - time: "November 16, 2025 at 4:00 PM"
+    - time: "September 15, 2026"
+      short_details: '2027 Registration Opens'
+    - time: "November 13-20, 2026"
       short_details: 'Team Competition'
-    - time: "March 19, 2026 at 5:00 PM"
+    - time: "December 31, 2026"
+      short_details: 'Regular Registration Deadline'
+    - time: "Febuary 1, 2027"
+      short_details: 'Late Registration Deadline'
+    - time: "March 18, 2027"
       short_details: 'Individual Competition'
     
 donation_items: 

@@ -19,9 +19,9 @@ registration_fee:
 
 
 event_list: 
-    - time: "November 5, 2025, 5:00 PM"
+    - time: "November 5"
       short_details: 'AMC 10 A'
-    - time: "November 13, 2025, 5:00 PM"
+    - time: "November 13"
       short_details: 'AMC 10 B'
 
 donation_items: 
