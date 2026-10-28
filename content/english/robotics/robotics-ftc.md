@@ -14,10 +14,10 @@ event_list:
       short_details: 'BIOGLOW Season Kickoff'
       price: "25"
       stripe_id: 'price_1RrPKLH5BRP1wdS74v4L3CVU'
-    - time: "August 9th, 16th, and 23rd, 2025. 1:00 PM to 4:00 PM."
-      short_details: 'Build, Code, Compete!'
-      price: "199.99"
-      stripe_id: "price_1RnoFRH5BRP1wdS75igV7ag7"
+    # - time: "August 9th, 16th, and 23rd, 2025. 1:00 PM to 4:00 PM."
+    #   short_details: 'Build, Code, Compete!'
+    #   price: "199.99"
+    #   stripe_id: "price_1RnoFRH5BRP1wdS75igV7ag7"
   
 donation_items: 
   - title: "Just Quacking By"
