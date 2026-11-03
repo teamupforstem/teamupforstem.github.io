@@ -3,24 +3,42 @@ draft: false
 title: 'After-School Programs'
 sub_title: "// On-site STEM Programs"
 meta_title: ""
-description: "Team Up for STEM offers after-school programs to encourage students to engage with STEM."
+description: "Bring hands-on learning and STEM exploration directly to your students with on-site, afer-school STEM programs."
 image: 
 date: 2022-06-01T05:00:00.000Z
 
-competition_details: "Math Kangaroo is an international math competition for students in grades 1–12 that promotes logical reasoning and problem-solving through engaging, multiple-choice challenges held annually in a friendly, low-stress environment."
+course_details: "Team Up For STEM offers engaging, hands-on after-school programs for students of a variety of ages and experience levels. 
 
-registration_fee:
-  price: "25"
-  duedate: "February 1, 2025."
-  message: "The registration fees are utilized to cover the costs of running the competitions."
-  registrationform: "https://pci.jotform.com/form/252714999666174"
+Programs are hosted on-site at your school, institution, or organization and can be tailored to fit your schedule, whether you're looking for a short-term program or year-round enrichment.
 
-event_list:
-    - time: "November 16, 2025 at 4:00 PM"
-      short_details: 'Team Competition'
-    - time: "March 19, 2026 at 5:00 PM"
-      short_details: 'Individual Competition'
-    
+We have course options across a variety of STEM subjects, including robotics, science, and coding. Select topics from program offerings below, or collaborate with us to develop a customized class that best fits your student community! Need some help deciding what would be best for your students? We can recommend topics for your age group and class sizes."
+
+
+robot_list:
+    - age: "Options for Elementary and Middle School"
+      short_details: 'SPIKE LEGO Robotics'
+    - age: "Lower Elementary (K-2nd)"
+      short_details: 'Indi Sphero Robotics'
+    - age: "Upper Elementary (2nd-5th)"
+      short_details: 'Sphero Bolt+ Robotics'
+    - age: "Options for Elementary and Middle School"
+      short_details: 'Aerial Drones'
+
+cs_list:
+    - age: "Lower Elementary (K-2nd)"
+      short_details: 'Scratch Jr Coding'
+    - age: "Upper Elementary (2nd-5th)"
+      short_details: 'Scratch Block Coding'
+    - age: "Elementary"
+      short_details: 'Coding Adventures with Code Monkey'
+    - age: "Options for Elementary and Middle School"
+      short_details: 'Introductory Python Coding'
+
+science_list:
+    - age: "Options for Elementary and Middle School"
+      short_details: 'Science Challenges'
+
+
 donation_items: 
 
 ---
