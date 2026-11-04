@@ -15,13 +15,13 @@ contact_us: "Contact our team to learn more about our programs, discuss your sch
 
 
 robot_list:
-    - age: "Options for Elementary and Middle School"
-      short_details: 'SPIKE LEGO Robotics'
+    - age: "Options for Elementary & Middle"
+      short_details: 'LEGO Robotics'
     - age: "Lower Elementary (K-2nd)"
-      short_details: 'Indi Sphero Robotics'
+      short_details: 'Sphero Indi Robotics'
     - age: "Upper Elementary (2nd-5th)"
       short_details: 'Sphero Bolt+ Robotics'
-    - age: "Options for Elementary and Middle School"
+    - age: "Options for Elementary & Middle"
       short_details: 'Aerial Drones'
 
 cs_list:
@@ -31,12 +31,18 @@ cs_list:
       short_details: 'Scratch Block Coding'
     - age: "Elementary"
       short_details: 'Coding Adventures with Code Monkey'
-    - age: "Options for Elementary and Middle School"
+    - age: "Upper Elementary (4th-5th) & Middle"
       short_details: 'Introductory Python Coding'
+    - age: "Middle and High School"
+      short_details: "Advanced Coding Courses"
 
 science_list:
-    - age: "Options for Elementary and Middle School"
+    - age: "Options for Elementary & Middle"
       short_details: 'Science Challenges'
+    - age: "Elementary"
+      short_details: 'Forces and Rube Goldberg Machines'
+    - age: "Elementary"
+      short_details: 'Paper Airplane Design Challenge'
 
 
 donation_items: 
