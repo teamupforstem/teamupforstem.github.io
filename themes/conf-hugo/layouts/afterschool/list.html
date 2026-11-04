@@ -7,6 +7,9 @@
         class="xl:col-5 xl:border-r xl:border-r-border dark:border-darkmode-border mb-4 xl:mb-0">
         <p></p>
         {{ .Params.course_details | safeHTML }}
+        <h2 class="mt-8">Ready to Team Up?</h2>
+        {{ .Params.contact_us | safeHTML }}
+        
       </div>
       <div class="xl:col-7 pl-5 content">
         {{ with .Params.price }}
@@ -14,9 +17,8 @@
             <b>Team dues: ${{ . }}/month.</b> The dues help cover the cost of competition registration, equipment, and materials.
           </p>
         {{ end }}
-        <h2 class="mt-8">Topics</h2>
-        <h3 class="mt-8">Robotics</h3>
-        <hr>
+        <h3 class="mt-8">Topics</h3>
+        <h4 class="mt-8">Robotics</h4>
         {{ $robotList := .Params.robot_list }} 
         {{/*  for simplicity, this has been left in the eventList format, with "event_list" replaced so it is easy to format in the same way as the other pages. Time is now Age */}}
         {{ range $index, $event := $robotList }}
@@ -25,8 +27,7 @@
           </h3>
         {{ end }}
         <hr>
-        <h3 class="mt-8">Computer Coding</h3>
-        <hr>
+        <h4 class="mt-8">Computer Coding</h4>
         {{ $csList := .Params.cs_list }} 
         {{ range $index, $event := $csList }}
           <h3 class="text-sm">
@@ -34,8 +35,7 @@
           </h3>
         {{ end }}
         <hr>
-        <h3 class="mt-8">Science</h3>
-        <hr>
+        <h4 class="mt-8">Science</h4>
         {{ $scienceList := .Params.science_list }} 
         {{ range $index, $event := $scienceList }}
           <h3 class="text-sm">

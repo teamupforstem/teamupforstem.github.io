@@ -15,6 +15,11 @@ Programs are hosted on-site at your school, institution, or organization and can
 
 We have course options across a variety of STEM subjects, including robotics, science, and coding. Select from our list of topics, or collaborate with us to develop a customized class that best fits your student community!"
 
+contact_us: "Contact our team to learn more about our programs, discuss your school or organization’s needs, and get information about pricing and availability. We’d love to work with you to create an experience that gets your students excited to learn, explore, and build. <p></p> 
+<a href="mailto:office@teamupforstem.org">office@teamupforstem.org</a>.<br>
+<p></p>
+<a href="tel:%28434%29%20688-6119">(434) 688-6119</a>"
+
 
 robot_list:
     - age: "Options for Elementary and Middle School"
