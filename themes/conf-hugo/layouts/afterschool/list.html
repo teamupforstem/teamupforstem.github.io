@@ -16,24 +16,24 @@
         {{ end }}
         <h2 class="mt-8">Robotics Topics</h2>
         {{ $robotList := .Params.robot_list }} 
-        {{/*  for simplicity, this has been left in the eventList format, with "event_list" replaced so it is easy to format in the same way as the other pages  */}}
+        {{/*  for simplicity, this has been left in the eventList format, with "event_list" replaced so it is easy to format in the same way as the other pages. Time is now Age */}}
         {{ range $index, $event := $robotList }}
           <h3 class="text-sm">
-            {{ $event.age }} &mdash; {{ $event.short_details | safeHTML }}
+            {{ $event.short_details }} &mdash; {{ $event.age | safeHTML }}
           </h3>
         {{ end }}
         <h2 class="mt-8">Computer Coding Topics</h2>
         {{ $csList := .Params.cs_list }} 
         {{ range $index, $event := $csList }}
           <h3 class="text-sm">
-            {{ $event.age }} &mdash; {{ $event.short_details | safeHTML }}
+            {{ $event.short_details }} &mdash; {{ $event.age | safeHTML }}
           </h3>
         {{ end }}
         <h2 class="mt-8">Science Topics</h2>
         {{ $scienceList := .Params.science_list }} 
         {{ range $index, $event := $scienceList }}
           <h3 class="text-sm">
-            {{ $event.age }} &mdash; {{ $event.short_details | safeHTML }} //time -> age
+            {{ $event.short_details }} &mdash; {{ $event.age | safeHTML }}
           </h3>
         {{ end }}
 
