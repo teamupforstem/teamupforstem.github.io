@@ -14,7 +14,9 @@
             <b>Team dues: ${{ . }}/month.</b> The dues help cover the cost of competition registration, equipment, and materials.
           </p>
         {{ end }}
-        <h2 class="mt-8">Robotics Topics</h2>
+        <h2 class="mt-8">Topics</h2>
+        <h3 class="mt-8">Robotics</h3>
+        <hr>
         {{ $robotList := .Params.robot_list }} 
         {{/*  for simplicity, this has been left in the eventList format, with "event_list" replaced so it is easy to format in the same way as the other pages. Time is now Age */}}
         {{ range $index, $event := $robotList }}
@@ -22,47 +24,31 @@
             {{ $event.short_details }} &mdash; {{ $event.age | safeHTML }}
           </h3>
         {{ end }}
-        <h2 class="mt-8">Computer Coding Topics</h2>
+        <hr>
+        <h3 class="mt-8">Computer Coding</h3>
+        <hr>
         {{ $csList := .Params.cs_list }} 
         {{ range $index, $event := $csList }}
           <h3 class="text-sm">
             {{ $event.short_details }} &mdash; {{ $event.age | safeHTML }}
           </h3>
         {{ end }}
-        <h2 class="mt-8">Science Topics</h2>
+        <hr>
+        <h3 class="mt-8">Science</h3>
+        <hr>
         {{ $scienceList := .Params.science_list }} 
         {{ range $index, $event := $scienceList }}
           <h3 class="text-sm">
             {{ $event.short_details }} &mdash; {{ $event.age | safeHTML }}
           </h3>
         {{ end }}
+        <hr>
+        <p> Need help choosing a course? No problem. We are happy to recommend topics suited for your age group, schedule, and class sizes.</p>
 
-        {{ with .Params.form }}
-          <p>
-            <b>Ready to join?</b>
-
-          Please fill in this <a href="{{ . }}">registration form</a> to sign up for a team. 
-        </p>
-        {{ else }}
-          <p>
-            <b>Registration closed!</b> 
-          </p>
-        {{ end }}
       </div>
     </div>
   </div>
 
-  {{/*  <div class="container">
-    <h2>Sponsorship Opportunities</h2>
-    <p>We welcome sponsorships to support our math programs.</p>
-    <p>
-      Sponsorships help us cover the costs of materials and resources needed
-      for our activities and initiatives.
-    </p>
 
-    <div class="row py-16 border-b border-border dark:border-darkmode-border gap-y-6">
-      {{ partial "donations-list.html" .Params.donation_items }}
-    </div>
-  </div>  */}}
 </section>
 {{ end }}

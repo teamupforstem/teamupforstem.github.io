@@ -7,11 +7,13 @@ description: "Bring hands-on learning and STEM exploration directly to your stud
 image: 
 date: 2022-06-01T05:00:00.000Z
 
-course_details: "Team Up For STEM offers engaging, hands-on after-school programs for students of a variety of ages and experience levels. 
+course_details: "Team Up For STEM offers engaging, hands-on after-school programs for students of a variety of ages and experience levels. <p></p>
 
 Programs are hosted on-site at your school, institution, or organization and can be tailored to fit your schedule, whether you're looking for a short-term program or year-round enrichment.
 
-We have course options across a variety of STEM subjects, including robotics, science, and coding. Select topics from program offerings below, or collaborate with us to develop a customized class that best fits your student community! Need some help deciding what would be best for your students? We can recommend topics for your age group and class sizes."
+<p></p>
+
+We have course options across a variety of STEM subjects, including robotics, science, and coding. Select from our list of topics, or collaborate with us to develop a customized class that best fits your student community!"
 
 
 robot_list:
