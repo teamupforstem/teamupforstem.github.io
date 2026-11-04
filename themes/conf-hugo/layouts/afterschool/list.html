@@ -7,16 +7,10 @@
         class="xl:col-5 xl:border-r xl:border-r-border dark:border-darkmode-border mb-4 xl:mb-0">
         <p></p>
         {{ .Params.course_details | safeHTML }}
-        <h2 class="mt-8">Ready to Team Up?</h2>
+        <h4 class="mt-8">Ready to Team Up?</h4>
         {{ .Params.contact_us | safeHTML }}
-        
       </div>
       <div class="xl:col-7 pl-5 content">
-        {{ with .Params.price }}
-          <p>
-            <b>Team dues: ${{ . }}/month.</b> The dues help cover the cost of competition registration, equipment, and materials.
-          </p>
-        {{ end }}
         <h3 class="mt-8">Topics</h3>
         <h4 class="mt-8">Robotics</h4>
         {{ $robotList := .Params.robot_list }} 
@@ -48,7 +42,6 @@
       </div>
     </div>
   </div>
-
 
 </section>
 {{ end }}
