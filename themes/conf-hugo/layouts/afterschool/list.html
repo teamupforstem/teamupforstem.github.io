@@ -6,10 +6,13 @@
       <div
         class="xl:col-5 xl:border-r xl:border-r-border dark:border-darkmode-border mb-4 xl:mb-0">
         <p></p>
-        <h4 class="mt-8"> Our Programs, Your Students</h4>
+        <h4 class="mt-8"> Bring STEM to Your Students</h4>
         {{ .Params.course_details | safeHTML }}
+        <h4 class="mt-8">Accessible STEM Education</h4>
+        {{ .Params.cost | safeHTML }}
         <h4 class="mt-8">Ready to Team Up?</h4>
         {{ .Params.contact_us | safeHTML }}
+
       </div>
       <div class="xl:col-7 pl-5 content">
         <h4 class="mt-8">Robotics</h4>
@@ -37,7 +40,6 @@
           </h3>
           <hr style="margin-bottom: 0;">
         {{ end }}
-        <hr>
         <p> Need help choosing a course? No problem. We are happy to recommend topics suited for your age group, schedule, and class sizes.</p>
 
       </div>
