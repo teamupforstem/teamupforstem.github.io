@@ -7,15 +7,9 @@ description: "Bring hands-on learning and STEM exploration directly to your stud
 image: 
 date: 2022-06-01T05:00:00.000Z
 
-course_details: "Team Up For STEM offers engaging, hands-on after-school programs for students of a variety of ages and experience levels. <p>
-Programs are hosted on-site at your school, institution, or organization and can be tailored to fit your schedule, whether you're looking for a short-term program or year-round enrichment.</p>
-<p>
-We have course options across a variety of STEM subjects, including robotics, science, and coding. Select from our list of topics, or collaborate with us to develop a customized class that best fits your student community!</p>"
+course_details: "Team Up For STEM offers engaging, hands-on after-school programs for students of a variety of ages and experience levels. <p> Programs are hosted on-site at your school, institution, or organization and can be tailored to fit your schedule, whether you're looking for a short-term program or year-round enrichment.</p><p>We have course options across a variety of STEM subjects, including robotics, science, and coding. Select from our list of topics, or collaborate with us to develop a customized class that best fits your student community!</p>"
 
-contact_us: "Contact our team to learn more about our programs, discuss your school or organization’s needs, and get information about pricing and availability. We’d love to work with you to create an experience that gets your students excited to learn, explore, and build. <p></p> 
-<a href="mailto:office@teamupforstem.org">office@teamupforstem.org</a>.<br>
-<p></p>
-<a href="tel:%28434%29%20688-6119">(434) 688-6119</a>"
+contact_us: "Contact our team to learn more about our programs, discuss your school or organization’s needs, and get information about pricing and availability. We’d love to work with you to create an experience that gets your students excited to learn, explore, and build. <p> <a href='mailto:office@teamupforstem.org'>office@teamupforstem.org</a> <br> </p><p><a href='tel:%28434%29%20688-6119'>(434) 688-6119</a></p>"
 
 
 robot_list:
