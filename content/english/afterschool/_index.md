@@ -7,7 +7,9 @@ description: "Bring hands-on learning and STEM exploration directly to your stud
 image: 
 date: 2022-06-01T05:00:00.000Z
 
-course_details: ". <p> Programs are hosted on-site at your school, institution, or organization and can be tailored to fit your schedule, whether you're looking for a short-term program or year-round enrichment.</p><p>We offer programs across a variety of STEM subjects, for a variety of ages, experience levels, and class sizes. Select a topic from our list of topics, or collaborate with us to develop a customized class that best fits your student community!</p>"
+course_details: "Team Up For STEM offers engaging, hands-on after-school programs for students of a variety of ages and experience levels. <p> Programs are hosted on-site at your school, institution, or organization and can be tailored to fit your schedule, whether you're looking for a short-term program or year-round enrichment.</p><p>We offer programs across a variety of STEM subjects, for a variety of ages, experience levels, and class sizes. Select a topic from our list of topics, or collaborate with us to develop a customized class that best fits your student community!</p>"
+
+cost: "Our mission is to inspire students to engage with STEM through hands-on, engaging learning experiences. We strive to keep our programs affordable and accessible for schools and organizations of all kinds. <p> Program pricing is based on the student age group, schedule duration, and class size. Programs include all necessary materials and equipment, and are taught by an experienced instructor. Contact us to learn more about pricing and receive a personalized estimate for your group."
 
 contact_us: "Contact our team to learn more about our programs, discuss your school or organization’s needs, and get information about pricing and availability. We’d love to work with you to create an experience that gets your students excited to learn, explore, and build. <p> <a href='mailto:office@teamupforstem.org'>office@teamupforstem.org</a> <br> </p><p><a href='tel:%28434%29%20688-6119'>(434) 688-6119</a></p>"
 
