@@ -6,6 +6,7 @@
       <div
         class="xl:col-5 xl:border-r xl:border-r-border dark:border-darkmode-border mb-4 xl:mb-0">
         <p></p>
+        <h3 class="mt-8"> Engaging, hands-on after-school programs for your organization.</h3>
         {{ .Params.course_details | safeHTML }}
         <h4 class="mt-8">Ready to Team Up?</h4>
         {{ .Params.contact_us | safeHTML }}
@@ -18,7 +19,7 @@
           <h3 class="text-sm">
             {{ $event.short_details }} &mdash; {{ $event.age | safeHTML }}
           </h3>
-          <hr>
+          <hr style="margin-bottom: 0;">
         {{ end }}
         <hr>
         <h4 class="mt-8">Computer Coding</h4>
