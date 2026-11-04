@@ -43,7 +43,7 @@ weight = 3
 [[main]]
 parent = "Competitions"
 name="-  World Robot Olympiad"
-url = "robotics/robotics-WRO"
+url = "robotics/robotics-wro"
 weight = 4
 
 
