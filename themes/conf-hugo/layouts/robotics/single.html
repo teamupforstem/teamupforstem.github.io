@@ -6,7 +6,7 @@
       <div
         class="xl:col-5 xl:border-r xl:border-r-border dark:border-darkmode-border mb-4 xl:mb-0">
         <p></p>
-        {{ .Params.course_details | safeHTML }}
+        {{ .Params.competition_details | safeHTML }}
       </div>
       <div class="xl:col-7 pl-5 content">
         {{ with .Params.price }}
@@ -14,25 +14,11 @@
             <b>Team dues: ${{ . }}/month.</b> The dues help cover the cost of competition registration, equipment, and materials.
           </p>
         {{ end }}
-        <h2 class="mt-8">Robotics Topics</h2>
-        {{ $robotList := .Params.robot_list }} //for simplicity, this has been left in the eventList format, with "event_list" replaced so it is easy to format in the same way as the other pages
-        {{ range $index, $event := $robotList }}
+        <h2 class="mt-8">Season Schedule</h2>
+        {{ $eventList := .Params.event_list }}
+        {{ range $index, $event := $eventList }}
           <h3 class="text-sm">
-            {{ $event.age }} &mdash; {{ $event.short_details | safeHTML }}
-          </h3>
-        {{ end }}
-        <h2 class="mt-8">Computer Coding Topics</h2>
-        {{ $csList := .Params.cs_list }} //for simplicity, this has been left in the eventList format, with "event_list" replaced so it is easy to format in the same way as the other pages
-        {{ range $index, $event := $csList }}
-          <h3 class="text-sm">
-            {{ $event.age }} &mdash; {{ $event.short_details | safeHTML }}
-          </h3>
-        {{ end }}
-        <h2 class="mt-8">Science Topics</h2>
-        {{ $scienceList := .Params.science_list }} //for simplicity, this has been left in the eventList format, with "event_list" replaced so it is easy to format in the same way as the other pages
-        {{ range $index, $event := $scienceList }}
-          <h3 class="text-sm">
-            {{ $event.age }} &mdash; {{ $event.short_details | safeHTML }} //time -> age
+            {{ $event.time }} &mdash; {{ $event.short_details | safeHTML }}
           </h3>
         {{ end }}
 
