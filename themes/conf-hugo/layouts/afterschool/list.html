@@ -4,7 +4,7 @@
     {{ partial "page-header" . }}
     <div class="row py-14">
       <div
-        class="xl:col-5 xl:border-r xl:border-r-border dark:border-darkmode-border mb-4 xl:mb-0">
+        class="xl:col-7 xl:border-r xl:border-r-border dark:border-darkmode-border mb-4 xl:mb-0">
         <p></p>
         <h4 class="mt-8"> Bring STEM to Your Students</h4>
         {{ .Params.course_details | safeHTML }}
@@ -14,7 +14,7 @@
         {{ .Params.contact_us | safeHTML }}
 
       </div>
-      <div class="xl:col-7 pl-5 content">
+      <div class="xl:col-5 pl-5 content">
         <h4 class="mt-8">Robotics</h4>
         {{ $robotList := .Params.robot_list }} 
         {{/*  for simplicity, this has been left in the eventList format, with "event_list" replaced so it is easy to format in the same way as the other pages. Time is now Age */}}
