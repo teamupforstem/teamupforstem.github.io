@@ -30,19 +30,19 @@ weight = 5
 
 [[main]]
 parent = "Competitions"
-name="-  FIRST Lego League"
+name="// FIRST Lego League"
 url = "robotics/robotics-fll"
 weight = 3
 
 [[main]]
 parent = "Competitions"
-name="-  FIRST Tech Challenge"
+name="// FIRST Tech Challenge"
 url = "robotics/robotics-ftc"
 weight = 3
 
 [[main]]
 parent = "Competitions"
-name="-  World Robot Olympiad"
+name="// World Robot Olympiad"
 url = "robotics/robotics-wro"
 weight = 4
 

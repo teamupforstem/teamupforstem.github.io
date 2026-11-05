@@ -9,11 +9,11 @@
         {{ .Params.competition_details | safeHTML }}
       </div>
       <div class="xl:col-7 pl-5 content">
-        {{ with .Params.price }}
+        {{/*  {{ with .Params.price }}
           <p>
             <b>Team dues: ${{ . }}/month.</b> The dues help cover the cost of competition registration, equipment, and materials.
           </p>
-        {{ end }}
+        {{ end }}  */}}
         <h2 class="mt-8">Season Schedule</h2>
         {{ $eventList := .Params.event_list }}
         {{ range $index, $event := $eventList }}
