@@ -32,7 +32,7 @@ features:
         enable: true
         label: "Learn More"
         link: "math"
-    - title: "After-school Programs"
+    - title: "After-School Programs"
       content: "In-school, on-site, affordable STEM programs"
       button:
         enable: true
