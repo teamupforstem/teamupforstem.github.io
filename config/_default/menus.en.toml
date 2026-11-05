@@ -16,7 +16,6 @@ weight = 2
 parent = "Competitions"
 name= "All Robotics"
 url = "robotics"
-is_bold = true
 weight = 1
 
 
@@ -24,7 +23,6 @@ weight = 1
 parent = "Competitions"
 name="All Math"
 url = "math"
-is_bold = true
 weight = 5
 
 
