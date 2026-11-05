@@ -16,7 +16,7 @@ banner:
 
 # Features
 features:
-  # title: "What we do"
+  title: "What we do"
   content: ""
   image: "/images/feature_image.png"
   items:  
