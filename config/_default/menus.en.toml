@@ -30,7 +30,7 @@ weight = 5
 
 [[main]]
 parent = "Competitions"
-name="// FIRST Lego League"
+name="// FIRST LEGO League"
 url = "robotics/robotics-fll"
 weight = 3
 
@@ -49,25 +49,25 @@ weight = 4
 
 [[main]]
 parent = "Competitions"
-name="-  Math Kangaroo"
+name="// Math Kangaroo"
 url = "math/mk"
 weight = 6
 
 [[main]]
 parent = "Competitions"
-name="-  AMC 8"
+name="// AMC 8"
 url = "math/amc8"
 weight = 7
 
 [[main]]
 parent = "Competitions"
-name="-  AMC 10"
+name="// AMC 10"
 url = "math/amc10"
 weight = 7
 
 [[main]]
 parent = "Competitions"
-name="-  AMC 12"
+name="// AMC 12"
 url = "math/amc12"
 weight = 7
 
