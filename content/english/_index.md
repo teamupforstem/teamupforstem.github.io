@@ -37,7 +37,7 @@ features:
       button:
         enable: true
         label: "Learn More"
-        link: "/placeholder"
+        link: "/afterschool"
     - title: "Mentorship Opportunities"
       content: "Connecting students with experienced professionals and educators in STEM fields."
       button:
