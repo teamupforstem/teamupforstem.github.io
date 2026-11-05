@@ -18,6 +18,7 @@ event_list:
     #   short_details: 'Build, Code, Compete!'
     #   price: "199.99"
     #   stripe_id: "price_1RnoFRH5BRP1wdS75igV7ag7"
+    
 contact_us: "Contact our team to learn more, register for a competition, or join one of our teams. <p> <a href='mailto:office@teamupforstem.org'>office@teamupforstem.org</a> <br> </p><p><a href='tel:%28434%29%20688-6119'>(434) 688-6119</a></p>"
 
 donation_items: 
