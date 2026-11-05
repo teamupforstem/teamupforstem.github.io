@@ -10,13 +10,13 @@ hero:
    - "AMC 8/10/12 "
 # Banner
 banner:
-  title_start: "About Us"
+  title_start: "About us"
   image: "/images/team-wide.png"
   mission: "At Team Up For STEM, we are dedicated to supporting and promoting student participation in robotics, computer science, mathematics, and science. <br><br> Our mission is to provide resources, mentorship, and opportunities that inspire creativity, critical thinking, and innovation for the next generation of STEM leaders."
 
 # Features
 features:
-  title: "What we do"
+  # title: "What we do"
   content: ""
   image: "/images/feature_image.png"
   items:  
