@@ -118,19 +118,18 @@
     <section class="section">
       <div class="container">
         {{/* Title */}}
-        {{/*  <div class="section-header">
-          <h2>{{ .title | markdownify }}</h2>
-          <p>
-            {{ .content | markdownify }}
-          </p>
-        </div>  */}}
 
         {{/* Features */}}
         <div
           class="row py-14 border-b border-border dark:border-darkmode-border">
           <div class="xl:col-5 mb-10 xl:mb-0 xl:pr-12">
+              <div class="section-header">
+              <h3>{{ .title | markdownify }}</h3>
+              <p>
+              {{ .content | markdownify }}
+              </p>
+            </div>
             {{ partial "image" (dict "Src" .image "Alt" "feature image" "Class" "w-full xl:sticky xl:top-32") }}
-
           </div>
           <div
             class="xl:col-7 xl:border-l xl:border-l-border dark:border-darkmode-border pl-4 xl:pl-16">
