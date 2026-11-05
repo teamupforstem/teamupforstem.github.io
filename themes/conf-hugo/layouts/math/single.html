@@ -24,6 +24,7 @@
           <h3 class="text-sm">
             {{ $event.time }} &mdash; {{ $event.short_details | safeHTML }}
           </h3>
+          <hr style="margin-bottom: 0;">
           {{ if $event.price }}
             {{/*  <p>Cost: ${{ $event.price | safeHTML }}</p>  */}}
             <p>{{ partial "checkout-button.html" . }}</p>
