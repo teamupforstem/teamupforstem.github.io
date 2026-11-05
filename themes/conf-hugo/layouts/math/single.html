@@ -8,7 +8,7 @@
         <p></p>
         {{ .Content | safeHTML }}
       </div>
-      <div class="xl:col-7 pl-5 content">
+      {{/*  <div class="xl:col-7 pl-5 content">
         {{ with .Params.registration_fee }}
           <p>
             Registration fee: ${{ .price }}.<br>
@@ -17,7 +17,7 @@
               here!
             </a>
           </p>
-        {{ end }}
+        {{ end }}  */}}
         <h2 class="mt-8">Contest Dates and Details</h2>
         {{ $eventList := .Params.event_list }}
         {{ range $index, $event := $eventList }}
