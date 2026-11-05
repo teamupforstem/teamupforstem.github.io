@@ -22,6 +22,8 @@ event_list:
 member: 
  name: "Member 1"
 
+contact_us: "Contact our team to learn more, register for a competition, or join one of our teams. <p> <a href='mailto:office@teamupforstem.org'>office@teamupforstem.org</a> <br> </p><p><a href='tel:%28434%29%20688-6119'>(434) 688-6119</a></p>"
+
 competition_details: "<p> WRO is a global robotics competition, featuring different challenge categories for students ages 8 and up. Teams tackle missions in teams of 2-3, and work together to build and code their own robot. The competition encourages young robot engineers with a focus on problem solving, teamwork, and creativity.
 </p><p>
 WRO participants learn about engineering, programming, autonomous robotics, innovation, and team collaboration and fostering interest in technology forward solution to real world problems. 

@@ -18,6 +18,8 @@ registration_fee:
   Registration for the AMC 12 is currentlty closed. Please contact us for details on registering for the next test."
   registrationform: "https://pci.jotform.com/form/252726615636159"
 
+contact_us: "Contact our team to learn more, register for a competition, or join one of our teams. <p> <a href='mailto:office@teamupforstem.org'>office@teamupforstem.org</a> <br> </p><p><a href='tel:%28434%29%20688-6119'>(434) 688-6119</a></p>"
+
 
 event_list: 
     - time: "November 5"

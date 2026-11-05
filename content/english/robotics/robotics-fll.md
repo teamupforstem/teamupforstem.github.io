@@ -23,6 +23,8 @@ event_list:
 #  - time: "One of the first three weekends in November"
 #    short_details: 'Compete in one regional qualifier'
 
+contact_us: "Contact our team to learn more, register for a competition, or join one of our teams. <p> <a href='mailto:office@teamupforstem.org'>office@teamupforstem.org</a> <br> </p><p><a href='tel:%28434%29%20688-6119'>(434) 688-6119</a></p>"
+
 donation_items: 
   - title: "Robotics Advocate"
     description: ""
