@@ -30,6 +30,8 @@
             <p>{{ partial "checkout-button.html" . }}</p>
           {{ end }}
         {{ end }}
+        <h4 class="mt-8">Ready to Team Up?</h4>
+        {{ .Params.contact_us | safeHTML }}
       </div>
     </div>
   </div>
